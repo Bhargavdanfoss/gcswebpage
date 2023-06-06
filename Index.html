@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-
+  <script src="https://kit.fontawesome.com/ef28b60f8a.js" crossorigin="anonymous"></script> <!--For Testimonials-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
   <style>
     body {
       font: 400 15px/1.8 Lato, sans-serif;
@@ -61,33 +62,33 @@
       border-color: #f1f1f1;
     }
 
-    .carousel-control.right,
-    .carousel-control.left {
+    .headcarousel .carousel-control.right,
+    .headcarousel .carousel-control.left {
       background-image: none;
       color: #f4511e;
     }
 
-    .carousel-indicators li {
+    .headcarousel .carousel-indicators li {
       border-color: #f4511e;
       margin-top: 30px;
     }
 
-    .carousel-indicators li.active {
+    .headcarousel .carousel-indicators li.active {
       background-color: #f4511e;
     }
 
-    .carousel-inner img {
+    .headcarousel .carousel-inner img {
       width: 100%;
       /* Set width to 100% */
 
     }
 
-    .carousel-caption h3 {
+    .headcarousel .carousel-caption h3 {
       color: #fff !important;
     }
 
     @media (max-width: 600px) {
-      .carousel-caption {
+      .headcarousel .carousel-caption {
         display: none;
         /* Hide the carousel text when the screen is less than 600 pixels wide */
       }
@@ -183,8 +184,8 @@
       margin-right: 7%;
       background-color: #ed1c24;
       border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
+      font-size: 400 13px !important;
+      letter-spacing: 2px;
       opacity: 1;
     }
 
@@ -289,6 +290,105 @@
     .inner:hover img {
       transform: scale(1.5);
     }
+
+    /*For Testimonial Section*/
+    .testim{
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+    
+  }
+  .testim .container{    
+    
+    width:100%;
+    min-height: 100vh;
+    background:#ffe8f0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .testim .testimonial{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    
+  }
+
+  .testim .testimonial-text
+  {
+    background:#ff0058;
+    color:#fff;
+    width:100%;
+    height:350px;
+    position: relative;
+    box-shadow:0 159x 20px rgba(0,0,0,0.2);
+    
+  }
+
+  .testim .user-text{
+    width:80%;
+    text-align:center;
+    line-height:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    right:50%;
+    transform: translate(-50%,-50%);
+    display:none; 
+    font-size:18px;   
+  }
+
+  .testim .user-text .fas{
+    font-size:30px;
+    margin-bottom:50px;
+    margin-top:20px;
+  }
+
+  .testim .user-text span{
+    display:block;
+    font-size:16px;
+    margin-top:70px;
+    font-weight:500;
+    text-transform:uppercase;
+  }
+
+  .testim .testimonial-pic{
+    margin-top: 30px;
+    display:fkex;
+    align-items:center;
+    justify-content:center;
+    margin-left:25%;
+  }
+
+   .testim .user-pic{
+    width: 65px;
+    padding: 5px;
+    border-radius:50%;
+    margin:1%;   
+    cursor:pointer;
+   }
+
+   .testim .user-text.active-text{
+    display:block;
+    animation: moveup 0.5s linear forwards;
+   }
+
+   .testim .user-pic.active-pic{
+    width:100px;
+    border: 3px solid #ff0058;
+   }
+
+   @keyframes moveup{
+        0%{
+            margin-top: 25px;
+        }
+        100%{
+            margin-top:0px;
+        }
+   }
+
+   
+    
   </style>
 
 </head>
@@ -307,13 +407,16 @@
         <img src="Canva/DET.png" alt="Welcome" width="260" height="50">
         <!--<a class="navbar-brand" href="#myPage">Logo</a>-->
       </div>
+      
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
+          <li style="margin-top:1.25%"><input type="text" name="search" placeholder="search..."></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
           <li><a href="#myPage">HOME</a></li>
           <li><a href="#organization">ORGANIZATION</a></li>
           <li><a href="#services">SERVICES</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li class="dropdown">
+          <!--<li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
               <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -321,8 +424,8 @@
               <li><a href="#">Extras</a></li>
               <li><a href="#">Media</a></li>
             </ul>
-          </li>
-          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          </li>-->
+          
         </ul>
       </div>
     </div>
@@ -331,7 +434,7 @@
 
   <div class="row" style="margin-top:3%;margin-bottom:1%" id="myPage">
     <div class="co1-sm-10">
-      <h2 style="text-align:center;letter-spacing: 2px; ">One Digital Platform</h2>
+      <h2 style="text-align:center;letter-spacing: 2px; ">GS Digital Platform</h2>
     </div>
   </div>
 
@@ -356,7 +459,7 @@
       </div> </a>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-6 headcarousel">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -571,10 +674,10 @@
           <div class="row text-center">
             <div class="col-sm-4">
               <div class="thumbnail">
-                <img src="Canva/logistics.jpg" alt="logistics" width="400" height="300">
-                <p><strong>Logistics GS-L</strong></p>
-                <p>May 31, 2022</p>
-                <a class="btn btn-primary" href="https://workplace.danfoss.net/129234/logistics-gs-l" target="_blank"
+                <img src="Canva/AboutGS.png" alt="AboutGS" width="400" height="300">
+                <p><strong>About GS</strong></p>
+                <p>Global Services</p>
+                <a class="btn btn-primary" href="https://workplace.danfoss.net/104095/about-gs" target="_blank"
                   role="button">Visit</a>
               </div>
             </div>
@@ -649,14 +752,56 @@
     <div class="col-sm-1"></div>
   </div>
 
-  <!--Testimonial Sectopm
+  <!--Testimonial Section -->
   <div class="row">
     <div class="col-sm-1"></div>
-    <div class="col-sm-10" style="margin-left:0.5%">
+    <div class="col-sm-10" style="margin-left:0.5%;background: #ffe8f0;">
+      <div class="testim">        
+        <div class="container">          
+            <div class="testimonial">
+              <h3 class="text-center">TESTIMONIALS</h3>
+                <div class="testimonial-text">                  
+                    <div class="user-text">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>The Landscaping Professionals were quick, courteous and very helpful. They helped me restore my lawn and gardens completely after putting in my deck. I was worried it would not be done in time for my garden party, but they finished the job with time to spare! </p>
+                            <span>JOHN RAYAN, CEO HUMBLE1</span>
+                    </div>
+                    <div class="user-text active-text">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>I immediately knew I had a [customer problem]. I needed this resolved [product or service competitive advantage]. [Your business name] did it, and I [overall satisfaction] </p>
+                            <span>JOHN RAYAN, CEO HUMBLE2</span>
+                    </div>
+                    <div class="user-text">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>When I realized I had an ant problem, it was out of control. I needed an exterminator immediately. Pest Control Company sent someone out right away and I have not seen an ant since—I would definitely recommend them</p>
+                            <span>JOHN RAYAN, CEO HUMBLE3</span>
+                    </div>
+                    <div class="user-text">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Hello my name is [customer name] and I am the [title] for [business name]. Our team was experiencing trouble with [state your problem] which was negatively impacting our sales. We had tried some options to resolve this problem, but nothing seemed to work. Then we found [product/service], which quickly resolved our issues and our sales began to increase. We highly recommend [product/service] if your business is facing similar problems. It changed everything for us!</p>
+                            <span>JOHN RAYAN, CEO HUMBLE4</span>
+                    </div>
+                    <div class="user-text">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>I was really struggling with [state your problem] which was negatively affecting me. I started by asking my friends and family what they have tried, and someone recommended [product/service]. After a little more research, I decided to go with [product/service] and I am glad I did! My friend was absolutely right, this product/service has done wonders for me and I’m never going back. If you’re facing similar issues, I highly recommend giving [product/service] a try.</p>
+                            <span>JOHN RAYAN, CEO HUMBLE5</span>
+                    </div>
+                </div>
+                <div class="testimonial-pic">
+                    <img src="Canva/user1.png" class="user-pic" onclick="showReview()">
+                    <img src="Canva/user2.png" class="user-pic active-pic" onclick="showReview()">
+                    <img src="Canva/user3.png" class="user-pic" onclick="showReview()">
+                    <img src="Canva/user4.png" class="user-pic" onclick="showReview()">
+                    <img src="Canva/user5.png" class="user-pic" onclick="showReview()">
+                </div>
+            </div>
+        </div>        
+    </div>
+
       
     </div>
     <div class="col-sm-1"></div>
-  </div>-->
+  </div>  
 
   <!-- Container (Contact Section) -->
   <div class="row">
@@ -765,7 +910,30 @@
         });
       });
     })
+
+    
   </script>
+
+  <!--For Testimonials-->
+  <script>
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics= document.getElementsByClassName("user-pic");
+
+    function showReview(){
+        for(userPic of userPics){
+            userPic.classList.remove("active-pic");
+        }
+        for(userText of userTexts){
+            userText.classList.remove("active-text");
+        }
+        let i=Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+    }
+    </script>
+ 
 
 </body>
 
