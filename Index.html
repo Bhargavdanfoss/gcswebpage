@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href ='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap' rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="ef28b60f8a.js" crossorigin="anonymous"></script> <!--For Testimonials-->
@@ -18,13 +19,15 @@
  
   <style>
     body {
-      font: 400 15px/1.8 Lato, sans-serif;
+      /*font: 400 15px/1.8 Lato, sans-serif;*/
+      font: 400 15px/1.8 'Poppins',sans-serif;
+      /*font-family:'Poppins',sans-serif;*/
       color: #777;
       overflow-x: hidden;
     }
 
     h2 {
-      font-family: sans-serif;
+      /*font-family: sans-serif;*/  font-family:'Poppins',sans-serif;
       font-size: 24px;
       text-transform: uppercase;
       color: #ed1c24;
@@ -184,7 +187,7 @@
     }
 
     .navbar {
-      font-family: sans-serif;
+      /*font-family: sans-serif;*/  font-family:'Poppins',sans-serif;
       margin-bottom: 0;
       margin-left: 8%;
       margin-right: 7%;
@@ -201,7 +204,7 @@
     }
 
     .navbar-nav li a:hover {
-      color: yellow !important;
+      color: #000 !important;
     }
 
     .navbar-nav li.active a {
@@ -383,106 +386,6 @@
     width:100px;
     border: 3px solid #ff0058;
    }
-   /*Testimonial End */
-
-   /*Upcoming Events1*/
-
-   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-  :root{ 
-    --font: sans-serif;  
-    --color: #ed1c24;
-    --bg-color: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(120.74deg, #FFB4B7 -1.19%, #DEB5E7 29.65%, #84B5FF 62.61%, #C68CFF 93.58%);
-  }
-
-  .swiper{
-    box-sizing: border-box;
-    font-family: --font;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    background: var(--bg-color);
-    width: 100%;
-  }
-  .swiper .swiper-wrapper{
-    width: 100%;
-    height: 35em;
-    display: flex;
-    align-items: center;
-  }
-  .swiper .card{
-    width: 20em;
-    height: 90%;
-    background-color: #fff;
-    border-radius: 2em;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-    padding: 2em 1em;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    margin: 0 2em;
-  }
-  .swiper .swiper-slide:not(.swiper-slide-active){
-    filter: blur(1px);
-  }
-
-  .swiper .card__image{
-    width: 10em;
-    height: 10em;
-    border-radius: 0%;
-    border: 5px solid var(--color);
-    padding: 3px;
-    margin-bottom: 2em;
-  }
-  .swiper .card__image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 0%;
-    object-fit: crop;
-  }
-
-  .swiper .card__content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .swiper .card__title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: relative;
-    top: .2em;
-    color:#000;
-  }
-  .swiper .card__name{
-    color: var(--color);
-  }
-  .swiper .card__text{
-    text-align: center;
-    font-size: 1.1rem;
-    margin: 1em 0;
-    color:#000;
-  }
-  .swiper .card__btn{
-    background-color: var(--color);
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
-    padding: .5em;
-    border-radius: .5em;
-    margin-top: .5em;
-    cursor: pointer;
-  }
-
-  .swiper .card__btn:hover{
-    background-color: #000;
-  }
-
-   /*Upcoming Events2*/
 
    @keyframes moveup{
         0%{
@@ -492,6 +395,158 @@
             margin-top:0px;
         }
    }
+   /*Testimonial End */
+
+   /*Upcoming Events Start*/
+   
+        .upcoming *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .upcoming{
+            
+            font-family:'Poppins', sans-serif;
+            margin-bottom:4%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#EFEFEF;
+        }
+        .upcoming .slide-container{
+            max-width:1120px;
+            width:100%;            
+            padding: 40px 0; 
+        }
+        .upcoming .slide-content{            
+            margin:0 40px;            
+            overflow:hidden;
+            border-radius:25px;
+        }
+        .upcoming .card{
+            min-height:421px;
+            border-radius:25px;
+            background-color:#FFF;
+        }
+        .upcoming .image-content, .card-content{
+            position: relative;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            padding: 10px 14px;
+        }
+        .upcoming .image-content{
+            position:relative;
+            row-gap:5px;
+            padding:25px 0;
+        }
+        .upcoming .overlay{
+            position:absolute;
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            background-color: #2d2d30;
+            border-radius:25px 25px 0 25px;
+            
+        }
+        .upcoming .overlay::before, .overlay::after{
+            content:'';
+            position:absolute;
+            right:0;
+            bottom:-40px;
+            height:40px;
+            width:40px;
+            background-color: #2d2d30;
+           
+        }
+        .upcoming .overlay::after{
+            border-radius:0 25px 0 0; 
+            width:50px;          
+            background-color:#fff;
+        }
+        .upcoming .card-image{
+            position: relative;
+            height:150px;
+            width:250px;
+            border-radius:5%;
+            background-color:#FFF;
+            padding:3px;
+        }
+        .upcoming .card-image .card-img{
+            height:100%;
+            width:100%;
+            object-fit:crop;
+            border-radius:5%;
+            border: 4px solid #2d2d30;
+        }
+        .upcoming .name{
+          font-family:'Poppins', sans-serif;
+            font-size:16px;
+            font-weight:500;
+            color:#333;
+        }
+        .upcoming .description{
+            font-size:14px;
+            color:#707070;
+            text-align:center;
+            margin-top:5%;
+            line-height:2vh;
+        }
+        .upcoming .button{
+            border: none;
+            font-size:16px;
+            color:#fff;
+            padding: 8px 16px;
+            background-color:#2d2d30;
+            border-radius:6px;
+            margin:14px;
+            cursor:pointer;
+            transition: all 0.3s ease;
+            text-decoration:none
+        }
+        .upcoming .button:hover{
+            background:#ed1c24;
+            color:#fff;
+        }
+        .upcoming .swiper-navBtn{
+             color:#ed1c24;
+             transition: color 0.3s ease;
+        }
+        .upcoming .swiper-navBtn:hover{
+            color:#2d2d30;
+        }
+        .upcoming .swiper-navBtn::before,
+                  .swiper-navBtn::after{
+            font-size: 40px;
+        }
+        .upcoming .swiper-button-next{
+            right:0;
+        }
+        .upcoming .swiper-button-prev{
+            left:0;
+        }
+        .upcoming .swiper-pagination-bullet{
+            background-color: #ed1c24;
+            opacity: 1;
+        }
+        .upcoming .swiper-pagination-bullet-active{
+            background-color:#2d2d30;
+        }
+
+        @media screen and (max-width:768px){
+            .upcoming .slide-content{
+                margin:0 10px;
+            }
+            .upcoming .swiper-navBtn{
+                display:none;
+            }
+        }
+   
+
+   /*Upcoming Events End*/
+
+   
 
    @media screen and (max-width: 768px){
     .heading{
@@ -517,12 +572,7 @@
     }
     .testim .testimonial-pic{
       margin-left:1%;
-    }
-
-    .swipermobile{
-      border-style:solid;
-      border-color:white;
-    }
+    }    
    
    }
    
@@ -571,7 +621,7 @@
 
   <div class="row" style="margin-top:3%;margin-bottom:1%" id="myPage">
     <div class="co1-sm-10 heading">
-      <h2 style="text-align:center;letter-spacing: 2px; ">GS Digital Platform</h2>
+      <h2 style="text-align:center;letter-spacing: 2px; ">GS APR - One Digital Platform</h2>
     </div>
   </div>
 
@@ -697,7 +747,7 @@
     <div class="col-sm-1"></div>
     <div class="col-sm-10 bg-grey" style="margin-left:0.5%">
       <div class="container-fluid text-center bg-grey">
-        <h2>People</h2><br>
+        <h2>Our PEOPLE</h2><br>
         <div class="row text-center">
           <div class="col-sm-4"> <a href="www.google.com" target="_blank">
               <div class="thumbnail">
@@ -805,7 +855,7 @@
     <div class="col-sm-10 bg-1" style="margin-left:0.5%;">
       <div id="services">
         <div class="container">
-          <h3 class="text-center">DANFOSS GLOBAL SERVICES</h3>
+          <h3 class="text-center">OUR SERVICES</h3>
           <p class="text-center">Frontline Passion - Run the Business by your own - Think Danfoss</p>
 
           <div class="row text-center">
@@ -822,7 +872,7 @@
               <div class="thumbnail">
                 <img src="Canva/Real_Estate.png" alt="Real Estate" width="400" height="300">
                 <p><strong>Real Estate</strong></p>
-                <p>Sustainability - Work environment - Facility</p>
+                <p style="font-size:14px">Sustainability-Work environment-Facility</p>
                 <a class="btn btn-primary" href="https://workplace.danfoss.net/25956/real-estate" target="_blank"
                   role="button">Visit</a>
               </div>
@@ -881,7 +931,7 @@
     <div class="col-sm-10 bg-2" style="margin-left:0.5%">
       <div id="orgchart" class="bg-2">
         <div class="container fluid">
-          <h3 class="text-center">ORGANIZATION CHART</h3>
+          <h3 class="text-center">OUR LEADERS</h3>
           <img src="Canva/Org_Chart.png" class="img-responsive" style="width:100%;height:100%">
         </div>
       </div>
@@ -892,64 +942,89 @@
   <!-- Container (Upcoming Events) -->
   <div class="row">
     <div class="col-sm-1"></div>
-    <div class="col-sm-10 bg-3 swipermobile" style="margin-left:0.5%">      
-        <h3 class="text-center" style="margin-top:5%;margin-bottom:0">UPCOMING EVENTS</h3>      
-        <div class="container fluid swiper mySwiper" style="padding-top:0">        
-          <div class="swiper-wrapper">          
-            <div class="card swiper-slide" style="display:flex">
-              <div class="card__image">
-                <img src="Canva/user1.jpg" alt="card image">
+    <div class="col-sm-10" style="margin-left:0.5%;background-color:#EFEFEF;">      
+        <h3 class="text-center" style="margin-top:5%">UPCOMING EVENTS</h3>
+        <div class="upcoming">
+          <div class="slide-container swiper">
+              <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+      
+                              <div class="card-image">
+                                  <img src="Canva/Events1.jpg" alt="" class="card-img">
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="name">28 - 29 June, 2023</h2>
+                              <h2 class="name">Trade shows, Cologne, DE</h2>
+                              <h2 class="name">Danfoss at IVT Expo 2023</h2>
+                              <p class="description">Danfoss will be a presenter and exhibitor at this year's IVT Expo.</p>                        
+                              <a class="button" href="https://www.ivtexpo.com/en/index.php" target="_blank"
+                              role="button">View More</a>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+      
+                              <div class="card-image">
+                                  <img src="Canva/Events2.png" alt="" class="card-img">
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="name">26 - 28 September, 2023</h2>
+                              <h2 class="name">Trade shows, Louisville, KY, USA</h2>
+                              <h2 class="name">Danfoss at The Utility Expo 2023</h2>
+                              <p class="description">Danfoss will be exhibiting at this year Utility Expo at the Kentucky Exposition Center.</p>
+                              <a class="button" href="https://www.theutilityexpo.com/" target="_blank"
+                              role="button">View More</a>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+      
+                              <div class="card-image">
+                                  <img src="Canva/Events3.jpg" alt="" class="card-img">
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="name">12 - 18 November, 2023</h2>
+                              <h2 class="name">Trade shows, Hannover, DE</h2>
+                              <h2 class="name">Danfoss at Agritechnica 2023</h2>
+                              <p class="description">Visit our booth where you will meet experts and learn about our latest solutions.</p>
+                              <a class="button" href="https://www.agritechnica.com/en/" target="_blank"
+                              role="button">View More</a>
+                          </div>
+                      </div>
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                              <span class="overlay"></span>
+      
+                              <div class="card-image">
+                                  <img src="Canva/Events4.jpg" alt="" class="card-img">
+                              </div>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="name">Up to 31 December, 2023</h2>
+                              <h2 class="name">On-demand webinars, Webinars</h2>
+                              <h2 class="name">RETHINK Live</h2>
+                              <p class="description">RETHINK Live is a global series of virtual events dedicated to uncovering new ways.</p>
+                              <a class="button" href="https://www.danfoss.com/en/service-and-support/learning/climate-solutions-learning/rethink-live/?utm_source=Danfoss_EventPage" target="_blank"
+                              role="button">View More</a>
+                          </div>
+                      </div>                               
+                  </div>  
+                  <div class="swiper-button-next swiper-navBtn"></div>
+                  <div class="swiper-button-prev swiper-navBtn"></div>
+                  <div class="swiper-pagination"></div>          
               </div>
-              <div class="card__content">
-                <span class="card__title text-center">28 - 29 June, 2023, Trade shows, Cologne, DE</span>
-                <span class="card__name">Danfoss at IVT Expo 2023</span>
-                <p class="card__text">Danfoss will be a presenter and exhibitor at this year's IVT Expo. Our team of experts will be presenting topics ranging from autonomous solutions to digital displacement. </p>
-                <a href="https://www.ivtexpo.com/en/index.php" target="_blank">
-                  <button class="card__btn">View More</button>
-                </a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="Canva/Events2.png" alt="card image">
-              </div>
-              <div class="card__content">
-                <span class="card__title text-center">26 - 28 September, 2023, Trade shows, Louisville, KY, USA</span>
-                <span class="card__name">Danfoss at The Utility Expo 2023</span>
-                <p class="card__text">Danfoss will be exhibiting at this year's Utility Expo at the Kentucky Exposition Center. Visit us in the South Wing A at booth S-3707. We look forward to meeting you and discussing your construction and utility vehicle needs.</p>
-                <a href="https://www.theutilityexpo.com/" target="_blank">
-                  <button class="card__btn">View More</button>
-                </a> 
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="Canva/user3.jpg" alt="card image">
-              </div>
-              <div class="card__content">
-                <span class="card__title text-center">12 - 18 November, 2023, Trade shows, Hannover, DE</span>
-                <span class="card__name">Danfoss at Agritechnica 2023</span>
-                <p class="card__text">Visit our booth where you will meet our experts and learn about our latest solutions at the world's leading trade fair for agricultural machinery.</p>
-                <a href="https://www.agritechnica.com/en/" target="_blank">
-                  <button class="card__btn">View More</button>
-                </a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card__image">
-                <img src="Canva/user4.jpg" alt="card image">
-              </div>
-              <div class="card__content">
-                <span class="card__title text-center">Up to 31 December, 2023, On-demand webinars, Webinars</span>
-                <span class="card__name">RETHINK Live</span>
-                <p class="card__text">RETHINK Live is a global series of virtual events dedicated to uncovering new ways of doing things in HVACR. Take part in the global conversation to shift your perspective.</p>
-                <a href="https://www.danfoss.com/en/service-and-support/learning/climate-solutions-learning/rethink-live/?utm_source=Danfoss_EventPage" target="_blank">
-                  <button class="card__btn">View More</button>
-                </a>
-              </div>
-            </div>            
-          </div>          
-        </div>      
+             
+          </div>  
+      </div>
+              
     </div>
     <div class="col-sm-1"></div>
   </div>
@@ -961,7 +1036,7 @@
       <div class="testim">        
         <div class="container">          
             <div class="testimonial">
-              <h3 class="text-center">TESTIMONIALS</h3>
+              <h3 class="text-center">WALL OF FAME</h3>
                 <div class="testimonial-text">                  
                     <div class="user-text">
                         <i class="fa-solid fa-quote-left"></i>
@@ -1137,28 +1212,41 @@
     </script>
 
     <!--For Upcoming Events-->
-    <!-- Swiper JS -->
-  <script src="swiper-bundle.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
+<script>
+    var swiper=new Swiper(".slide-content",{
+        slidesPerView:3,
+        spaceBetween:25,
+        loop: true,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',        
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev", 
+        },
+
+        breakpoints:{
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            },
+        },
     });
-  </script>
+
+</script>
     
 
 </body>
