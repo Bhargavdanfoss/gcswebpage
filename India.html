@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>India Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+  body {
+    font: 500 16px "DM Sans", sans-serif;
+    line-height: 1.8;    
+  }
+  .navbar{
+    background-color: #B6000F;
+  }
+  .navbar li{
+    background-color: #B6000F;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: white !important;
+  }
+  .navbar-nav li a:hover {
+    color: yellow !important;      
+  }
+  h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.375em;
+    color:black;
+    font-weight: 500;    
+   }     
+  
+  .pop .h4{
+    float:left;   
+
+  }
+  
+  .jumbotron {
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .inner {
+      overflow: hidden;
+    }
+
+    .inner img {
+      transition: all 1.5s ease;
+    }
+
+    .inner:hover img {
+      transform: scale(1.5);
+    }
+  .container-fluid {
+    padding-top:50px;
+   background-image:linear-gradient(to bottom, white 0%, white 30%, white, white 100%);
+     /*background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(120.74deg, #FFB4B7 -1.19%, #DEB5E7 29.65%, #84B5FF 62.61%, #C68CFF 93.58%);*/
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: whitesmoke;
+    font-size: 50px;
+  }
+  .logo {
+    color: whitesmoke;
+    font-size: 200px;
+  }
+  .thumbnail {    
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;    
+  }
+  .thumbnail p{
+    margin-top:3%;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: whitesmoke;
+  }
+  .carousel-indicators li {
+    border-color: whitesmoke;
+  }
+  .carousel-indicators li.active {
+    background-color: whitesmoke;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {    
+    transition: box-shadow 0.5s;    
+    }
+
+  .panel-body:hover {    
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }  
+
+  .pop:hover{
+    transform: translateY(-20px);
+    overflow: hidden;
+    background-color:whitesmoke;    
+  }  
+  
+  .panel-heading {        
+    color:white;
+    font-family:sans-serif;
+  }   
+  
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }  
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  } 
+  .grid{
+    background-image: url("/Canva/edge.png");
+  background-color: #cccccc;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }  
+
+  .list{
+    background-image: url("/Canva/edge.png");
+  background-color: #cccccc;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-3 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }    
+
+    .pop{
+      justify-content: center;
+      justify-items: center;
+      align-content:center;
+      align-items:center;
+      
+    }
+
+    .country{
+      margin-left :10%;
+    }
+    
+    
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  } 
+  @media screen and (max-width: 720px) {
+    .titlehead {
+      display:none;
+    }      
+    .thumbnail img {
+        width:60%;
+    }
+  }  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">  
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container col-sm-12">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <img src="Canva/DET.png" alt="Welcome" width="225" height="50" style="margin-left:12%;">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar" style="margin-right:3%">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Index.html">HOME</a></li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="row">
+  <div class="col-sm-3 col-xs-4" ></div>
+  <div class="col-sm-6 col-xs-4" >
+    <div class="text-center">
+      <h2 style="color:black">INDIA</h2>
+    </div>
+  </div>
+  <div class="col-sm-3 col-xs-4" style="margin:0"> 
+    <div id="btnContainer" class="titlehead" style="float:right;line-height:4">      
+      <button class="btn active" id="btngrid" onclick="toggleView('grid')"><i class="fa fa-th-large"></i> Grid</button> 
+      <button class="btn" id="btnlist" onclick="toggleView('list')"><i class="fa fa-bars"></i> List</button>      
+    </div>
+  </div>
+  </div>
+  <div id="listView" style="display: none;">
+    <div class="row list" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12" >
+
+        <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+          <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+              <div class="thumbnail">
+                  <div class="inner">
+                    <img src="Canva/GCS_Link.png" alt="GCS" width="250" height="250">
+                  </div>
+                  <p><strong>GCS</strong></p>
+                </div>
+          </div>       
+        </div>
+        
+        <div class="row"><br></div>
+
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="http://10.60.1.133/Login" target="_blank">       
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/ExitClearance_Malaysia.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Trackpro</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/c169a33f-ba08-465f-9f29-dd7abacb0491?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/OffcieApplication_Malaysia.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Vicki – Smart Bot</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/28b66d35-c835-4898-a902-e196fc2af074?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/LunchRefreshment_Malaysia.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Ideation Tool</h4>
+              </div>   
+            </a>
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/d083ad19-84ef-4f6a-b667-89636d4fd5a0?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/RegaliaCarton_Malaysia.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Voice of Customer</h4>
+              </div> 
+            </a>
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+            <a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Femails.azure.microsoft.com%2Fredirect%2F%3Fdestination%3Dhttps%253A%252F%252Fapp.powerbi.com%252FMobileRedirect.html%253Faction%253DOpenDashboard%2526groupObjectId%253D3b238272-8b77-44b5-a207-c9a65f7efb5d%2526dashboardObjectId%253D36ecdedd-5c35-4a2d-8d92-fea22ea8b225%2526ctid%253D097464b8-069c-453e-9254-c17ec707310d%2526OpenAppFromWindowsPCAndTablet%253Dfalse%2526emailSource%253DEmailSubscription%26p%3DbT1kNGFlNmRkZi1mZWJmLTRlN2UtODgxNS01NTJmMGZkYmIxNGQmdT1hZW8mbD1jdGElM0FkYXNoYm9hcmQ%253D&data=05%7C01%7Cvignesh.nagaraj%40danfoss.com%7C237824ab4c204b1a71ce08db07f291a8%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638112510632436241%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=S%2FGT1Vaq49HHl4dsQQ5YTd85VVeUCbWZj8PpghCCsqA%3D&reserved=0" target="_blank">
+              <div class="col-sm-3" style="margin-top:2%">
+                <img src="Canva/FlexibleDiscussion_Malaysia.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Voice of Customer – Insights</h4>
+              </div> 
+            </a>
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/6767193a-c14a-4a7c-ab33-57a940ea0924?tenantId=097464b8-069c-453e-9254-c17ec707310d#" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/VisaApplicationLetter_Malaysia.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Reuse</h4>
+              </div> 
+            </a>
+          </div>            
+      </div>
+        
+      </div> 
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+          <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+              <div class="thumbnail">
+                  <div class="inner">
+                    <img src="Canva/O2C_Link.png" alt="O2C" width="400" height="300">
+                  </div>
+                  <p><strong>O2C</strong></p>
+                </div>                
+          </div>
+        </div>
+
+        <div class="row"><br></div>
+
+          <div class="panel panel-default">        
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://app.powerbi.com/groups/2c2c2574-3ed3-4229-99b7-84c9a6fa1b72/list" target="_blank">
+                <div class="col-sm-3" style="margin-top:2%">
+                  <img src="Canva/V39A_Singapore.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4>Cash Application - Daily</h4>
+                </div>
+              </a>
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+              <a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/list" target="_blank">   
+                <div class="col-sm-3" style="margin-top:4%">
+                  <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9" style="margin-top:5%">
+                  <h4>AROD</h4>
+                </div>
+              </a>           
+            </div>                
+          </div>      
+      </div>    
+
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default text-center" style="background-color:whitesmoke;max-height:345px">       
+          <div class="panel-body" style="background-color:whitesmoke;max-height:343px">
+              <div class="thumbnail">
+                  <div class="inner">
+                    <img src="Canva/R2R_Link.png" alt="R2R" width="400" height="300">
+                  </div>
+                  <p><strong>R2R</strong></p>
+                </div>
+          </div>  
+        </div>
+        <div class="row"><br></div>
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/72be57a8-6fe1-4aa4-a365-7f88d303f8a4/reports/4f52ec5c-ee81-47c2-be39-bbd0db16d176/ReportSectionf43eb4a12a038098b380" target="_blank">       
+              <div class="col-sm-3" style="margin-top:2%">
+                <img src="Canva/EmployementCertificate_Taiwan.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Daily Flash Report_V1 - Power BI</h4>
+              </div> 
+            </a>        
+          </div>               
+        </div>            
+      </div>
+
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+          <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+              <div class="thumbnail">
+                  <div class="inner">
+                    <img src="Canva/EHS_ADMIN_Link.png" alt="EHS ADMIN" width="400" height="300">
+                  </div>
+                  <p><strong>EHS&ADMIN</strong></p>
+                </div>
+          </div>        
+        </div>
+        <div class="row"><br></div>
+        <div class="panel panel-default">
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/ca220e03-a20a-4f1a-8725-5c002ba0bf62?tenantId=097464b8-069c-453e-9254-c17ec707310d&amp;source=portal" target="_blank">          
+              <div class="col-sm-3" style="margin-top:2%"> 
+                <img src="Canva/DanfossCourier_India.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Danfoss Courier (Inward&Outward)</h4>
+              </div>  
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://danfoss.sharepoint.com/sites/GSIndiaAdministration/Lists/Courrier%20Tracker/Request%20view%20%20chennai.aspx?InplviewHash05b4dee1-3696-4e91-9a77-1f680f0eb857=SortField%3DLinkIssueIDNoMenu%2DSortDir%3DDesc&sortField=DueDate&isAscending=false&viewid=05b4dee1%2D3696%2D4e91%2D9a77%2D1f680f0eb857" target="_blank">          
+              <div class="col-sm-3" style="margin-top:4%"> 
+                <img src="Canva/TravelConcur_India.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Courier Tracker</h4>
+              </div>  
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">  
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/93845129-1544-44de-ab72-44f765048e73?source=portal" target="_blank">         
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/AssistMe_India.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Assist Me</h4>
+              </div>
+            </a>          
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">    
+            <a href="https://app.powerbi.com/groups/me/reports/5d2362d6-789d-4b95-972b-5dea96271860/ReportSection29edea916b0de1a07615" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/AsssitMePBI.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Assit Me - PBI</h4>
+              </div>   
+            </a>       
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+            <a href="https://danfoss.sharepoint.com/sites/GSIndiaAdministration/Lists/VISA%20Invite/NewForm.aspx?Source=https%3A%2F%2Fdanfoss%2Esharepoint%2Ecom%2Fsites%2FGSIndiaAdministration%2FSitePages%2FVisa%2DInvitation%2Easpx&RootFolder=%2Fsites%2FGSIndiaAdministration%2FLists%2FVISA%20Invite" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/VisaInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Visa invitation link</h4>
+              </div>  
+            </a>
+          </div>  
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">          
+              <div class="col-sm-3" style="margin-top:4%"> 
+                <img src="Canva/TravelConcur_India.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Travel & Hotel - Concur</h4>
+              </div>  
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://danfoss--bmcservicedesk.vf.force.com/apex/SelfServiceNew?fromSiteUrl=#/support/problem-requests/all?id=a57C0000000br3tIAA" target="_blank">          
+              <div class="col-sm-3" style="margin-top:4%"> 
+                <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Mobile Device Request</h4>
+              </div>  
+            </a>        
+          </div>           
+      </div>
+        
+      </div>
+
+    </div>
+
+    <div class="row list" style="background:none"><br></div>
+
+    <div class="row list" style="border-style:solid;border-color:whitesmoke;padding-top:3%">     
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/P2P_Link.png" alt="P2P" width="400" height="300">
+                      </div>
+                      <p><strong>P2P</strong></p>
+                  </div>
+              </div>        
+          </div>
+
+        <div class="row"><br></div>
+
+          <div class="panel panel-default">        
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://app.powerbi.com/groups/d5371640-e89a-4a12-9360-1895d46267cf/reports/21f4cd04-6d00-419b-bf81-487285ddd8f8/ReportSectionbc4cfb8ff1121a9c6e9b" target="_blank">
+                <div class="col-sm-3" style="margin-top:2%">
+                  <img src="Canva/TaxInvoiceApplication_SouthKorea.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4>P2P Dashboard - Power BI</h4>
+                </div>
+              </a>
+            </div>           
+          </div>      
+      </div>
+      <div class="col-sm-3 col-xs-12"> 
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/GS_Pro_Link.png" alt="GS Procurement" width="400" height="300">
+                      </div>
+                      <p><strong>GS Procurement</strong></p>
+                  </div>
+              </div>        
+          </div>
+        <div class="row"><br></div> 
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDRfZEyIGP9BPulARi2ykqg5UOUdaM1ZFODJaTU5KVFNLMTlXOUFNSlVKNy4u" target="_blank">       
+              <div class="col-sm-3" style="margin-top:2%">
+                <img src="Canva/TravelGuaranteeLetter_Thailand.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Travel Guarantee Letter</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDfg_vS8JK_1LmfZupzYqMwpUQVlGQUZWWUpYRzBTMVJTUllUUU5DM082RC4u" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Travel Invitation Letter</h4>
+              </div>  
+            </a>  
+          </div>            
+        </div>
+      </div> 
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/Real_Estate_Link.png" alt="Real Estate" width="400" height="300">
+                      </div>
+                      <p><strong>Real Estate</strong></p>
+                  </div>
+              </div>        
+          </div>
+        <div class="row"><br></div> 
+        <div class="panel panel-default">              
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/fa72c2c3-47b2-44ab-b8d2-76201a67432a/list" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/TravelInvitationletter.png" style="height:60px;width:60px;">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Campus Headcount</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/3b492245-d159-4f8e-8e87-ff485448b5b0/list" target="_blank">       
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>Real Estate Footprint</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://forms.office.com/e/QYtBsfrKhV" target="_blank">
+              <div class="col-sm-3" style="margin-top:4%">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9" style="margin-top:5%">
+                <h4>OHC Digitalization</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/52d433e3-25e7-4bca-852d-c2f039dc4399/ReportSection63ed99c1342a65ea57d7" target="_blank">       
+              <div class="col-sm-3" style="margin-top:2%">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Occupational Health Center - Power BI</h4>
+              </div> 
+            </a>        
+          </div>           
+        </div>
+      </div>   
+      <div class="col-sm-3 col-xs-12" >
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/Contolling_Link.png" alt="Controlling" width="400" height="300">
+                      </div>
+                      <p><strong>Controlling</strong></p>
+                  </div>
+              </div>        
+          </div>
+        <div class="row"><br></div> 
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDfg_vS8JK_1LmfZupzYqMwpUODJERjlCVjlWSVFZR0VIRko4S1lDM0VKRS4u" target="_blank">
+              <div class="col-sm-3" style="margin-top:2%">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Travel Invitation Letter (Danfoss)</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDfg_vS8JK_1LmfZupzYqMwpUNDhYWE5SUUZCOU5GT0s4VU9TVTdYMElDMy4u" target="_blank">       
+              <div class="col-sm-3" style="margin-top:2%">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4>Travel invitation letter (DPS2)</h4>
+              </div> 
+            </a>        
+          </div>             
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div id="gridView">
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12" >
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                        <img src="Canva/GCS_Link.png" alt="GCS" width="400" height="300">
+                      </div>
+                      
+                      <p><strong>GCS</strong></p>
+                      
+                    </div>
+              </div>       
+            </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke;">
+              <a href="http://10.60.1.133/Login" target="_blank">       
+                <div class="col-sm-3">
+                  <img src="Canva/ExitClearance_Malaysia.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:7%">Trackpro</h4>
+                </div> 
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/c169a33f-ba08-465f-9f29-dd7abacb0491?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/OffcieApplication_Malaysia.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:7%">Vicki – Smart Bot</h4>
+                </div>  
+              </a>  
+            </div> 
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/28b66d35-c835-4898-a902-e196fc2af074?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/LunchRefreshment_Malaysia.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:7%">Ideation Tool</h4>
+                </div>   
+              </a>
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/d083ad19-84ef-4f6a-b667-89636d4fd5a0?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/RegaliaCarton_Malaysia.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:7%">Voice of Customer</h4>
+                </div> 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default">             
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+              <a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Femails.azure.microsoft.com%2Fredirect%2F%3Fdestination%3Dhttps%253A%252F%252Fapp.powerbi.com%252FMobileRedirect.html%253Faction%253DOpenDashboard%2526groupObjectId%253D3b238272-8b77-44b5-a207-c9a65f7efb5d%2526dashboardObjectId%253D36ecdedd-5c35-4a2d-8d92-fea22ea8b225%2526ctid%253D097464b8-069c-453e-9254-c17ec707310d%2526OpenAppFromWindowsPCAndTablet%253Dfalse%2526emailSource%253DEmailSubscription%26p%3DbT1kNGFlNmRkZi1mZWJmLTRlN2UtODgxNS01NTJmMGZkYmIxNGQmdT1hZW8mbD1jdGElM0FkYXNoYm9hcmQ%253D&data=05%7C01%7Cvignesh.nagaraj%40danfoss.com%7C237824ab4c204b1a71ce08db07f291a8%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638112510632436241%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=S%2FGT1Vaq49HHl4dsQQ5YTd85VVeUCbWZj8PpghCCsqA%3D&reserved=0" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/FlexibleDiscussion_Malaysia.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:3%;margin-bottom:0">Voice of Customer – Insights</h4>
+                </div> 
+              </a>
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/6767193a-c14a-4a7c-ab33-57a940ea0924?tenantId=097464b8-069c-453e-9254-c17ec707310d#" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/VisaApplicationLetter_Malaysia.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:7%">Reuse</h4>
+                </div> 
+              </a>
+            </div> 
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+           
+        </div>       
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12" >
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                        <img src="Canva/O2C_Link.png" alt="O2C" width="400" height="300">
+                      </div>
+                      <p><strong>O2C</strong></p>
+                    </div>                
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3 col-xs-12" >
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/2c2c2574-3ed3-4229-99b7-84c9a6fa1b72/list" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/V39A_Singapore.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Cash Application - Daily</h4>
+              </div>
+            </a>
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+            <a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/list" target="_blank">   
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">AROD</h4>
+              </div>
+            </a>           
+          </div>                      
+        </div> 
+      </div>
+      <div class="col-sm-3 col-xs-12" >       
+      </div>
+      <div class="col-sm-3 col-xs-12" >
+      </div>
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default text-center" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                        <img src="Canva/R2R_Link.png" alt="R2R" width="400" height="300">
+                      </div>
+                      <p><strong>R2R</strong></p>
+                    </div>
+              </div>  
+            </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/72be57a8-6fe1-4aa4-a365-7f88d303f8a4/reports/4f52ec5c-ee81-47c2-be39-bbd0db16d176/ReportSectionf43eb4a12a038098b380" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/EmployementCertificate_Taiwan.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">Daily Flash Report_V1 - Power BI</h4>
+              </div> 
+            </a>        
+          </div>                      
+        </div>  
+      </div>
+      <div class="col-sm-3 col-xs-12">      
+      </div>
+      <div class="col-sm-3 col-xs-12">      
+      </div>
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                        <img src="Canva/EHS_ADMIN_Link.png" alt="EHS ADMIN" width="400" height="300">
+                      </div>
+                      <p><strong>EHS&ADMIN</strong></p>
+                    </div>
+              </div>        
+            </div>
+      </div>
+      <div class="col-sm-3 col-xs-12" >
+          <div class="panel panel-default">
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/ca220e03-a20a-4f1a-8725-5c002ba0bf62?tenantId=097464b8-069c-453e-9254-c17ec707310d&amp;source=portal" target="_blank">          
+                <div class="col-sm-3" > 
+                  <img src="Canva/DanfossCourier_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:3%;margin-bottom:0">Danfoss Courier (Inward&Outward)</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://danfoss.sharepoint.com/sites/GSIndiaAdministration/Lists/Courrier%20Tracker/Request%20view%20%20chennai.aspx?InplviewHash05b4dee1-3696-4e91-9a77-1f680f0eb857=SortField%3DLinkIssueIDNoMenu%2DSortDir%3DDesc&sortField=DueDate&isAscending=false&viewid=05b4dee1%2D3696%2D4e91%2D9a77%2D1f680f0eb857" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/DanfossCourier_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4 style="margin-top:7%">Courier Tracker</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">  
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/93845129-1544-44de-ab72-44f765048e73?source=portal" target="_blank">         
+                <div class="col-sm-3">
+                  <img src="Canva/AssistMe_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Assist Me</h4>
+                </div>
+              </a>          
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">    
+              <a href="https://app.powerbi.com/groups/me/reports/5d2362d6-789d-4b95-972b-5dea96271860/ReportSection29edea916b0de1a07615" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/AsssitMePBI.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Assit Me - PBI</h4>
+                </div>   
+              </a>       
+            </div> 
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-12" >
+          <div class="panel panel-default">             
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke"> 
+              <a href="https://danfoss.sharepoint.com/sites/GSIndiaAdministration/Lists/VISA%20Invite/NewForm.aspx?Source=https%3A%2F%2Fdanfoss%2Esharepoint%2Ecom%2Fsites%2FGSIndiaAdministration%2FSitePages%2FVisa%2DInvitation%2Easpx&RootFolder=%2Fsites%2FGSIndiaAdministration%2FLists%2FVISA%20Invite" target="_blank">
+                <div class="col-sm-3">
+                  <img src="Canva/VisaInvitationletter.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Visa invitation link</h4>
+                </div>  
+              </a>
+            </div>  
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/TravelConcur_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Travel & Hotel - Concur</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://danfoss--bmcservicedesk.vf.force.com/apex/SelfServiceNew?fromSiteUrl=#/support/problem-requests/all?id=a57C0000000br3tIAA" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Mobile Device Request</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://danfoss--bmcservicedesk.vf.force.com/apex/SelfServiceNew?fromSiteUrl=#/support/problem-requests/all?id=a57C0000000br3tIAA" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:3%;margin-bottom:0">Remedyforce Device Request</h4>
+                </div>  
+              </a>        
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-12" >
+          <div class="panel panel-default"> 
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://app.powerbi.com/groups/98f0c5c4-8ac4-42b9-96e2-83f98ffebc05/reports/9695e475-a261-4c89-85f3-c796f33c8a87/ReportSection82acf440195b053e1082?experience=power-bi" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Safety Performance report</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/b95c1227-5b6e-4536-8f4a-25b76228e8a6?tenantId=097464b8-069c-453e-9254-c17ec707310d&source=portal" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">IMS internal audit tool</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDYupmO0uRQ9FmvRgxOEOsR1UN1kwNkpLUkRGUTZKVjVBSVhPSVlWWTc5Si4u&wdLOR=c7FA6F46E-B1C6-42E5-BC60-A37A314C94C4" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Creche registration form</h4>
+                </div>  
+              </a>        
+            </div>
+            <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+              <a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/afaebfa5-72b3-4d3e-9c3b-4e84d3c5b951/ReportSection" target="_blank">          
+                <div class="col-sm-3"> 
+                  <img src="Canva/MobileDeviceRequest_India.png" style="height:50px;width:50px">
+                </div>
+                <div class="col-sm-9">
+                  <h4  style="margin-top:7%">Compliance tracker</h4>
+                </div>  
+              </a>        
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/P2P_Link.png" alt="P2P" width="400" height="300">
+                      </div>
+                      <p><strong>P2P</strong></p>
+                  </div>
+              </div>        
+          </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d5371640-e89a-4a12-9360-1895d46267cf/reports/21f4cd04-6d00-419b-bf81-487285ddd8f8/ReportSectionbc4cfb8ff1121a9c6e9b" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TaxInvoiceApplication_SouthKorea.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">P2P Dashboard - Power BI</h4>
+              </div>
+            </a>
+          </div>       
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">      
+      </div>
+      <div class="col-sm-3 col-xs-12">      
+      </div>
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/GS_Pro_Link.png" alt="GS Procurement" width="400" height="300">
+                      </div>
+                      <p><strong>GS Procurement</strong></p>
+                  </div>
+              </div>        
+          </div>     
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/c2e344c2-49a7-401f-9b78-a2725b4cbeeb?channelId=a3d29308-2a97-4c62-8e21-7f54de48f2d2" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelGuaranteeLetter_Thailand.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">What is MyShop</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/3f9f3e1c-46f6-4d5d-9c96-e7d889abda41?channelId=a3d29308-2a97-4c62-8e21-7f54de48f2d2" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">Find MyShop and GS-Procurement</h4>
+              </div>  
+            </a>  
+          </div>  
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/9857f415-48c4-4149-beca-cb5eac8f4a3e?channelId=a3d29308-2a97-4c62-8e21-7f54de48f2d2" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Goods Receipt in MyShop</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/5123cba9-7054-45b3-9269-7745bad254f2?list=studio" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Watch Requisition</h4>
+              </div>  
+            </a>  
+          </div>         
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default"> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/c933d5bf-aa92-4594-8fe0-9605556d4568?channelId=da1350be-7a4f-4157-8adc-4ad3518ad319" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Approve/Deny Requisition</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/e7854980-a0d3-4cc0-a3cd-a82f58682717?channelId=a3d29308-2a97-4c62-8e21-7f54de48f2d2" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px;margin-top:20%">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:0;margin-bottom:0">Create a Purchase Requisition for Catalog items in MyShop</h4>
+              </div>  
+            </a>  
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://web.microsoftstream.com/video/c384393a-e7b4-40fb-a253-9fce51ac1a84?channelId=a3d29308-2a97-4c62-8e21-7f54de48f2d2" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px;margin-top:20%">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:0;margin-bottom:0">Create a Purchase Requisition for Adhoc items in MyShop</h4>
+              </div>  
+            </a>  
+          </div>
+        </div>  
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        
+      </div>
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%">
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/Real_Estate_Link.png" alt="Real Estate" width="400" height="300">
+                      </div>
+                      <p><strong>Real Estate</strong></p>
+                  </div>
+              </div>        
+          </div>             
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">       
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/fa72c2c3-47b2-44ab-b8d2-76201a67432a/list" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px;">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Campus Headcount</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/3b492245-d159-4f8e-8e87-ff485448b5b0/list" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Real Estate Footprint</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://forms.office.com/e/QYtBsfrKhV" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">OHC Digitalization</h4>
+              </div>  
+            </a>  
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/52d433e3-25e7-4bca-852d-c2f039dc4399/ReportSection63ed99c1342a65ea57d7" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">Occupational Health Center - Power BI</h4>
+              </div> 
+            </a>        
+          </div>            
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+          
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        
+      </div>
+    </div>
+    <div class="row grid" style="border-style:solid;border-color:whitesmoke;padding-top:3%;overflow-x: scroll;">
+      <div class="col-sm-3 col-xs-12">
+          <div class="panel panel-default" style="background-color:whitesmoke;max-height:345px">       
+              <div class="panel-body text-center" style="background-color:whitesmoke;max-height:343px">
+                  <div class="thumbnail">
+                      <div class="inner">
+                          <img src="Canva/Contolling_Link.png" alt="Controlling" width="400" height="300">
+                      </div>
+                      <p><strong>Controlling</strong></p>
+                  </div>
+              </div>        
+          </div>             
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">        
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/me/reports/aa8ccad8-8a50-4880-b79f-5d7a16386e0f/ReportSection?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation" target="_blank">
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">INR Flash Report</h4>
+              </div>  
+            </a>  
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/me/reports/9cec2378-5771-48f3-9b6f-b98e9576cce2/ReportSection95b06f957dead596cdd8?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">APR Flash Report</h4>
+              </div> 
+            </a>        
+          </div> 
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/f5fa954c-e7de-404f-bf49-203089ec23db/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">DDS Budget Vs Actual Report</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/733202ca-fa71-4205-8053-fc4b1c88e0c3/ReportSection0102ec205962eb117760" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">Inventory Dashboard</h4>
+              </div> 
+            </a>        
+          </div>            
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/2ee84c75-d994-4337-bbd4-4e54f5b9e3c0/reports/6631987a-b039-4ea3-9106-6aaca429f1ce/ReportSectiondb20b290381de831f0df?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">APR OIT Report</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/f5fa954c-e7de-404f-bf49-203089ec23db/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">DDS Budget Vs Actual Report</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/me/reports/c1f08d7f-744b-47f6-aecf-ca4fef359e03/ReportSectiona67470f0eee28b7b96ea" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">API-Fixed Cost Analysis - Power BI</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/me/reports/68b9caf0-d2d5-452b-8ce1-704b2befe344/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">API-Variable Cost Analysis - Power BI</h4>
+              </div> 
+            </a>        
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/me/reports/34411863-bc46-4972-8a6c-19b87d3895fd/ReportSectionhttps:/app.powerbi.com/groups/me/reports/34411863-bc46-4972-8a6c-19b87d3895fd/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">API-Financial Statement - Power BI</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/me/reports/db83f0a6-c65d-4bf9-8c5c-2f3d267fbca5/ReportSection33b9afa2d79c0d053663https:/app.powerbi.com/groups/me/reports/db83f0a6-c65d-4bf9-8c5c-2f3d267fbca5/ReportSection33b9afa2d79c0d053663" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">API-Local Margin Analysis - Power BI</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/3136334c-7441-4e02-97df-723fe0b64382" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">API-Turnover Report</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/ee71cfcd-cdd9-4f56-933f-c352c50705cb/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">API-Margin Analysis</h4>
+              </div> 
+            </a>        
+          </div>
+        </div>
+      </div>
+     <!-- <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/92410ec3-bad6-4ff5-bc68-d73a429829f6/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">API-AR & Inventory</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/1cad6302-36d1-4c80-ba94-ef514756d013/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">DDS NER Margin Dashboard</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/d0a6a20e-1263-4489-b984-371fb327349c/ReportSection6e763ef95f6ab043b3a0" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">DDS GKA APR OIT</h4>
+              </div> 
+            </a>        
+          </div>
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/2aae3c04-c40d-488b-a7ed-626b938d01cd/ReportSection934dc6949dc50005227b?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:3%;margin-bottom:0">APR Customer Delivery Performance</h4>
+              </div> 
+            </a>        
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body pop" style="border-bottom-style:solid;border-bottom-color:whitesmoke">
+            <a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/552cd64d-5143-4b80-8926-89c8360cd8c5/ReportSection" target="_blank">       
+              <div class="col-sm-3">
+                <img src="Canva/TravelInvitationletter.png" style="height:50px;width:50px">
+              </div>
+              <div class="col-sm-9">
+                <h4 style="margin-top:7%">DDS GKA Margin Analysis</h4>
+              </div> 
+            </a>        
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Theme Made By Danfoss-Global Services Team</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if   
+
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+function toggleView(currentView)
+{
+  console.log(currentView);
+  
+if(currentView=='list')
+{
+  $('#listView').show();
+  $('#gridView').hide();
+  $('#btngrid').removeClass('active');
+  $('#btnlist').addClass('active');
+}
+else{
+  $('#listView').hide();
+  $('#gridView').show();
+  $('#btnlist').removeClass('active');
+  $('#btngrid').addClass('active');
+}
+
+}
+</script>
+
+</body>
+</html>
