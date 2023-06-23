@@ -184,8 +184,9 @@ input[type="checkbox"]{
     left:50%;
     top:95%;
     transform:translate(-50%,-50%);
-    width:500px;
+    width:60px;
     height:60px;
+    transition: .5s;
 }
 .box label{
     position: absolute;
@@ -211,7 +212,7 @@ input[type="checkbox"]{
 .box label:hover{
     border-color: hsla(0, 0%, 100%, 0);
     box-shadow: inset -7px -7px 20px 0 #fff9, inset 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 .box input{
     width:100%;
@@ -223,8 +224,32 @@ input[type="checkbox"]{
     font-size:19px;
     padding-left:20px;
     color:gray;
-    border-color: hsla(0, 0%, 100%, 0);
+    box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+    transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    opacity:0;
+}
+.box input:focus{
+    border-color: hsla(0, 0%, 100%, 0); 
     box-shadow: inset -7px -7px 20px 0 #fff9, inset 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-
+}
+#check:checked+.box{
+    width:500px;
+}
+#check:checked+.box>input{
+    opacity:1;
+}
+#check:checked+.box>label{
+    box-shadow:none;
+}
+#check:checked+.box>label:hover{
+    box-shadow:none;
+    transform:scale(1);
 }
 
