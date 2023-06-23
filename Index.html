@@ -4,468 +4,189 @@
   <title>One Digital Platform</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!--For Search Symbol-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="W3.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <style> 
-  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap");
-body{
-    margin:0;
-    padding:0;
-    font-family: "DM Sans", sans-serif;
-}
-section{
-    position:relative;
-    width:100%;
-    height:32vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
-}
-section::before
-{
-    content: '';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#E2000F;
-    border-radius:0% 0% 50% 50%/0% 0% 100% 100%;
-    transform: scaleX(1.5);
-}  
-section .Container{    
-    position: relative;     
-    z-index:1;
-    margin:0 auto;
-    max-width:900px;
-    text-align:center;
-    
-
-}
-
-section .Container img{
-    width:50%;
-    height:50%;
-    
-}
-.main-container h2, h4{
-    font-family: "DM Sans", sans-serif;
-    
-}
-.Buttonse{
-    height:60px;width:11.11%;
-     
-    border-bottom-left-radius: 20px;
-background: linear-gradient(145deg, #c7c7c7, #ececec);
-box-shadow:  10px 10px 30px #bcbcbc,
-             -10px -10px 30px #fefefe;
-}
-.Buttonse:active{
-    background:#fff;
-}
-.Buttonse:hover{
-    background:#fff;
-}
-.selected
-{
-    background:#fff;
-}
-
-.Buttonse h4{
-    margin-top:11px;
-    font-size:18px;
-}
-.button {
-    width:100%;
-    float:left;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 70px;
-    margin-top:3%;
-    margin-bottom:5%;
-    align-items: center;
-    Padding-left: 40px;
-    
-/*    margin-right: 20px;
-    margin-left: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;    */
-    border-style: solid;
-    border-width: 2px;
-    border-color: hsla(0, 0%, 100%, 0);
-    border-radius: 20px;
-    background-color: #f1f1f1;
-    box-shadow: -8px -6px 15px 0 #fff, 6px 8px 15px 0 rgba(0, 0, 0, 0.15);
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    font-family: 'Dm Sans', sans-serif;
-    color: grey;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.button:active {
-    border-color: hsla(0, 0%, 100%, 0.5);
-    box-shadow: -8px -6px 15px 0 #fff, 6px 8px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-.button:hover {
-    border-color: hsla(0, 0%, 100%, 0);
-    box-shadow: inset -8px -7px 10px 0 #fff, inset 7px 8px 10px 0 rgba(0, 0, 0, 0.15);
-}
-.button-icon {
-    width: 24px;
-    height: 24px;
-    opacity: 0.65;
-}
-.button-label {
-    margin-left: 20px;
-}
-.buttons {
-    position: relative;
-    z-index: 2;
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    font-family: 'Dm Sans', sans-serif;
-    font-weight: 600;
-    
-    
-    
-}
-
-.buttons.bottom {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.buttonhead{
-    border-radius: 50px;
-background: #ffffff;
-box-shadow:  20px 20px 60px #cdcdcd,
-             -20px -20px 60px #ffffff;
-}
-
-.container .one{
-        background-color: #f1f1f1;
-    }
-    .buttonsubs {
-    position: relative;
-    z-index: 2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    font-family: 'Dm Sans', sans-serif;
-    font-weight: 600;
-    
-    width: 100%;
-    flex-wrap: wrap ;
-}
-.buttonsubs.bottom {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-    
-
-        .buttonsub {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 70px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: hsla(0, 0%, 100%, 0);
-    border-radius: 20px;
-    background: #ffffff;
-    -webkit-box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
-        box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    font-family: 'Dm Sans', sans-serif;
-    color: grey;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.buttonsub:active {
-    border-color: hsla(0, 0%, 100%, 0.5);
-    box-shadow: -8px -6px 15px 0 #fff, 6px 8px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-.buttonsub:hover {
-    border-color: hsla(0, 0%, 100%, 0);
-    box-shadow: inset -8px -7px 10px 0 #fff, inset 7px 8px 10px 0 rgba(0, 0, 0, 0.15);
-}
-.selected_buttonsub{
-    border-color: hsla(0, 0%, 100%, 0);
-    box-shadow: inset -8px -7px 10px 0 #fff, inset 7px 8px 10px 0 rgba(0, 0, 0, 0.15);
-}
-.buttonsub-icon {
-    width: 24px;
-    height: 24px;
-    opacity: 0.65;
-}
-.buttonsub-label {
-    margin-left: 20px;
-}
-
-  </style>
+  <link rel="stylesheet" href="IndexStyle.css">
+  
 </head>
 <body>
-    <section >
-        <div class="Container">            
-            <img src="Assets\Logo.jpg">       
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="logo">
+                <img src="Assets/logo.jpg">
+            </div>
         </div>
-    </section>
+        <div class="col-sm-4">
+            
+        </div>
+        <div class="col-sm-4">
+            <div class="dropdown localdropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select your country
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">India</a></li>
+                  <li><a href="#">South Korea</a></li>
+                  <li><a href="#">Malaysia</a></li>
+                  <li><a href="#">Thailand</a></li>
+                  <li><a href="#">Singapore</a></li>
+                  <li><a href="#">Taiwan</a></li>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">New Zealand</a></li>
+                  <li><a href="#">Vietnam</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+</div>
 
-    <div class="w3-container main-container" style="background-color: #f1f1f1;">
-        
-        <h2 class="text-center" style="margin-top:2%;margin-bottom:2%;color:#E2000F">GS (API) - One Digital Platform</h2>
-        
-        <div class="w3-row">
-            <a id="tab_first" href="javascript:void(0)" onclick="openCity(event, 'India');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>India</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'South Korea');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>South Korea</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Malaysia');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>Malaysia</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Singapore');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>Singapore</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Taiwan');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>Taiwan</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Thailand');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>Thailand</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Vietnam');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>Vietnam</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Australia');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>Australia</h4>
-            </div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'New Zealand');">
-            <div class="Buttonse text-center w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-                <h4>New Zealand</h4>
-            </div>
-            </a>       
-
-        <div id="India" class="w3-container city" style="display:none;height:200px;background-color: #f1f1f1;">  
-            <div class="buttons col-sm-3">
-                <a href="javascript:void(0)" onclick="openSubCity(event, 'India_Admin');" style="text-decoration:none">      
-                <div class="button tablinksub">
-                    <img src="Assets/Admin.png" loading="lazy" alt="" class="button-icon">
-                    <div class="button-label">Admin</div>
-                </div> 
-                </a>
-                <div class="button"><img src="Assets/Travel.png" loading="lazy" alt="" class="button-icon">
-                    <div class="button-label">Travel</div>
-                </div>
-                <div class="button"><img src="Assets/Procurement.png" loading="lazy" alt="" class="button-icon">
-                    <div class="button-label">Procurement</div>
-                </div>                    
-            </div>
-            <div id="India_Admin" class="container one col-sm-9 subcity" style="background-color:#fff;height:280.5px;position:relative;margin-top: 2.75%;border-radius:1%;display:none">
-                
-                    <div class="buttonsubs">    
-                        <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/93845129-1544-44de-ab72-44f765048e73?source=portal" target="_blank" style="text-decoration:none">  
-                        <div class="buttonsub">
-                            <img src="Assets/Admin.png" loading="lazy" alt="" class="buttonsub-icon">
-                            <div class="buttonsub-label">Assit Me</div>
-                        </div> 
-                        </a>
-                        <a href="https://app.powerbi.com/groups/me/reports/5d2362d6-789d-4b95-972b-5dea96271860/ReportSection29edea916b0de1a07615" target="_blank" style="text-decoration:none">
-                        <div class="buttonsub"><img src="Assets/Procurement.png" loading="lazy" alt="" class="buttonsub-icon">
-                            <div class="buttonsub-label">Assit Me - PBI</div>
-                        </div>
-                        </a>
-                        <a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank" style="text-decoration:none">
-                        <div class="buttonsub"><img src="Assets/Travel.png" loading="lazy" alt="" class="buttonsub-icon">
-                            <div class="buttonsub-label">Travel & Hotel - Concur</div>
-                        </div>
-                        </a>
+<div class="container-fluid">
+    <div class="row content">
+        <div class="welcome col-sm-4">
+            <div class="container-fluid">
+                <div class="row" style="height:150px;">
+                    <div class="Panel col-sm-9" style="margin-top:36px">
+                        <h3 style="font-weight:bold;margin-top:0">Welcome to</h3>
+                        <h3 style="font-weight:bold;margin-top:0;margin-bottom:0;">Global Services</h3>
+                        <img src="Assets/Line.png" style="height:4px">
                     </div>
-                
+                    <div class="Panel col-sm-3" style="margin-top:36px">
+                        <img src="Assets/Mouse.svg">
+                    </div>
+
+                </div>
+                <div class="row" style="height:150px">
+                    <div class="panel col-sm-9" style="margin-top:42px">
+                        <p>At your services just a click away!</p>
+                        <p style="background:yellow">Some more key messages or news flash</p>
+                    </div>                    
+                </div>
+                <div class="row" style="height:200px">
+                    <div class="container buttonwelcome">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>GSLT (API) Meeting</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <img src="Assets/Meeting.svg" style="width:75px;height:75px;">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    
-
-        <div id="South Korea" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <div class="buttons">      
-                <div class="button">
-                    <img src="https://assets.website-files.com/60268dd22b1a45c580259838/602693b2c7b2336bdb945558_rocket.svg" loading="lazy" alt="" class="button-icon">
-                    <div class="button-label">Launch</div>
-                </div> 
-                <div class="button"><img src="https://assets.website-files.com/60268dd22b1a45c580259838/6026965811ce8e42e55375ed_align-right.svg" loading="lazy" alt="" class="button-icon">
-                    <div class="button-label">Menu</div>
+        <div class="middle col-sm-6">
+            <div class="container-fluid">
+                <div class="row" style="height:250px">
+                    <div class="container buttonse col-sm-4">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>CFO & MIS</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <div class="col-sm-6">
+                                <img src="Assets/CFO.svg" style="width:75px;height:75px;">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="Assets/MIS.svg" style="width:75px;height:75px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container buttonse col-sm-4">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>Safety</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <img src="Assets/Safety.svg" style="width:75px;height:75px;">
+                        </div>
+                    </div>
+                    <div class="container buttonse col-sm-4">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>Real Estate, Infrastructure & ESG</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <img src="Assets/RealEstate.svg" style="width:75px;height:75px;">
+                        </div>
+                    </div>
                 </div>
-                <div class="button"><img src="https://assets.website-files.com/60268dd22b1a45c580259838/602696e912b252af4777fbee_apple.svg" loading="lazy" alt="" class="button-icon">
-                    <div class="button-label">Apple</div>
+                <div class="row" style="height:250px">
+                    <div class="container buttonse col-sm-4">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>Indirect procurement</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <img src="Assets/IndirectProcurement.svg" style="width:75px;height:75px;">
+                        </div>
+                    </div>
+                    <div class="container buttonse col-sm-4">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>Admin</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <div class="col-sm-4">
+                                <img src="Assets/Mobile.svg" style="width:50px;height:50px;">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="Assets/Car.svg" style="width:50px;height:50px;">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="Assets/Globe.svg" style="width:50px;height:50px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container buttonse col-sm-4">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>Transport & Canteen</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <div class="col-sm-6">
+                                <img src="Assets/Transport.svg" style="width:75px;height:75px;">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="Assets/Canteen.svg" style="width:75px;height:75px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>            
         </div>
+        <div class="news col-sm-2">
+            <div class="container-fluid">
+                <div class="row" style="height:250px">
+                    <div class="container buttonmiddle col-sm-12">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:21px"><strong>GS News Letters<strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <img src="Assets/Speaker.svg" style="width:75px;height:75px;">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row" style="height:250px">
+                    <div class="container buttonmiddle col-sm-12">
+                        <div class="row text-center" style="height:70px">
+                            <p style="margin-top:10px"><strong>Having a problem to solve?</strong></p>
+                            <p><strong>Knock “GCS”</strong></p>
+                        </div>
+                        <div class="row text-center" style="height:110px">
+                            <img src="Assets/Speaker.svg" style="width:75px;height:75px;margin-top: 21px;">
+                        </div>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </div>  
+</div>
 
-        <div id="Malaysia" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>Malaysia</h2>            
-        </div>
-
-        <div id="Singapore" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>Singapore</h2>           
-        </div>
-
-        <div id="Taiwan" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>Taiwan</h2>
-        </div>
-
-        <div id="Thailand" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>Thailand</h2>            
-        </div>
-
-        <div id="Vietnam" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>Vietnam</h2>           
-        </div>
-
-        <div id="Australia" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>Australia</h2>
-        </div>
-
-        <div id="New Zealand" class="w3-container city" style="display:none;height:500px;background-color: #fff;">
-            <h2>New Zealand</h2>            
-        </div>
-    
+<div class="container-fluid search">
+    <input type="checkbox" id="check">
+    <div class="box">
+        <input type="text" placeholder="Search Here...">
+        <label for="check"><i class='fa fa-search'></i></label>
     </div>
-    </div>
+</div>
 
-    <script>
-   function openCity(evt, cityName) {
-        console.log(evt);
-        var i, x, tablinks;
-        x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-            tablinks[i].className = tablinks[i].className.replace(" selected", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-
-        
-        //if(evt!=null) //Page-load
-        evt.currentTarget.firstElementChild.className += " w3-border-red selected";
-       // else //Page-load
-        //$('#tab_first div').first().addClass(' w3-border-red selected'); //Page-load
-}
-
-function openSubCity(evt, subcityName) {
-        console.log(evt);
-        var i, x,tablinksubs; 
-        x = document.getElementsByClassName("subcity");
-
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        tablinksubs = document.getElementsByClassName("tablinksub");
-        for (i = 0; i < x.length; i++) {            
-            tablinksubs[i].className = tablinksubs[i].className.replace("selected_buttonsub", "");
-        }
-        document.getElementById(subcityName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += "selected_buttonsub";
-       
-}
-
-
-   //$(document).ready(function(){ //Page-load
-        //openCity(null,'India'); //Page-load
-   //});  
-
-    </script>
-    
 
 </body>
 </html>
