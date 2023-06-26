@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap_min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!--For Search Symbol-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!--For Search icon-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="IndexStyle.css">
@@ -15,19 +15,25 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-lg-4">
             <div class="logo">
                 <img src="Assets/Logo.jpg">
             </div>
         </div>
-        <div class="col-sm-4">
-            
+        <div class="col-sm-4 col-lg-4">
+            <div class="container search">
+                <input type="checkbox" id="check">
+                <div class="box">
+                    <input type="text" placeholder="Search Here...">
+                    <label for="check"><i class='fa fa-search'></i></label>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-lg-4">
             <div class="dropdown localdropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select your country
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="country_text">Select your country
                 <span class="caret"></span></button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" id="list">
                   <li><a href="#">India</a></li>
                   <li><a href="#">South Korea</a></li>
                   <li><a href="#">Malaysia</a></li>
@@ -39,27 +45,28 @@
                   <li><a href="#">Vietnam</a></li>
                 </ul>
             </div>
+            <p id="country_text"></p>
         </div>
     </div>  
 </div>
 
 <div class="container-fluid">
-    <div class="row content">
-        <div class="welcome col-sm-4">
+    <div class="row content">        
+        <div class="welcome col-sm-4 col-lg-4">
             <div class="container-fluid">
                 <div class="row" style="height:150px;">
-                    <div class="Panel col-sm-9" style="margin-top:36px">
+                    <div class="Panel col-sm-9 col-lg-9" style="margin-top:36px">
                         <h3 style="font-weight:bold;margin-top:0">Welcome to</h3>
                         <h3 style="font-weight:bold;margin-top:0;margin-bottom:0;">Global Services</h3>
                         <img src="Assets/Line.png" style="height:4px">
                     </div>
-                    <div class="Panel col-sm-3" style="margin-top:36px">
+                    <div class="Panel col-sm-3 col-lg-3" style="margin-top:36px">
                         <img src="Assets/Mouse.svg">
                     </div>
 
                 </div>
                 <div class="row" style="height:150px">
-                    <div class="panel col-sm-9" style="margin-top:42px">
+                    <div class="panel col-sm-9 col-lg-9" style="margin-top:42px">
                         <p>At your services just a click away!</p>
                         <p style="background:yellow">Some more key messages or news flash</p>
                     </div>                    
@@ -77,23 +84,23 @@
 
             </div>
         </div>
-        <div class="middle col-sm-6">
+        <div class="middle col-sm-6 col-lg-6">
             <div class="container-fluid">
                 <div class="row" style="height:250px">
-                    <div class="container buttonse col-sm-4">
+                    <div class="container buttonse col-sm-4 col-lg-4">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>CFO & MIS</strong></p>
                         </div>
                         <div class="row text-center" style="height:110px">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-lg-6">
                                 <img src="Assets/CFO.svg" style="width:75px;height:75px;">
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-lg-6">
                                 <img src="Assets/MIS.svg" style="width:75px;height:75px;">
                             </div>
                         </div>
                     </div>
-                    <div class="container buttonse col-sm-4">
+                    <div class="container buttonse col-sm-4 col-lg-4">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>Safety</strong></p>
                         </div>
@@ -101,7 +108,7 @@
                             <img src="Assets/Safety.svg" style="width:75px;height:75px;">
                         </div>
                     </div>
-                    <div class="container buttonse col-sm-4">
+                    <div class="container buttonse col-sm-4 col-lg-4">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>Real Estate, Infrastructure & ESG</strong></p>
                         </div>
@@ -111,7 +118,7 @@
                     </div>
                 </div>
                 <div class="row" style="height:250px">
-                    <div class="container buttonse col-sm-4">
+                    <div class="container buttonse col-sm-4 col-lg-4">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>Indirect procurement</strong></p>
                         </div>
@@ -119,31 +126,31 @@
                             <img src="Assets/IndirectProcurement.svg" style="width:75px;height:75px;">
                         </div>
                     </div>
-                    <div class="container buttonse col-sm-4">
+                    <div class="container buttonse col-sm-4 col-lg-4">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>Admin</strong></p>
                         </div>
                         <div class="row text-center" style="height:110px">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 col-lg-4">
                                 <img src="Assets/Mobile.svg" style="width:50px;height:50px;">
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 col-lg-4">
                                 <img src="Assets/Car.svg" style="width:50px;height:50px;">
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 col-lg-4">
                                 <img src="Assets/Globe.svg" style="width:50px;height:50px;">
                             </div>
                         </div>
                     </div>
-                    <div class="container buttonse col-sm-4">
+                    <div class="container buttonse col-sm-4 col-lg-4">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>Transport & Canteen</strong></p>
                         </div>
                         <div class="row text-center" style="height:110px">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-lg-6">
                                 <img src="Assets/Transport.svg" style="width:75px;height:75px;">
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-lg-6">
                                 <img src="Assets/Canteen.svg" style="width:75px;height:75px;">
                             </div>
                         </div>
@@ -151,10 +158,10 @@
                 </div>
             </div>            
         </div>
-        <div class="news col-sm-2">
+        <div class="news col-sm-2 col-lg-2">
             <div class="container-fluid">
-                <div class="row" style="height:250px">
-                    <div class="container buttonmiddle col-sm-12">
+                <div class="row" style="height:250px;">
+                    <div class="container buttonmiddle col-sm-12 col-lg-12">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:21px"><strong>GS News Letters<strong></p>
                         </div>
@@ -164,7 +171,7 @@
                     </div>                    
                 </div>
                 <div class="row" style="height:250px">
-                    <div class="container buttonmiddle col-sm-12">
+                    <div class="container buttonmiddle col-sm-12 col-lg-12">
                         <div class="row text-center" style="height:70px">
                             <p style="margin-top:10px"><strong>Having a problem to solve?</strong></p>
                             <p><strong>Knock “GCS”</strong></p>
@@ -176,17 +183,37 @@
                 </div>
             </div>            
         </div>
+
     </div>  
 </div>
 
-<div class="container-fluid search">
-    <input type="checkbox" id="check">
-    <div class="box">
-        <input type="text" placeholder="Search Here...">
-        <label for="check"><i class='fa fa-search'></i></label>
-    </div>
-</div>
+<!--
+<script>
+    var items=document.querySelectorAll("#list li"),
+        tab = [], index;
+    //add values to tha array
+    for(var i=0;i<items.length;i++){
+        tab.push(items[i].innerHTML);
+    }
+    
+    //get selected element index
+    for(var i=0;i < items.length;i++){
+        items[i].onclick=function(){
 
+            index=tab.indexOf(this.innerHTML);
+            //console.log(this.innerHTML+"Index ="+index);
+            if(index==0){
+                var element = document.getElementById("country_text");
+                element.innerHTML="India";
+                             
+            }
+            if(index==1){
+                document.getElementById("country_text").innerHTML+=" South Korea";
+            }
+        }
+    }
 
+    
+</script> -->
 </body>
 </html>
