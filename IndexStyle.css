@@ -13,9 +13,9 @@ body{
     
 }
 .localdropdown .btn{
-
-    padding-left:50px;
-    padding-right:50px;
+    width:220px;
+ /*   padding-left:50px;
+    padding-right:50px; */
     line-height:3;
     float:right;
     margin-top: 40px;
@@ -27,6 +27,7 @@ body{
 
 }
 .localdropdown .btn-primary{
+    
     color:#E2000F;
     -webkit-border-radius: 10px;
     border-radius: 10px;

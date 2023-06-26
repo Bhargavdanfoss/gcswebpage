@@ -31,7 +31,7 @@
         </div>
         <div class="col-sm-4 col-lg-4">
             <div class="dropdown localdropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="country_text">Select your country
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="country_text">India 
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu" id="list">
                   <li><a href="#">India</a></li>
@@ -45,7 +45,7 @@
                   <li><a href="#">Vietnam</a></li>
                 </ul>
             </div>
-            <p id="country_text"></p>
+            
         </div>
     </div>  
 </div>
@@ -193,7 +193,7 @@
     <div class="wave"></div>
   </div>
 
-<!--
+
 <script>
     var items=document.querySelectorAll("#list li"),
         tab = [], index;
@@ -210,16 +210,47 @@
             //console.log(this.innerHTML+"Index ="+index);
             if(index==0){
                 var element = document.getElementById("country_text");
-                element.innerHTML="India";
-                             
+                element.innerHTML="India ";                                            
             }
-            if(index==1){
-                document.getElementById("country_text").innerHTML+=" South Korea";
+            else if(index==1){
+                var element = document.getElementById("country_text");
+                element.innerHTML="South Korea ";               
             }
+            else if(index==2){
+                var element = document.getElementById("country_text");
+                element.innerHTML="Malaysia ";  
+            }
+            else if(index==3){
+                var element = document.getElementById("country_text");
+                element.innerHTML="Thailand ";  
+            }
+            else if(index==4){
+                var element = document.getElementById("country_text");
+                element.innerHTML="Singapore ";  
+            }
+            else if(index==5){
+                var element = document.getElementById("country_text");
+                element.innerHTML="Taiwan ";  
+            }
+            else if(index==6){
+                var element = document.getElementById("country_text");
+                element.innerHTML="Australia ";  
+            }
+            else if(index==7){
+                var element = document.getElementById("country_text");
+                element.innerHTML="New Zealand ";  
+            }
+            else if(index==8){
+                var element = document.getElementById("country_text");
+                element.innerHTML="Vietnam ";  
+            }
+            var newSpan = document.createElement('span');
+                newSpan.setAttribute('class', 'caret');
+                element.appendChild(newSpan);
         }
     }
 
     
-</script> -->
+</script> 
 </body>
 </html>
