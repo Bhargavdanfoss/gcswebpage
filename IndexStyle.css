@@ -21,8 +21,7 @@ body{
     margin-top: 40px;
 }
 .localdropdown .dropdown-menu
-{
-    margin-left:300px;
+{    
     margin-top:95px;
 
 }
@@ -151,8 +150,8 @@ body{
    inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
  height:180px;
- width: 200px;
- margin-left:32px;
+ 
+ margin-left:45px;
  margin-top:40px;
  border-style:solid;
  border-color:#E2000F;
@@ -179,7 +178,7 @@ body{
    inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
     height:180px;
-    width: 180px;
+    
     margin-left:21px;
     margin-top:40px;
     border-style:solid;
@@ -280,11 +279,12 @@ input[type="checkbox"]{
 .ocean {
     height: 80px; /* change the height of the waves here */
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     overflow-x: hidden;
+    margin-top:30px;
   }
   
   .wave {
