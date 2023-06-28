@@ -76,6 +76,17 @@ body{
    border-color:#E2000F;
    height:500px;
 }
+.blink-text{
+    color: #000;    
+    animation: blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%		{ color: #10c018;}
+    25%		{ color: #1056c0;}
+    50%		{ color: #ef0a1a;}
+    75%		{ color: #254878;}
+    100%	{ color: #04a1d5;}
+}
 .content .middle .container-fluid{
     background: #fff;
     box-shadow:
