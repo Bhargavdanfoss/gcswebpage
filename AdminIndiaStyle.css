@@ -7,7 +7,7 @@ body{
 }
 .content{
     background-color:#fff;    
-    width:195px;
+    width:24%;
     height:150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
     border-left-style: solid;
@@ -41,7 +41,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .img_heading{
-    Padding-left:55px;
+    
     height:295px;margin-top:16px;    
 }
 .img_heading img{
@@ -74,7 +74,7 @@ body{
 {
   min-height: 225px;
   max-height: 225px;
-  overflow-y: hidden;  
+  overflow: hidden;  
   
 }
 
@@ -85,6 +85,7 @@ body{
 
 .rightSideAreaNews .block
 {
+  margin-left:0;
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #e7e7e7;
@@ -94,6 +95,8 @@ body{
 {
   float: left;
   margin-right: 10px;
+  position: relative;
+  width:20%;
 }
 .rightSideAreaNews .block .leftArea .dateTime
 {
@@ -131,7 +134,8 @@ body{
 {
   margin:0px 0;
   display: inline-block;
-  width: 80%;
+  width: 70%;
+  position: relative;
 }
 
 .rightSideAreaNews .block .RightDetailArea .title
@@ -175,5 +179,32 @@ body{
 }
 .rightSideAreaNews .block .RightDetailArea .anchorBtn .btns:hover{
   color: var(--color2);
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E2000F #E2000F;
+}
+
+ 
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+ 
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+ 
+
+*::-webkit-scrollbar-thumb {
+  background-color: #E2000F;
+ 
+  
 }
 
