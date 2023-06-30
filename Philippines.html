@@ -33,7 +33,7 @@
             <div class="dropdown localdropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="country_text">                
                 <span class="fa fa-globe"></span>
-                New Zealand 
+                Philippines 
                 <span class="caret"></span></button></button>
                 <ul class="dropdown-menu dropdown-menu-right" id="list">
                   <li><a href="#">India</a></li>
@@ -92,7 +92,7 @@
             <div class="container-fluid">
                 <div class="row" style="height:250px">
                     <div class="container buttonse col-sm-3 col-lg-3">
-                        <a href="Admin_NewZealand.html" style="text-decoration:none">
+                        <a href="Admin_Philippines.html" style="text-decoration:none">
                             <div class="row text-center" style="height:70px">
                                 <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>Admin</strong></p>
                             </div>
@@ -178,7 +178,7 @@
             <div class="container-fluid">
                 <div class="row" style="height:250px;">
                     <div class="container buttonmiddle col-sm-10 col-lg-10">
-                        <a href="GSNewsLetters_NewZealand.html" style="text-decoration:none">
+                        <a href="GSNewsLetters_Philippines.html" style="text-decoration:none">
                             <div class="row text-center" style="height:70px">
                                 <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>GS News Letters<strong></p>
                             </div>
@@ -198,8 +198,8 @@
                         <div class="row text-center" style="height:110px">
                             <img src="Assets/Speaker.svg" style="width:75px;height:75px;margin-top: 21px;">
                         </div>
-                    </div> 
-                    -->                   
+                    </div>  
+                    -->                  
                 </div>
             </div>            
         </div>
@@ -257,17 +257,18 @@
                 location.replace("Australia.html");               
                 //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Australia "+"<span class='caret'></span>";  
             }
-            else if(index==7){                
-                document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" New Zealand "+"<span class='caret'></span>";  
+            else if(index==7){ 
+                location.replace("NewZealand.html");               
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" New Zealand "+"<span class='caret'></span>";  
             }
             else if(index==8){
                 location.replace("Vietnam.html");
-                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Vietnam "+"<span class='caret'></span>";  
-            }
+                document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Vietnam "+"<span class='caret'></span>";  
+            } 
             else if(index==9){ 
-                location.replace("Philippines.html");               
-                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Philippines "+"<span class='caret'></span>";  
-            }             
+                               
+                document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Philippines "+"<span class='caret'></span>";  
+            }           
         }
     }
 
