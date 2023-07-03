@@ -370,11 +370,28 @@ input[type="checkbox"]{
   }
 
   @media only screen and (max-width: 720px) {
+    .logo img{
+        width:150%;
+        
+    }
+    .localdropdown .btn{
+        width:150%;
+        line-height: 2;
+    }
+    .box{
+        width:40px;
+    height:40px;
+    }
+    .box label{
+        width:40px;
+    height:40px; 
+    line-height:50px;
+    }
     .welcome{
         width:100%;
     }
     .search{
-        margin-top:150px;
+        margin-top:130px;
     }
     
     .middle{
