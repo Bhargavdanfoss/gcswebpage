@@ -385,7 +385,7 @@ input[type="checkbox"]{
     .box label{
         width:40px;
     height:40px; 
-    line-height:50px;
+    line-height:40px;
     }
     .welcome{
         width:100%;
@@ -394,12 +394,22 @@ input[type="checkbox"]{
         margin-top:130px;
     }
     
+    .buttonse{
+        width:90%;
+    }
+    .content .middle .container-fluid{
+        height:1370px;
+    }
     .middle{
         margin-top:20px;
         width:100%;
+    }
+    .content .news .container-fluid {
+        height:515px;
     }
     .news{
         margin-top:20px;
         width:100%;
     }
+    
 }
