@@ -408,20 +408,25 @@ input[type="checkbox"]{
     }
     
     .buttonse{
-        width:90%;
+        width:88%;
     }
     .buttonse .left{
         margin-left:10%;
     }
     .content .middle .container-fluid{
-        height:1370px;
+        height:265px;
     }
     .middle{
         margin-top:20px;
         width:100%;
     }
+    
     .content .news .container-fluid {
-        height:515px;
+        height:265px;
+    }
+
+    .buttonmiddle{
+        width:88%;
     }
     .news{
         margin-top:20px;
