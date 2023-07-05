@@ -239,6 +239,16 @@ body{
  
   
 }
+.link{
+  color:#000;
+}
 .link:hover{
+  color:#E2000F;
+}
+
+.linkwhite{
+  color:#fff;
+}
+.linkwhite:hover{
   color:#E2000F;
 }
