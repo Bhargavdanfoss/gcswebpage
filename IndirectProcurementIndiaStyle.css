@@ -56,7 +56,7 @@ body{
 .content h5,h6{
     color:#000;
     text-decoration-line: none;
-    font-weight:bold;
+    font-weight:500;
     
 }
 .main{
@@ -275,7 +275,7 @@ body{
 }
 
 .vl{
-  border-left: 3.5px solid #E2000F;
+  border-left: 1.8px solid #E2000F;
         height: 90px;
   width:4%;
   margin-left:3%;
