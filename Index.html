@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap_min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!--For Search icon-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
+  <script src="jquery_min.js"></script>
+  <script src="bootstrap_min.js"></script>
   <link rel="stylesheet" href="IndexStyle.css">
   
 </head>
@@ -207,7 +207,7 @@
 <!--
 <div class="container-fluid" id="searchplatform">
     <div class="row">
-        <h2 style="text-align:center;text-transform: uppercase;color:#E2000F;">Search Results</h2>
+        <h4 style="text-align:center;text-transform: uppercase;color:#E2000F;font-weight:600">Search Results</h4>
         <table id="myTable">
         <tr class="header">
             <th>Name</th>
@@ -239,6 +239,9 @@
             <td>Yoshi Tannamuri</td>
             <td>Canada</td>
         </tr>
+        <td>cfo</td>
+            <td>Gcs</td>
+            <td><a href="www.google.com" target="_blank">click to view</a></td>
         <tr>
             <td>Magazzini Alimentari Riuniti</td>
             <td>Giovanni Rovelli</td>
@@ -332,7 +335,9 @@
                 let textvlaue=td.textContent || td.innerHTML;
 
                 if(textvlaue.toUpperCase().indexOf(filter) > -1){
-                    
+                    tr[i].style.display = "";
+                }else{
+                    tr[i].style.display = "none";
                 }
             }
         }

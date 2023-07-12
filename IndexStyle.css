@@ -369,7 +369,31 @@ input[type="checkbox"]{
       50% {transform: translateX(-25%);}
       100% {transform: translateX(-50%);}
   }
+/*
+  #myTable {
+    font-family: inherit;
+    border-collapse: collapse;
+    width: 100%;
+  }
 
+  #myTable td, #myTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width:33.33%;
+  }
+
+  #myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #E2000F;
+  color: white;
+}
+*/
   @media only screen and (min-width: 1200px) {
     #check:checked+.box{
         width:500px;
