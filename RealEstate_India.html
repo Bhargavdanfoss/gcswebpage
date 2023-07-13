@@ -572,50 +572,49 @@
     </div>    
 </div>
 
-
-	<script type="text/javascript">
-		var interval;
-		function ticker()
-		{
-			if($("#rightSideAreaNews .block").length > 3)
-			{
-				$("#rightSideAreaNews .block:first").slideUp(function(){
-					$(this).appendTo("#rightSideAreaNews").slideDown();
-				});
-			}			
-		}
-
-		$(document).ready(function(){
-				interval = setInterval(ticker,3000);
-			$("#rightSideAreaNews").hover(function(){
-				clearInterval(interval);
-			},function(){
-				interval = setInterval(ticker,3000);
-			});
-		});
-	</script>
-
 <script type="text/javascript">
-  var interval1;
-  function ticker1()
+  var interval;
+  function ticker()
   {
-    if($("#news_gallery .block1").length > 1)
+    if($("#rightSideAreaNews .block").length > 3)
     {
-      $("#news_gallery .block1:first").slideUp(function(){
-        $(this).appendTo("#news_gallery").slideDown();
+      $("#rightSideAreaNews .block:first").slideUp(function(){
+        $(this).appendTo("#rightSideAreaNews").slideDown();
       });
     }			
   }
 
   $(document).ready(function(){
-      interval1 = setInterval(ticker1,5000);
-    $("#news_gallery").hover(function(){
-      clearInterval(interval1);
+      interval = setInterval(ticker,3000);
+    $("#rightSideAreaNews").hover(function(){
+      clearInterval(interval);
     },function(){
-      interval1 = setInterval(ticker1,5000);
+      interval = setInterval(ticker,3000);
     });
   });
 </script>
+
+<script type="text/javascript">
+var interval1;
+function ticker1()
+{
+  if($("#news_gallery .block1").length > 1)
+  {
+    $("#news_gallery .block1:first").slideUp(function(){
+      $(this).appendTo("#news_gallery").slideDown();
+    });
+  }			
+}
+
+$(document).ready(function(){
+    interval1 = setInterval(ticker1,5000);
+  $("#news_gallery").hover(function(){
+    clearInterval(interval1);
+  },function(){
+    interval1 = setInterval(ticker1,5000);
+  });
+});
+</script>	
 
 </body>
 </html>

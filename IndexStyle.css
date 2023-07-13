@@ -369,7 +369,7 @@ input[type="checkbox"]{
       50% {transform: translateX(-25%);}
       100% {transform: translateX(-50%);}
   }
-/*
+
   #myTable {
     font-family: inherit;
     border-collapse: collapse;
@@ -393,7 +393,11 @@ input[type="checkbox"]{
   background-color: #E2000F;
   color: white;
 }
-*/
+
+#searchplatform{
+    display:none;
+}
+
   @media only screen and (min-width: 1200px) {
     #check:checked+.box{
         width:500px;
@@ -465,5 +469,17 @@ input[type="checkbox"]{
       
       tr:nth-child(even) {
         background-color: #dddddd;
+      }
+
+      #searchplatform{
+        margin-top:10%;
+      }
+
+      #searchplatform h4{
+        font-size:12px;
+      }
+
+      #myTable{
+        font-size:12px;
       }
 }
