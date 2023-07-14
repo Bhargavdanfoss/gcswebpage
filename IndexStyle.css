@@ -373,7 +373,7 @@ input[type="checkbox"]{
   #myTable {
     font-family: inherit;
     border-collapse: collapse;
-    width: 100%;
+    width: 100%;    
   }
 
   #myTable td, #myTable th {
@@ -397,6 +397,8 @@ input[type="checkbox"]{
 #searchplatform{
     display:none;
 }
+
+
 
   @media only screen and (min-width: 1200px) {
     #check:checked+.box{
