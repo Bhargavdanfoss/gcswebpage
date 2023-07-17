@@ -775,7 +775,54 @@
                     </div>
 
                 </div>
-            </div>            
+            </div> 
+            <div class="row">
+              <div class="feedback">
+                <button class="reportfeedback-button" onclick="openFeedbackForm()">Report a Feedback</button>
+                <div class="form-popup" id="myForm1">
+                  <form action="/action_page.php" class="form-container">
+                    
+                    <label for="name" style="margin-bottom:0"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+
+                    <label for="email" style="margin-bottom:0"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="contact" style="margin-bottom:0"><b>Contact</b></label>
+                    <input type="text" placeholder="Enter Contact" name="contact" required>
+
+                    <label for="subject" style="margin-bottom:0"><b>Report your Feedback</b></label>
+                    <textarea id="subject" type="text" placeholder="Report your Feedback.." style="height:200px" required></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeFeedbackForm()">Close</button>
+                  </form>
+                </div>
+              </div>
+              
+              <div class="question">
+                <button class="open-button" onclick="openForm()">Have a question, ask here?</button>
+                  <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      
+                      <label for="name" style="margin-bottom:0"><b>Name</b></label>
+                      <input type="text" placeholder="Enter Name" name="name" required>
+
+                      <label for="email" style="margin-bottom:0"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+
+                      <label for="contact" style="margin-bottom:0"><b>Contact</b></label>
+                      <input type="text" placeholder="Enter Contact" name="contact" required>
+
+                      <label for="subject" style="margin-bottom:0"><b>Ask Here</b></label>
+                      <textarea id="subject" type="text" placeholder="Ask Here.." style="height:200px" required></textarea>
+
+                      <button type="submit" class="btn">Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+              </div>                
+            </div>           
           </div>
         </div>
 
@@ -833,8 +880,8 @@
           </div>
         </div>
       </div>
-    </div>
 </div>
+
 
 <div class="container-fluid" style="background-color:#EBEFF0;margin-top:18px;position:relative">
     <div class="row">
@@ -896,6 +943,29 @@
     });
   });
 </script>
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    document.getElementById("myForm1").style.display = "none";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+  
+  <script>
+    function openFeedbackForm() {
+      document.getElementById("myForm1").style.display = "block";
+      document.getElementById("myForm").style.display = "none";
+      document.getElementsByClassName("open-button").style.display = "none";
+    }
+    
+    function closeFeedbackForm() {
+      document.getElementById("myForm1").style.display = "none";
+    }
+    </script>
 
 </body>
 </html>
