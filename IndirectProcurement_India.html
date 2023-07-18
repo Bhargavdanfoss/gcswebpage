@@ -469,9 +469,16 @@
   
   <script>
     function openFeedbackForm() {
-      document.getElementById("myForm1").style.display = "block";
-      document.getElementById("myForm").style.display = "none";
-      document.getElementsByClassName("open-button").style.display = "none";
+      if(document.getElementById("myForm1").style.display === "none")
+      {
+        document.getElementById("myForm1").style.display = "block";
+        document.getElementById("myForm").style.display = "none";
+        document.getElementsByClassName("open-button").style.display = "none";
+      }
+      else
+      {
+        document.getElementById("myForm1").style.display = "none";
+      }
     }
     
     function closeFeedbackForm() {
