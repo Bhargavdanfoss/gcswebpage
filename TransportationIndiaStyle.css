@@ -73,7 +73,7 @@ body{
 }
 .news_heading{
     background-color:#FFF;Padding-left:10px;padding-top:10px;
-    height: 411px;margin-top:3.6%;border-radius: 25px;
+    height: 277px;margin-top:3.6%;border-radius: 25px;
     border-style:solid;
     border-color:#E2000F;
 }
@@ -126,8 +126,8 @@ body{
 
 #rightSideAreaNews
 {
-  min-height: 330px;
-  max-height: 330px;
+  min-height: 220px;
+  max-height: 220px;
   overflow: hidden;  
   
 }
