@@ -59,21 +59,24 @@ body{
     font-weight:500;
     
 }
+.mainhead{
+  width:60.88%;
+}
 .main{
-    width:59%;
+    width:100%;
     border-radius: 25px;
     border-style:solid;
     border-color:#E2000F;
-    margin-top:1%;
+    margin-top:0%;
     
 }
 .news{
-    margin-left:2%;
+    margin-left:1%;
     width:31%;   
 }
 .news_heading{
     background-color:#FFF;Padding-left:10px;padding-top:10px;
-    height: 411px;margin-top:3.6%;border-radius: 25px;
+    height: 411px;margin-top:14%;border-radius: 25px;
     border-style:solid;
     border-color:#E2000F;
 }
@@ -331,7 +334,7 @@ body{
   display: none;
   position: fixed;
   bottom: 0;
-  right: 4%;
+  right: 3%;
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
