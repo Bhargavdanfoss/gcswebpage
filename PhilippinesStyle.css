@@ -211,6 +211,11 @@ body{
  border-color:#E2000F;
  
 }
+
+.buttonwelcome .left{
+    margin-left:9%;
+}
+
 .buttonse .left{
     margin-left:7%;
 }
