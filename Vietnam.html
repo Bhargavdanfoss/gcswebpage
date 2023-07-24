@@ -24,7 +24,7 @@
             <div class="container search">
                 <input type="checkbox" id="check">
                 <div class="box">
-                    <input type="text" placeholder="Search Here...">
+                    <input type="text" name=" " id="myInput" placeholder="Search Here..." onkeyup="searchFun()">
                     <label for="check"><i class='fa fa-search'></i></label>
                 </div>
             </div>
@@ -53,7 +53,380 @@
     </div>  
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="searchplatform">
+    <div class="row">
+        <h4 style="text-align:center;text-transform: uppercase;color:#E2000F;font-weight:600">Search Results</h4>
+        <table id="myTable">
+            <tr class="header">
+                <th>Name</th>
+                <th>Department</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>CFO</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=vt" target="_blank">click to view</a></td>
+            </tr>      
+            <tr>
+                <td>Chief Financial Officer</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=vt" target="_blank">click to view</a></td>
+            </tr>             
+            <tr>
+                <td>Sales Report</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSectionc95a770e8157fef21b35?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>OIT</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSection4cc003c0218eb24e12b6?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Order Intake</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSection4cc003c0218eb24e12b6?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Open Order</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSection42d9a804a967570c0600?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Margin Report</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/ee71cfcd-cdd9-4f56-933f-c352c50705cb/ReportSectionec76287f4417c8866d39?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Business P&L</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/f937d1cf-f39b-42ae-a22d-193e5ce7864c/ReportSection27e6922d512e350dc5da?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Business Profit & Loss</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/f937d1cf-f39b-42ae-a22d-193e5ce7864c/ReportSection27e6922d512e350dc5da?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>P&L, BS, Cash</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/34411863-bc46-4972-8a6c-19b87d3895fd/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Profit & Loss, Balance Sheet, Cash</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/34411863-bc46-4972-8a6c-19b87d3895fd/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>OVC</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/f937d1cf-f39b-42ae-a22d-193e5ce7864c/ReportSection2566331b2da3c6ee1b02?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Other Variable costs</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/f937d1cf-f39b-42ae-a22d-193e5ce7864c/ReportSection2566331b2da3c6ee1b02?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>FE</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/f937d1cf-f39b-42ae-a22d-193e5ce7864c/ReportSectionfc1a4e145201cd11bfa9?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Fixed Expenses</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/f937d1cf-f39b-42ae-a22d-193e5ce7864c/ReportSectionfc1a4e145201cd11bfa9?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Local GP</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/db83f0a6-c65d-4bf9-8c5c-2f3d267fbca5/ReportSection33b9afa2d79c0d053663?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Local Gross Profit</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/db83f0a6-c65d-4bf9-8c5c-2f3d267fbca5/ReportSection33b9afa2d79c0d053663?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Inventory Dashboard</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/733202ca-fa71-4205-8053-fc4b1c88e0c3/ReportSectione8e139c4ec600135bd58?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>R2R</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=vt#R2R" target="_blank">click to view</a></td>
+            </tr>           
+            <tr>
+                <td>R2R KPI</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/links/L29s0GtOZT?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Global TP (Charges/Recharges)</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Global Lease Reporting-IFRS 16</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Blackline Reconciliation</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>ICO Reconciliation</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>API Annual Statutory Accounts</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr> 
+            <tr>
+                <td>HEX Sales and Financial Reporting</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/personal/sugumar_a_danfoss_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsugumar%5Fa%5Fdanfoss%5Fcom%2FDocuments%2FHEX%20Finance&ga=1" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>DPS Reporting (place holder)</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr> 
+            <tr>
+                <td>RFM Observations</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/9575a000-bcee-4fc1-a7f9-c3857f19f2a7?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>ICOFR - Dashboard</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/links/Za4f7v_7Vd?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>One ERP Release Updates</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSFinance/DFPortal/runbook/Runbook/Forms/AllItems.aspx?id=%2Fsites%2FGSFinance%2FDFPortal%2Frunbook%2FRunbook%2FONE%20ERP%20RELEASE&viewid=00000000%2D0000%2D0000%2D0000%2D000000000000&OR=Teams%2DHL&CT=1688531512495&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA2MDQwMTEzOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Workflow Approval Process-OTRS</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-finance.managed-otrs.com/external/" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>O2C</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=vt#O2C" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Global Credit Management Report</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr> 
+            <tr>
+                <td>Cash Application Dashboard</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/40856bb9-3048-46c7-b7c5-6807156773c0/reports/74005ca4-238a-4ed1-8995-a54be031134f/ReportSection9dda6a08cc183dde0769?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Cash Application Auto Posting Ratio</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr> 
+            <tr>
+                <td>Overdue Daily Flash Report</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr> 
+            <tr>
+                <td>P2P</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=vt#P2P" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>API Regional Dashboard</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://app.powerbi.com/groups/d5371640-e89a-4a12-9360-1895d46267cf/reports/21f4cd04-6d00-419b-bf81-487285ddd8f8/ReportSection48d3cf0e97c48df5072f?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Global TCS KPI</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSFinanceProcessesandSupportP2P/Shared Documents/Forms/AllItems.aspx?id=%2Fsites%2FGSFinanceProcessesandSupportP2P%2FShared%20Documents%2FAccounts%20Payable%2FDashboards&viewid=5304dab2%2D264a%2D426f%2D82f4%2D4916e5c660ee" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Global Travel KPI</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GS-Dashboard/SitePages/GLOBAL-TRAVEL-MANAGEMENT-OVERVIEW-BEHAVIOR.aspx?OR=Teams-HL&CT=1689069893729&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA2MDQwMTE2MSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>Celonis Dashboard</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr>
+            <tr>
+                <td>Vendor Invoice Current Status</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSFinanceProcessesandSupportP2P/SitePages/How-to-get-support-for-Accounts-Payable-&-Travel-Expense-.aspx" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>VIM Approval Fiori Login</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://fiori.danfoss.net/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#OPT_VIM_WP-display?sap-ui-tech-hint=GUI" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>VIM Approval SAP Login</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr>
+            <tr>
+                <td>Vendor Master Creation / Updation</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://sapp76.danfoss.net/ui2/nwbc/?sap-client=010&sap-language=EN&sap-nwbc-node=root&sap-theme=sap_corbu" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>SAP Concur</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Credit Card Administration</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDd6bZveR26FMr6xeKaMjxXJUQkdGNDA4QlhSOFZLS0U5N1hRUE9RNzMzRS4u" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Credit Card Policy</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/HRDI/Policies/Forms/AllItems.aspx?id=%2Fsites%2FHRDI%2FPolicies%2FOther%20Policies%2F2023%2FCorporate%20Credit%20Card%20Policy%5F02%2E12%2E2020%2Epdf&parent=%2Fsites%2FHRDI%2FPolicies%2FOther%20Policies%2F2023" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Relocation Policy</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/HRDI/Policies/Forms/AllItems.aspx?id=%2Fsites%2FHRDI%2FPolicies%2FBenefits%2FRelocation%20policy%5F2021%2Epdf&parent=%2Fsites%2FHRDI%2FPolicies%2FBenefits" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>TIS Approval (via single sign)</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://workplace.danfoss.net/4933/banking-online-portals" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Citi Approval</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://www.citidirect.com/login/landing" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>BNP Approval</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://ssologin.bnpparibas.com/cib/LoginForm.aspx?TYPE=33554433&REALMOID=06-0007ab17-9c3b-1321-8ff5-510a0af30000&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-VPRXR87ibIrEfVdPjcXCVUoDtTM%2fFW%2bAheNlUwnRKSwT%2fEPqB62mNahIJnpcDuE8&TARGET=-SM-https%3a%2f%2fcentric%2ebnpparibas%2ecom%2fhome" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>HDFC Approval</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://corporate.hdfcbank.com/EnetMVC/" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Taxation</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=vt#Taxation" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Registration Numbers</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?id=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FTax%20on%20Digital%2Epdf&parent=%2Fsites%2FDanfossIndia%2FGS%20Taxation&p=true&ga=1" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>ITL Tax Tool Referencer</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=eJi78v&cid=2a9fcf87%2Df80c%2D42bf%2D9d4e%2Da04e236a05b6&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FITL%20Tax%20Tool%20Study%20Material%20%5FINCO&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Tax Code Reference Book INCO</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=EHx8L5&cid=fdae9621%2D93ee%2D434d%2D845e%2De0b464ed7d44&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FGST%20REFERENCE%20BOOK%20%5FVRB%5FINCO&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Tax Code Reference Book APA</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=uVVi4r&cid=858fa94d%2Dfd4b%2D4f18%2D9ff5%2De07095d6ef06&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FVat%20Reference%20Book%28VRB%29%20%5FAPA&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Risk Management - procedure for written contracts (500B1050)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Delegation of Power (500B1167)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Reporting of litigation cases (500B1273)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>General Terms and Conditions of Sale (500B0144)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>Indirect Procurement</td>
+                <td>Indirect Procurement</td>
+                <td><a href="IndirectProcurement_Vietnam.html" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>MyShop</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://s1-eu.ariba.com/gb/?realm=danfossgroup&locale=en_US" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>MyShop User Guides</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://workplace.danfoss.net/116686/myshop-user-guides" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Procurement Contract Templates</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://workplace.danfoss.net/42738/contract-lifecycle-and-risk-management" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Lower Payment Terms Approval</td>
+                <td>Indirect Procurement</td>
+                <td><a href="#" target="_blank">Link need to be added</a></td>
+            </tr>
+            <tr>
+                <td>Approved Vendor list</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/340ba6d6-8b44-426f-aa6c-e228de5fa933/ReportSectionbc94c1e365690e6215c3?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Spend View</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/2f116f77-d0de-4a8d-a92d-56588a20b6db/ReportSection?experience=power-bi&bookmarkGuid=Bookmark513d2d40602602283544" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Payment Terms</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/2f116f77-d0de-4a8d-a92d-56588a20b6db/ReportSectiona2074f342e58173dee34?experience=power-bi&bookmarkGuid=Bookmarka93e5b0f9006853e52ac" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Catalogue Adoption</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/20740f5a-7ddc-4f16-982d-991bad10a0d8/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>           
+        </table>
+    </div>
+    <div class="row" id="noresult">
+        <div class="alert alert-danger">
+            <strong>Sorry,</strong> we could not find any results matching with your input...
+          </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="dashboardplatform">
     <div class="row content">        
         <div class="welcome col-sm-4 col-lg-4">
             <div class="container-fluid">
@@ -279,5 +652,62 @@
 
     
 </script> 
+
+<script>
+    const searchFun = () => {        
+        
+        var notfound=0;
+        let filter=document.getElementById('myInput').value.toUpperCase();
+
+        if(filter!=""){
+            document.getElementById('searchplatform').style.display="block"; 
+            
+        }
+        else
+        {
+            document.getElementById('searchplatform').style.display="none";
+            
+        }
+
+        let myTable=document.getElementById('myTable');
+
+        let tr = myTable.getElementsByTagName('tr');        
+        
+        for(var i=0;i<tr.length;i++){
+            
+            let td = tr[i].getElementsByTagName('td')[0];
+
+            if(td){
+                let textvlaue=td.textContent || td.innerHTML;
+
+                if(textvlaue.toUpperCase().indexOf(filter) > -1){
+                    
+                    tr[i].style.display = "";
+                      
+                                    
+                }                               
+                else{
+                    tr[i].style.display = "none";
+                    notfound++;  
+                                                  
+                }
+            }
+            
+        }
+        
+        if(notfound >= tr.length-1)
+        {
+            document.getElementById("noresult").style.display="";
+            document.getElementById("myTable").style.display="none";
+        }
+        else
+        {
+            document.getElementById("noresult").style.display="none";
+            document.getElementById("myTable").style.display="";
+        }
+          
+    }
+</script> 
+
 </body>
 </html>
