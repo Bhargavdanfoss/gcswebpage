@@ -153,7 +153,8 @@ body{
    inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
  height:180px;
- width: 250px;
+ width: 40%;
+ margin-left: 30px;
  border-width: 1.2px;
  border-style:solid;
  border-color:#E2000F;
@@ -218,7 +219,7 @@ body{
 }
 
 .buttonwelcome .left{
-    margin-left:9%;
+    margin-left:4%;
 }
 
 .buttonse .left{
@@ -409,6 +410,10 @@ input[type="checkbox"]{
     display:none;
 }
 
+#gcs{
+    margin-top:10px;
+}
+
   @media only screen and (min-width: 1200px) {
     #check:checked+.box{
         width:500px;
@@ -439,13 +444,29 @@ input[type="checkbox"]{
     #check:checked+.box{
         width:200px;
     }
+    .content .welcome .container-fluid{
+        height:750px;
+    }
     .welcome{
         width:100%;
     }
     .search{
         margin-top:130px;
     }
-    
+    .buttonwelcome{
+        width:90%;
+        margin-left:18px;       
+    } 
+    .mgtop{           
+        margin-top: 40px;
+    }   
+    .buttonwelcome .left{
+        margin-left:10%;
+    } 
+
+    #gcs{
+        margin-top:18px;
+    }
     .buttonse{
         width:88%;
     }
