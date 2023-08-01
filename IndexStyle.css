@@ -222,8 +222,12 @@ body{
     margin-left:4%;
 }
 
+.buttonse .leftimg{
+    margin-left:6%;
+}
+
 .buttonse .left{
-    margin-left:7%;
+    margin-left:6%;
 }
 .buttonse:hover{
     border-color: hsla(0, 0%, 100%, 0);
@@ -471,6 +475,9 @@ input[type="checkbox"]{
     .buttonse{
         width:90%;
     }
+    .buttonse .leftimg{
+        margin-left:13.5%;
+    }
     .buttonse .left{
         margin-left:10%;
     }
@@ -489,7 +496,7 @@ input[type="checkbox"]{
         width:100%;
     }
     table {
-        font-family: arial, sans-serif;
+        font-family: inherit;
         border-collapse: collapse;
         width: 100%;
       }

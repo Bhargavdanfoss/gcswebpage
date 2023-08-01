@@ -495,7 +495,7 @@ input[type="checkbox"]{
         width:100%;
     }
     table {
-        font-family: arial, sans-serif;
+        font-family: inherit;
         border-collapse: collapse;
         width: 100%;
       }

@@ -1,6 +1,6 @@
 body{
     background-color:#fff;
-    font-family:calibri;
+    font-family:Verdana;
 }
 .panel{
     background-color:#fff;
@@ -11,8 +11,8 @@ body{
     padding-right:50px; */
     
     float:right;
-    font-size:24px;
-    font-weight:bold;
+    
+    
   }
   
   .Home .btn-primary{
@@ -80,6 +80,7 @@ body{
     border-style:solid;
     border-color:#E2000F;
 }
+
 .news_gallery{
   background-color:#FFF;Padding-left:10px;padding-top:10px;margin-left:2%;
     height: 345px;margin-top:20px;overflow: hidden;  border-radius: 25px;
@@ -91,6 +92,10 @@ body{
   border-radius: 15px 50px;
  
   
+}
+
+.news_gallery p{
+  font-size:12px;
 }
 
 .gallerynews{
@@ -171,7 +176,7 @@ body{
 {
   font-family: inherit;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
   color: var(--white);
   display: block;
   text-align: center;
@@ -184,7 +189,7 @@ body{
 {
   font-family: inherit;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   color: var(--black);
   display: block;
   text-align: center;
@@ -205,7 +210,7 @@ body{
   font-family: inherit;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 4px;
   line-height: 20px;
 }
@@ -228,7 +233,7 @@ body{
   text-align:justify;
    font-family: inherit;
   font-weight: 400;
-  font-size:12px;
+  font-size:10px;
 }
 
 .rightSideAreaNews .block .RightDetailArea .anchorBtn .btns
@@ -237,7 +242,7 @@ body{
   font-weight: 600;
   color: var(--color2);
   text-transform: uppercase;
-  font-size:12px;
+  font-size:10px;
 }
 .rightSideAreaNews .block .RightDetailArea .anchorBtn .btns:hover{
   color: var(--color2);
@@ -296,7 +301,7 @@ body{
   right: 10%;
   width: 280px;
   z-index: 8;
-  font-size:18px;
+  font-size:14px;
 }
 
 
@@ -314,7 +319,7 @@ body{
     text-orientation: sideways;
     width: auto;
     writing-mode: vertical-lr;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 5px 0px 0px 5px;    
     padding: 3px;
     color: whitesmoke;
@@ -344,6 +349,7 @@ body{
   max-width: 470px;
   padding: 10px;
   background-color: white;
+  font-size:12px;
 }
 
 /* Full-width input fields */
