@@ -1,9 +1,14 @@
 body{
     background-color:#fff;
-    font-family:calibri;
+    font-family:Verdana;
 }
 .panel{
     background-color:#fff;
+}
+.titlehead{
+  margin-top:14.75px;
+  margin-bottom:14.75px;
+  font-weight:bold;
 }
 .Home .btn{
  
@@ -11,8 +16,8 @@ body{
     padding-right:50px; */
     
     float:right;
-    font-size:24px;
-    font-weight:bold;
+    
+    
   }
   
   .Home .btn-primary{
@@ -61,6 +66,8 @@ body{
 }
 .mainhead{
   width:60.88%;
+  margin-left: 60px;
+  height: auto;
 }
 .main{
     width:100%;
@@ -69,6 +76,9 @@ body{
     border-color:#E2000F;
     margin-top:0%;
     
+}
+.Telecommunication{
+  font-size:10px;
 }
 .news{
     margin-left:1%;
@@ -80,11 +90,17 @@ body{
     border-style:solid;
     border-color:#E2000F;
 }
+
 .news_gallery{
   background-color:#FFF;Padding-left:10px;padding-top:10px;margin-left:2%;
     height: 345px;margin-top:20px;overflow: hidden;  border-radius: 25px;
     border-style:solid;
     border-color:#E2000F;
+}
+
+.gallery{
+  margin-top:2%;
+  margin-left:40px;
 }
 
 .news_gallery img{
@@ -93,8 +109,14 @@ body{
   
 }
 
+.news_gallery p{
+  font-size:12px;
+}
+
 .gallerynews{
   width:62.333%;
+  margin-left: 25px;
+  height: auto;
 }
 /*
 .img_heading{
@@ -171,7 +193,7 @@ body{
 {
   font-family: inherit;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
   color: var(--white);
   display: block;
   text-align: center;
@@ -184,7 +206,7 @@ body{
 {
   font-family: inherit;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   color: var(--black);
   display: block;
   text-align: center;
@@ -205,7 +227,7 @@ body{
   font-family: inherit;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 4px;
   line-height: 20px;
 }
@@ -228,7 +250,7 @@ body{
   text-align:justify;
    font-family: inherit;
   font-weight: 400;
-  font-size:12px;
+  font-size:10px;
 }
 
 .rightSideAreaNews .block .RightDetailArea .anchorBtn .btns
@@ -237,7 +259,7 @@ body{
   font-weight: 600;
   color: var(--color2);
   text-transform: uppercase;
-  font-size:12px;
+  font-size:10px;
 }
 .rightSideAreaNews .block .RightDetailArea .anchorBtn .btns:hover{
   color: var(--color2);
@@ -296,7 +318,7 @@ body{
   right: 10%;
   width: 280px;
   z-index: 8;
-  font-size:18px;
+  font-size:14px;
 }
 
 
@@ -314,7 +336,7 @@ body{
     text-orientation: sideways;
     width: auto;
     writing-mode: vertical-lr;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 5px 0px 0px 5px;    
     padding: 3px;
     color: whitesmoke;
@@ -344,6 +366,7 @@ body{
   max-width: 470px;
   padding: 10px;
   background-color: white;
+  font-size:12px;
 }
 
 /* Full-width input fields */
@@ -397,4 +420,80 @@ textarea {
 textarea:focus{
   background-color: #ddd;
   outline: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .logo img{
+      width:200%;
+      margin-top:10%;
+      
+  }
+  .Home{
+    width:150%;    
+    margin-right: 20%;
+  }
+  .titleclass{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .titlehead{
+    font-weight:bold;
+    margin-top:70px;    
+  }
+  .mainhead{
+    width: 96%;
+    margin-left:4%;
+  }
+
+  .mainhead .content{
+    width:44%;
+  }
+
+  .mainhead .vl{
+    display:none;
+  }
+
+  .mainhead hr{
+    display:none;
+  }
+
+  .news{
+    margin-left: 4%;
+    width: 88%;
+  }
+
+  .news_heading{
+    height:510px;
+    margin-top:6%;    
+  }
+
+  #rightSideAreaNews {
+    min-height: 460px;
+    max-height: 460px;
+    overflow: hidden;
+  }
+
+  .rightSideAreaNews .block .RightDetailArea{
+    margin: 0px 10px;
+    width: 65%;
+  }
+
+  .gallerynews{
+    margin-left: 0%;
+    width: 96%;
+  }
+  .news_gallery {
+    margin-left: 0.5%;
+    height:200px;
+    overflow: hidden;
+  }
+  .gallery{
+    margin-left:0;
+  }
+  .open-button{
+    right:15%;
+  }
+  .Telecommunication{
+    font-size:9px;
+  }
 }
