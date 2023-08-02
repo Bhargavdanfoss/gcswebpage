@@ -5,6 +5,11 @@ body{
 .panel{
     background-color:#fff;
 }
+.titlehead{
+  margin-top:14.75px;
+  margin-bottom:14.75px;
+  font-weight:bold;
+}
 .Home .btn{
  
   /*   padding-left:50px;
@@ -61,6 +66,8 @@ body{
 }
 .mainhead{
   width:60.88%;
+  margin-left: 60px;
+  height: auto;
 }
 .main{
     width:100%;
@@ -88,6 +95,11 @@ body{
     border-color:#E2000F;
 }
 
+.gallery{
+  margin-top:2%;
+  margin-left:40px;
+}
+
 .news_gallery img{
   border-radius: 15px 50px;
  
@@ -100,6 +112,8 @@ body{
 
 .gallerynews{
   width:62.333%;
+  margin-left: 25px;
+  height: auto;
 }
 /*
 .img_heading{
@@ -403,4 +417,71 @@ textarea {
 textarea:focus{
   background-color: #ddd;
   outline: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .logo img{
+      width:200%;
+      margin-top:10%;
+      
+  }
+  .Home{
+    width:150%;    
+    margin-right: 20%;
+  }
+  .titlehead{
+    font-weight:bold;
+    margin-top:70px;
+  }
+  .mainhead{
+    width: 96%;
+    margin-left:4%;
+  }
+
+  .mainhead .content{
+    width:44%;
+  }
+
+  .mainhead .vl{
+    display:none;
+  }
+
+  .mainhead hr{
+    display:none;
+  }
+
+  .news{
+    margin-left: 4%;
+    width: 88%;
+  }
+
+  .news_heading{
+    height:510px;
+    margin-top:6%;
+  }
+
+  #rightSideAreaNews {
+    min-height: 460px;
+    max-height: 460px;
+  }
+
+  .rightSideAreaNews .block .RightDetailArea{
+    margin: 0px 10px;
+    width: 65%;
+  }
+
+  .gallerynews{
+    margin-left: 0%;
+    width: 96%;
+  }
+  .news_gallery {
+    margin-left: 0.5%;
+    height:210px;
+  }
+  .gallery{
+    margin-left:0;
+  }
+  .open-button{
+    right:15%;
+  }
 }
