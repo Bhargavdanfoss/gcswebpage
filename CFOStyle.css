@@ -457,12 +457,13 @@ textarea:focus{
 
   .news_heading{
     height:510px;
-    margin-top:6%;
+    margin-top:6%;    
   }
 
   #rightSideAreaNews {
     min-height: 460px;
     max-height: 460px;
+    overflow: hidden;
   }
 
   .rightSideAreaNews .block .RightDetailArea{
@@ -476,7 +477,8 @@ textarea:focus{
   }
   .news_gallery {
     margin-left: 0.5%;
-    height:210px;
+    height:200px;
+    overflow: hidden;
   }
   .gallery{
     margin-left:0;
