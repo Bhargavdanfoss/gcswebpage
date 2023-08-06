@@ -50,13 +50,25 @@ body{
     
     
 }
+.contentcab{
+  margin-bottom:0;
+    background-color:#fff;    
+    width:18%;
+    height:90px;
+}
 .content:hover{
    
     background-color:#EBEFF0;   
-    height:90px;
-    
-   
-  } 
+    height:90px;   
+  }
+  .contentcablink:hover{
+    background-color:#EBEFF0;
+    height:70px;   
+  }
+  .contentcabclip:hover{
+    background-color:#E2000F; 
+    color:#fff;  
+  }
  
 .content h5,h6{
     color:#000;
@@ -64,6 +76,16 @@ body{
     font-weight:500;
     
 }
+
+.contentcab h5,h6{
+  color:#000;
+  text-decoration-line: none;
+  font-weight:500;
+  
+}
+
+
+
 .mainhead{
   width:60.88%;
   margin-left: 60px;
@@ -77,9 +99,7 @@ body{
     margin-top:0%;
     
 }
-.Telecommunication{
-  font-size:10px;
-}
+
 .news{
     margin-left:1%;
     width:31%;   
@@ -441,9 +461,23 @@ textarea:focus{
     margin-left:4%;
   }
 
+  .mainhead .cabheight{
+    height:410px;
+  }
+
+  .mainhead .uberbox{
+    margin-top:7%;
+  }
+
   .mainhead .content{
     width:44%;
   }
+
+  .mainhead .contentcab{
+    width:44%;
+  }
+
+
 
   .mainhead .vl{
     display:none;
@@ -489,7 +523,5 @@ textarea:focus{
   .open-button{
     right:15%;
   }
-  .Telecommunication{
-    font-size:9px;
-  }
+  
 }

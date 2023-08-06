@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
   <script src="jquery_min.js"></script>
   <script src="bootstrap_min.js"></script>
+  <script src="Scripts/EmailHandler.js"></script>
   <link rel="stylesheet" href="TravelStyleVietnam.css">
   
   
@@ -200,50 +201,35 @@
             </div>
             <div class="row">
               <div class="feedback">
-                <button class="reportfeedback-button" onclick="openFeedbackForm()">Report a Feedback</button>
+                <button class="reportfeedback-button" onclick="openFeedbackForm()">Support</button>
                 <div class="form-popup" id="myForm1">
-                  <form action="/action_page.php" class="form-container">
+                  <div class="form-container">
+                    <label for="selectsubmission" style="margin-bottom:0"><b>Select Submission type:</b></label><br>
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission1" onchange="handleChange(this);" value="feedback"/> Feedback &nbsp;
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission2" onchange="handleChange(this);" value="ask"/> Ask &nbsp;
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission3" onchange="handleChange(this);" value="complaint"/> Complaint <br><br>
+
+                    <label for="toemail" style="margin-bottom:0"><b>To</b></label>
+                    <input type="text" id="txtToEmail" name="toemail" value="joseph.d@danfoss.com" required readonly>
                     
                     <label for="name" style="margin-bottom:0"><b>Name</b></label>
-                    <input type="text" placeholder="Enter Name" name="name" required>
+                    <input type="text" id="txtName" placeholder="Enter Name" name="name" pattern="[A-Za-z]" title="Only Alphabets" required>
 
                     <label for="email" style="margin-bottom:0"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
 
                     <label for="contact" style="margin-bottom:0"><b>Contact</b></label>
-                    <input type="text" placeholder="Enter Contact" name="contact" required>
+                    <input type="number" id="txtContact" placeholder="Enter Contact" name="contact" required>
 
-                    <label for="subject" style="margin-bottom:0"><b>Report your Feedback</b></label>
-                    <textarea id="subject" type="text" placeholder="Report your Feedback.." style="height:200px" required></textarea>
+                    <label for="Message" id="LblMessage" style="margin-bottom:0"><b>Report your Submission</b></label>
+                    <textarea id="txtBodyOfMessage" type="text" placeholder="Report your Submission.." style="height:175px" required></textarea>
 
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" onclick="submitQuery()"  class="btn">Submit</button>
                     <button type="button" class="btn cancel" onclick="closeFeedbackForm()">Close</button>
-                  </form>
-                </div>
-              </div>
-              
-              <div class="question">
-                <button class="open-button" onclick="openForm()">Have a question, ask here?</button>
-                  <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                      
-                      <label for="name" style="margin-bottom:0"><b>Name</b></label>
-                      <input type="text" placeholder="Enter Name" name="name" required>
-
-                      <label for="email" style="margin-bottom:0"><b>Email</b></label>
-                      <input type="text" placeholder="Enter Email" name="email" required>
-
-                      <label for="contact" style="margin-bottom:0"><b>Contact</b></label>
-                      <input type="text" placeholder="Enter Contact" name="contact" required>
-
-                      <label for="subject" style="margin-bottom:0"><b>Ask Here</b></label>
-                      <textarea id="subject" type="text" placeholder="Ask Here.." style="height:200px" required></textarea>
-
-                      <button type="submit" class="btn">Submit</button>
-                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                    </form>
                   </div>
-              </div>                
+                </div>
+              </div>               
+                             
             </div>             
           </div>
         </div>
@@ -367,34 +353,114 @@
 </script>
 
 <script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
+  function openFeedbackForm() {
+    if(document.getElementById("myForm1").style.display === "block")
+    {
+      document.getElementById("myForm1").style.display = "none";                
+    }
+    else 
+    {
+      document.getElementById("myForm1").style.display = "block";
+    }
+  }
+  
+  function closeFeedbackForm() {
     document.getElementById("myForm1").style.display = "none";
   }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-  </script>
-  
-  <script>
-    function openFeedbackForm() {
-      if(document.getElementById("myForm1").style.display === "none")
-      {
-        document.getElementById("myForm1").style.display = "block";
-        document.getElementById("myForm").style.display = "none";
-        document.getElementsByClassName("open-button").style.display = "none";
-      }
-      else
-      {
-        document.getElementById("myForm1").style.display = "none";
-      }
-    }
+
+
+  function submitQuery()
+  {
+     var From="gsonedigitalplatform@danfoss.com";
+     var To = document.getElementById('txtToEmail').value;
+     var Name = document.getElementById('txtName').value; var nameregexPattern = /^[a-zA-Z\s\.]+$/;
+     var Email = document.getElementById('email').value; var emailregexPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     var Contact = document.getElementById('txtContact').value;
+     var BodyOfMessage = document.getElementById('txtBodyOfMessage').value;
     
-    function closeFeedbackForm() {
+    var SubmissionType;      
+    var TypeSubmission1 = document.getElementById('TypeSubmission1');
+    var TypeSubmission2 = document.getElementById('TypeSubmission2');
+    var TypeSubmission3 = document.getElementById('TypeSubmission3');
+
+    if(TypeSubmission1.checked === false && TypeSubmission2.checked === false  && TypeSubmission3.checked === false )
+    {
+      alert("Please check your Submission Type");
+    }
+    else if(Name === "")
+    {
+      alert("Please enter your Name");
+    }
+    else if(!(nameregexPattern.test(Name)))
+    {
+      alert("Enter a your Valid Name");
+    }
+    else if(Email === "")
+    {
+      alert("Please enter your Email Id");
+    }
+    else if(!(emailregexPattern.test(Email)))
+    {
+      alert("Enter a your Valid Email Id");
+    }
+    else if(Contact === "")
+    {
+      alert("Please enter your Contact Number");
+    }
+    else if(BodyOfMessage === "")
+    {
+      alert("Please enter your Message in Report area");
+    }
+    else
+    {
+      if(TypeSubmission1.checked === true)
+      {
+        SubmissionType = "feedback";        
+      }
+      else if(TypeSubmission2.checked === true)
+      {
+        SubmissionType = "ask";        
+      }
+      else if(TypeSubmission3.checked === true)
+      {
+        SubmissionType = "complaint";        
+      } 
+      
+
+        
+      sendEmail(From,To,Name,Email,Contact,SubmissionType,BodyOfMessage);
+
+      document.getElementById('txtName').value ="";
+      document.getElementById('email').value ="";
+      document.getElementById('txtContact').value ="";
+      document.getElementById('txtBodyOfMessage').value ="";
+      TypeSubmission1.checked =false;
+      TypeSubmission2.checked =false;
+      TypeSubmission3.checked =false;
+
+      alert("Your Information Saved Successfully, Our team will reach you soon, Thank you.");
+
       document.getElementById("myForm1").style.display = "none";
     }
-    </script>
+  }
+
+  function handleChange(src) {
+    
+    if(src.value === "feedback"){
+      document.getElementById('LblMessage').innerHTML="<b>Report your Feedback</b>"; 
+      document.getElementById('txtBodyOfMessage').placeholder ="Report your Feedback...";
+    }
+    else if(src.value === "ask"){
+      document.getElementById('LblMessage').innerHTML="<b>Ask your Questions</b>";
+      document.getElementById('txtBodyOfMessage').placeholder ="Ask your Questions";
+    }
+    else if(src.value === "complaint"){
+      document.getElementById('LblMessage').innerHTML="<b>Report your complaint</b>";
+      document.getElementById('txtBodyOfMessage').placeholder ="Report your complaint";
+    }
+}
+
+  </script>
 
 </body>
 </html>
