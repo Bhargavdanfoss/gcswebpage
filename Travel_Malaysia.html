@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://prod-87.westeurope.logic.azure.com/workflows/d0b8d7b3702c41e0a2f24e4f9cd18fb4/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2Q0klkNsUInggoO1Il8UFfBVJJ1RcESRKf91fcHaRyo https://prod-06.westeurope.logic.azure.com/workflows/baaed420a437449c95f5616dca04a775/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qN1nw71VIApYkJIKLl8xLT4yCF0j3AtnwqRd9g474V0; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+  <title>Travel - Malaysia</title>
+  <link rel="icon" type="image/png" href="Assets/GSPlus_Logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
+  <script src="jquery_min.js"></script>
+  <script src="bootstrap_min.js"></script>
+  <script src="Scripts/EmailHandler.js"></script>
+  <link rel="stylesheet" href="TravelStyleMalaysia.css">
+  
+  
+<script src="Scripts/CountHandler.js"></script>
+<script src="Scripts/disabled.js"></script>
+
+</head>
+<body onload="countvisit()">
+<div class="container-fluid">
+    <div class="row" style="margin-top:10px">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="Panel" style="float:left;margin-top:0px">
+            <div class="logo">
+                <img src="Assets/Logo.jpg">
+            </div>
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 titleclass">
+            <div class="Panel text-center" style="margin-top:0px;">                
+              <h4 class="titlehead">Travel - Malaysia</h4>
+                
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="Panel Home" style="margin-top: 4.1px;margin-bottom: 4.1px;float:right">
+                <a href="Malaysia.html">
+                    <button class="btn btn-primary" type="button" style="font-size:18px;font-weight:bold;">Home <i class="fa fa-home"></i></button>
+                    
+                </a>
+            </div>
+        </div>        
+    </div>
+    <div class="row">
+      <hr style="border: 1px solid #aaa;margin-top:10px;margin-bottom:0">
+    </div>    
+</div>
+<div class="container-fluid">
+    <div class="row">
+      <div class="container-fluid mainhead col-xs-7 col-sm-7 col-md-7 col-lg-7">
+        <div class="row main">
+          <!--  <div class="row">
+              <div class="panel" style="margin-top:18px">
+                  <h3 style="font-size:18px;font-weight:bold;margin-top:0;margin-bottom:0;margin-left:6;color:#E2000F">Management Cockpits</h3>
+                  <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 8%;margin-left: 0px;">
+              </div>
+          </div> -->
+          <div class="row" style="margin-top:3%;margin-left:3%">                
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDfg_vS8JK_1LmfZupzYqMwpUMjhTUE9GQVE5NERGNFdHWklQTjA4RUxUVC4u" target="_blank">
+                  <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                      <img src="Assets/TravelInvitation.png" style="height:40px;width:40px;margin-top:4px">
+                      <h6>Travel invitation<br>letter</h6>
+                      
+                  </div>
+              </a>
+
+              <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDfg_vS8JK_1LmfZupzYqMwpUN1ZNSFNYM0hIRkJEUTlQRzdZWVIxVzhPQi4u" target="_blank">
+                <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/VisaInvitation.png" style="height:40px;width:40px;margin-top:4px">
+                    <h6>Visa Application<br>letter</h6>
+                    
+                </div> 
+              </a> 
+
+              <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>   
+              
+              <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/1008d3a4-7bcb-4eab-9b5e-eea975c210fd?tenantId=097464b8-069c-453e-9254-c17ec707310d&source=AppSharedV3&hint=209c1839-ef78-437f-ac66-377b87a6b9cc&skipmetadata=true" target="_blank"> 
+                <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2"> 
+                  <img src="Assets/Travel_and_Hiring.png" style="height:40px;width:40px;margin-top:4px">  
+                  <h6>Travel & Hiring<br>Request Form</h6>
+                    
+                    
+                </div>
+              </a>
+  
+              <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                                                                      
+          </div>        
+          <!--   <div class="row">
+              <div class="panel" style="margin-top:18px">
+                  <h3 style="font-size:18px;font-weight:bold;margin-top:0;margin-bottom:0;color:#E2000F">Reporting</h3>
+                  <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 8%;margin-left: 0px;">
+              </div>    
+          </div>      -->                
+
+          <div class="row" style="margin-bottom:3%">
+
+          </div>
+        </div>  
+      </div>
+        <div class="container-fluid news col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div class="row">
+              <div class="news_heading">                                
+                <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:2%;color:#E2000F;margin-top:0;margin-bottom:0;">Events</h5>
+                <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 8%;margin-left: 2%;">
+                
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6" style="margin-left:15px;margin-right:18px">
+                        
+                        <!-- ============================ -->
+                         <div class="rightSideAreaNews" id="rightSideAreaNews">
+                  
+                                  <!-- block start -->
+                                  <div class="block row">
+                                    <div class="leftArea">
+                                      <div class="dateTime">
+                                        <span class="date">28</span>
+                                        <span class="month-year">JUN 2023</span>
+                                      </div>
+                                    </div>
+                                     <div class="RightDetailArea">
+                                    <div class="title"><a href="#" target="_blank">Life is what you make it, so let’s make it.</a></div>
+                                    <div class="descri">
+                                      <p>
+                                       At Florence we believe that Learning Illuminates Life, well - read and well-educated mindset helps.
+                                      </p>
+                                    </div>
+                                    <div class="anchorBtn">
+                                      <a href="#" target="_blank" class="btns">Read More</a>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <!-- block end -->
+                                  
+                                  <!-- block start -->
+                                  <div class="block row">
+                                    <div class="leftArea">
+                                      <div class="dateTime">
+                                       <span class="date">27</span>
+                                        <span class="month-year">JUN 2023</span>
+                                      </div>
+                                    </div>
+                                     <div class="RightDetailArea">
+                                    <div class="title"><a href="#" target="_blank">Life is what you make it, so let’s make it.</a></div>
+                                    <div class="descri">
+                                      <p>
+                                       At Florence we believe that Learning Illuminates Life, well - read and well-educated mindset helps.
+                                      </p>
+                                    </div>
+                                    <div class="anchorBtn">
+                                      <a href="#" target="_blank" class="btns">Read More</a>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <!-- block end -->
+                                  
+                                  <!-- block start -->
+                                  <div class="block row">
+                                    <div class="leftArea">
+                                      <div class="dateTime">
+                                       <span class="date">26</span>
+                                        <span class="month-year">JUN 2023</span>
+                                      </div>
+                                    </div>
+                                     <div class="RightDetailArea">
+                                    <div class="title"><a href="#" target="_blank">Life is what you make it, so let’s make it.</a></div>
+                                    <div class="descri">
+                                      <p>
+                                       At Florence we believe that Learning Illuminates Life, well - read and well-educated mindset helps.
+                                      </p>
+                                    </div>
+                                    <div class="anchorBtn">
+                                      <a href="#" target="_blank" class="btns">Read More</a>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <!-- block end -->
+        
+                                   <!-- block start -->
+                                  <div class="block row">
+                                    <div class="leftArea">
+                                      <div class="dateTime">
+                                        <span class="date">25</span>
+                                        <span class="month-year">JUN 2023</span>
+                                      </div>
+                                    </div>
+                                     <div class="RightDetailArea">
+                                    <div class="title"><a href="#" target="_blank">Life is what you make it, so let’s make it.</a></div>
+                                    <div class="descri">
+                                      <p>
+                                       At Florence we believe that Learning Illuminates Life, well - read and well-educated mindset helps.
+                                      </p>
+                                    </div>
+                                    <div class="anchorBtn">
+                                      <a href="#" target="_blank" class="btns">Read More</a>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <!-- block end -->
+
+                                  <!-- block start -->
+                                  <div class="block row">
+                                    <div class="leftArea">
+                                      <div class="dateTime">
+                                        <span class="date">24</span>
+                                        <span class="month-year">JUN 2023</span>
+                                      </div>
+                                    </div>
+                                     <div class="RightDetailArea">
+                                    <div class="title"><a href="#" target="_blank">Life is what you make it, so let’s make it.</a></div>
+                                    <div class="descri">
+                                      <p>
+                                       At Florence we believe that Learning Illuminates Life, well - read and well-educated mindset helps.
+                                      </p>
+                                    </div>
+                                    <div class="anchorBtn">
+                                      <a href="#" target="_blank" class="btns">Read More</a>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <!-- block end -->
+                                  
+                                </div>
+                        <!-- ============================ -->
+        
+                    </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="feedback">
+                <img src="Assets/support.gif" onclick="openFeedbackForm()" class="reportfeedback-button">
+                <div class="form-popup" id="myForm1">
+                  <div class="form-container">
+                    <label for="selectsubmission" style="margin-bottom:0;color:#E2000F"><b>Select Submission type:</b></label><br>
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission1" onchange="handleChange(this);" value="feedback"/> Feedback &nbsp;
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission2" onchange="handleChange(this);" value="ask"/> Ask &nbsp;
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission3" onchange="handleChange(this);" value="complaint"/> Complaint <br><br>
+
+                    <label for="toemail" style="margin-bottom:0"><b>To</b></label>
+                    <input type="text" id="txtToEmail" name="toemail" value="joseph.d@danfoss.com" required readonly>
+                    
+                    <label for="name" style="margin-bottom:0"><b>Name</b></label>
+                    <input type="text" id="txtName" placeholder="Enter Name" name="name" pattern="[A-Za-z]" title="Only Alphabets" required>
+
+                    <label for="email" style="margin-bottom:0"><b>Email</b></label>
+                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="contact" style="margin-bottom:0"><b>Contact</b></label>
+                    <input type="number" id="txtContact" placeholder="Enter Contact" name="contact" required>
+
+                    <label for="Message" id="LblMessage" style="margin-bottom:0"><b>Report your Submission</b></label>
+                    <textarea id="txtBodyOfMessage" type="text" placeholder="Report your Submission.." style="height:100px" required></textarea>
+
+                    <button type="button" onclick="submitQuery()"  class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeFeedbackForm()">Close</button>
+                  </div>
+                </div>
+              </div>
+              
+                              
+            </div>             
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container gallerynews col-xs-7 col-sm-7 col-md-7 col-lg-7">
+            <div class="news_gallery" id="news_gallery">
+              <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:2%;color:#E2000F;margin-top:0;margin-bottom:0;">News</h5>
+              <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 4%;margin-left: 2%;">
+    
+              <div class="row block1" style="margin-left:0%;">
+                <a href="https://www.danfoss.com/en-in/about-danfoss/news/dcs/new-options-for-oems-as-danfoss-expand-the-z-design-range-of-micro-plate-heat-exchangers/" target="_blank">
+                <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+                  <img src="Assets/News1.jpg" style="width:100%;height:100%;">
+                  <p style="margin-left:3%">New options for OEMs as Danfoss expand the...</p>
+                </div>
+                </a>
+                <a href="https://www.danfoss.com/en-in/about-danfoss/news/dcs/danfoss-forward-naturally-with-co2-refrigeration-solutions/" target="_blank">
+                <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+                  <img src="Assets/News2.jpg" style="width:100%;height:100%;">
+                  <p style="margin-left:3%">Danfoss Forward. Naturally With CO₂ Refrigeration...</p>                      
+                </div>
+                </a>
+              </div>
+    
+              <div class="row block1" style="margin-left:0%">
+                <a href="https://www.danfoss.com/en-in/about-danfoss/news/dhs/danfoss-adds-a-new-and-data-driven-dimension-to-district-energy-with-the-launch-of-groundbreaking-substation-technology-in-danfoss-titan/" target="_blank">
+                <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+                  <img src="Assets/News3.png" style="width:100%;height:100%;">
+                  <p style="margin-left:3%">Danfoss adds a new and data-driven dimension to...</p>
+                </div>
+                </a>
+                <a href="https://www.danfoss.com/en-in/about-danfoss/news/dcs/danfoss-formally-completes-acquisition-of-german-compressor-manufacturer-bock-gmbh/" target="_blank">
+                <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+                  <img src="Assets/News4.jpg" style="width:100%;height:100%;">
+                  <p style="margin-left:3%">Danfoss formally completes acquisition of compressor...</p>
+                </div>
+                </a>
+              </div>
+    
+              <div class="row block1" style="margin-left:0%">
+                <a href="https://www.danfoss.com/en-in/about-danfoss/news/dds/trouble-free-operation-in-water-treatment/" target="_blank">
+                <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+                  <img src="Assets/News5.jpg" style="width:100%;height:100%;">
+                  <p style="margin-left:3%">Trouble-free operation in water treatment...</p>
+                </div>
+                </a>
+                <a href="https://www.danfoss.com/en-in/about-danfoss/news/dds/zero-emission-ferries-molslinjen/" target="_blank">
+                <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+                  <img src="Assets/News6.jpg" style="width:100%;height:100%;">
+                  <p style="margin-left:3%">Danfoss powers two new zero-emission ferries for...</p>
+                </div>
+                </a>
+              </div>
+    
+            </div>
+          </div>
+      </div>
+</div>
+
+
+<div class="container-fluid" style="background-color:#EBEFF0;margin-top:18px;position:relative">
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="Panel" style="margin-top:10px;margin-bottom: 10px;">                                               
+                <img src="Assets/GSPlus_Logo.png" style="width:50px">                
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            
+        </div>
+    </div>    
+</div>
+
+
+	<script type="text/javascript">
+		var interval;
+		function ticker()
+		{
+			if($("#rightSideAreaNews .block").length > 2)
+			{
+				$("#rightSideAreaNews .block:first").slideUp(function(){
+					$(this).appendTo("#rightSideAreaNews").slideDown();
+				});
+			}			
+		}
+
+		$(document).ready(function(){
+				interval = setInterval(ticker,3000);
+			$("#rightSideAreaNews").hover(function(){
+				clearInterval(interval);
+			},function(){
+				interval = setInterval(ticker,3000);
+			});
+		});
+	</script>
+
+<script type="text/javascript">
+  var interval1;
+  function ticker1()
+  {
+    if($("#news_gallery .block1").length > 1)
+    {
+      $("#news_gallery .block1:first").slideUp(function(){
+        $(this).appendTo("#news_gallery").slideDown();
+      });
+    }			
+  }
+
+  $(document).ready(function(){
+      interval1 = setInterval(ticker1,5000);
+    $("#news_gallery").hover(function(){
+      clearInterval(interval1);
+    },function(){
+      interval1 = setInterval(ticker1,5000);
+    });
+  });
+</script>
+
+<script>
+  function openFeedbackForm() {
+    if(document.getElementById("myForm1").style.display === "block")
+    {
+      document.getElementById("myForm1").style.display = "none";                
+    }
+    else 
+    {
+      document.getElementById("myForm1").style.display = "block";
+    }
+  }
+  
+  function closeFeedbackForm() {
+    document.getElementById("myForm1").style.display = "none";
+  }
+
+
+  function submitQuery()
+  {
+     var From="gsonedigitalplatform@danfoss.com";
+     var To = document.getElementById('txtToEmail').value;
+     var Name = document.getElementById('txtName').value; var nameregexPattern = /^[a-zA-Z\s\.]+$/;
+     var Email = document.getElementById('email').value; var emailregexPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     var Contact = document.getElementById('txtContact').value;
+     var BodyOfMessage = document.getElementById('txtBodyOfMessage').value;
+    
+    var SubmissionType;      
+    var TypeSubmission1 = document.getElementById('TypeSubmission1');
+    var TypeSubmission2 = document.getElementById('TypeSubmission2');
+    var TypeSubmission3 = document.getElementById('TypeSubmission3');
+
+    if(TypeSubmission1.checked === false && TypeSubmission2.checked === false  && TypeSubmission3.checked === false )
+    {
+      alert("Please check your Submission Type");
+    }
+    else if(Name === "")
+    {
+      alert("Please enter your Name");
+    }
+    else if(!(nameregexPattern.test(Name)))
+    {
+      alert("Enter a your Valid Name");
+    }
+    else if(Email === "")
+    {
+      alert("Please enter your Email Id");
+    }
+    else if(!(emailregexPattern.test(Email)))
+    {
+      alert("Enter a your Valid Email Id");
+    }
+    else if(Contact === "")
+    {
+      alert("Please enter your Contact Number");
+    }
+    else if(BodyOfMessage === "")
+    {
+      alert("Please enter your Message in Report area");
+    }
+    else
+    {
+      if(TypeSubmission1.checked === true)
+      {
+        SubmissionType = "feedback";        
+      }
+      else if(TypeSubmission2.checked === true)
+      {
+        SubmissionType = "ask";        
+      }
+      else if(TypeSubmission3.checked === true)
+      {
+        SubmissionType = "complaint";        
+      } 
+      
+
+        
+      sendEmail(From,To,Name,Email,Contact,SubmissionType,BodyOfMessage);
+
+      document.getElementById('txtName').value ="";
+      document.getElementById('email').value ="";
+      document.getElementById('txtContact').value ="";
+      document.getElementById('txtBodyOfMessage').value ="";
+      TypeSubmission1.checked =false;
+      TypeSubmission2.checked =false;
+      TypeSubmission3.checked =false;
+
+      alert("Your Information Saved Successfully, Our team will reach you soon, Thank you.");
+
+      document.getElementById("myForm1").style.display = "none";
+    }
+  }
+
+  function handleChange(src) {
+    
+    if(src.value === "feedback"){
+      document.getElementById('LblMessage').innerHTML="<b>Report your Feedback</b>"; 
+      document.getElementById('txtBodyOfMessage').placeholder ="Report your Feedback...";
+    }
+    else if(src.value === "ask"){
+      document.getElementById('LblMessage').innerHTML="<b>Ask your Questions</b>";
+      document.getElementById('txtBodyOfMessage').placeholder ="Ask your Questions";
+    }
+    else if(src.value === "complaint"){
+      document.getElementById('LblMessage').innerHTML="<b>Report your complaint</b>";
+      document.getElementById('txtBodyOfMessage').placeholder ="Report your complaint";
+    }
+}
+
+  </script>
+
+<script>
+    function countvisit(){
+        var PageCount = 1;        
+        var PageName = "Malaysia Travel";
+        sendCount(PageCount,PageName);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>GS News Letter-India</title>
+  <link rel="icon" type="image/png" href="Assets/GSPlus_Logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
+  <script src="jquery_min.js"></script>
+  <script src="bootstrap_min.js"></script>  
+  <link rel="stylesheet" href="GSNewsLetter.css">
+  <!--<script src="Scripts/CountHandler.js"></script>
+<script src="Scripts/disabled.js"></script>-->
+ 
+  
+</head>
+<body>
+    <!--
+<div class="container-fluid">
+    <div class="row" style="margin-top:10px">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="Panel" style="float:left;margin-top:0px">
+            <div class="logo">
+                <img src="Assets/Logo.jpg">
+            </div>
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="Panel text-center" style="margin-top:0px;">                
+                <h4 class="titlehead">GS News Letter - India</h4>
+                
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="Panel Home" style="margin-top: 4.1px;margin-bottom: 4.1px;float:right">
+                <a href="Index.html">
+                    <button class="btn btn-primary" type="button" style="font-size:18px;font-weight:bold;">Home <i class="fa fa-home"></i></button>
+                    
+                </a>
+            </div>
+        </div>        
+    </div>
+    <div class="row">
+      <hr style="border: 1px solid #aaa;margin-top:10px;margin-bottom:0">
+    </div>    
+</div>
+
+<div class="container-fluid">
+    <div class="row" style="margin-top:10px">          
+        <iframe width="1200px" height="720px"  frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" class="swayframe_ind" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      </div>
+</div>
+-->
+
+<script>
+/*$(document).ready(function (){
+  fetch('https://data.authentise.com/flat-line-item/')  
+  //fetch('http://ergast.com/api/f1/2004/1/results.json')
+  .then(res => res.json())
+  .then(data => {        
+          //$('.swayframe_ind').attr("src", data[0].hrefIND);
+          console.log(JSON.stringify(data));
+  });
+});
+$(document).ready(function () {
+  fetch('https://data.authentise.com/flat-line-item.json')
+    .then(res => {
+      if (!res.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return res.json();
+    })
+    .then(data => {
+      alert(JSON.stringify(data));
+      // Further processing of data here
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+});
+*/
+$(document).ready(function() {
+    var url = 'http://ergast.com/api/f1/2004/1/results.json';
+    var jsonResponse;
+
+    $.ajax({
+        url: url,
+        type: 'GET',
+        dataType: 'json',
+        success: function(response) {
+            // This function executes if the request succeeds
+            jsonResponse = response;
+            console.log('Response:', jsonResponse);
+        },
+        error: function(xhr, status, error) {
+            // This function executes if the request fails
+            console.log('An error occurred while processing the request:', error);
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://prod-87.westeurope.logic.azure.com/workflows/d0b8d7b3702c41e0a2f24e4f9cd18fb4/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2Q0klkNsUInggoO1Il8UFfBVJJ1RcESRKf91fcHaRyo https://prod-06.westeurope.logic.azure.com/workflows/baaed420a437449c95f5616dca04a775/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qN1nw71VIApYkJIKLl8xLT4yCF0j3AtnwqRd9g474V0; img-src 'self' data:;  script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self' 'unsafe-inline' https://sway.cloud.microsoft/;">
+  <title>GS News Letter-Singapore</title>
+  <link rel="icon" type="image/png" href="Assets/GSPlus_Logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
+  <script src="jquery_min.js"></script>
+  <script src="bootstrap_min.js"></script>  
+  <link rel="stylesheet" href="GSNewsLetter.css">
+  <script src="Scripts/CountHandler.js"></script>
+<script src="Scripts/disabled.js"></script>
+
+  
+</head>
+<body onload="countvisit()">
+<div class="container-fluid">
+    <div class="row" style="margin-top:10px">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="Panel" style="float:left;margin-top:0px">
+            <div class="logo">
+                <img src="Assets/Logo.jpg">
+            </div>
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="Panel text-center" style="margin-top:0px;">                
+                <h4 class="titlehead">GS News Letter - Singapore</h4>
+                
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="Panel Home" style="margin-top: 4.1px;margin-bottom: 4.1px;float:right">
+                <a href="Singapore.html">
+                    <button class="btn btn-primary" type="button" style="font-size:18px;font-weight:bold;">Home <i class="fa fa-home"></i></button>
+                    
+                </a>
+            </div>
+        </div>        
+    </div>
+    <div class="row">
+      <hr style="border: 1px solid #aaa;margin-top:10px;margin-bottom:0">
+    </div>    
+</div>
+
+<div class="container-fluid">
+  <div class="row" style="margin-top:10px">                        
+        <iframe width="1200px" height="720px" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" class="swayframe_apr" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+  function countvisit() {    
+    var PageCount = 1;        
+    var PageName = "Singapore GS News Letter";   
+    sendCount(PageCount,PageName);
+  }
+  </script>
+<script>
+  $(document).ready(function (){
+    fetch('./Json/GSNewsData.json')
+    .then(res => res.json())
+    .then(data => {         
+            $('.swayframe_apr').attr("src", data[0].hrefAPR);
+    });
+  });
+  </script>
+</body>
+</html>

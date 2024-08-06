@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://prod-87.westeurope.logic.azure.com/workflows/d0b8d7b3702c41e0a2f24e4f9cd18fb4/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2Q0klkNsUInggoO1Il8UFfBVJJ1RcESRKf91fcHaRyo https://prod-06.westeurope.logic.azure.com/workflows/baaed420a437449c95f5616dca04a775/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qN1nw71VIApYkJIKLl8xLT4yCF0j3AtnwqRd9g474V0; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+  <title>EHS - India</title>
+  <link rel="icon" type="image/png" href="Assets/GSPlus_Logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
+  <script src="jquery_min.js"></script>
+  <script src="bootstrap_min.js"></script>
+  <script src="Scripts/EmailHandler.js"></script>
+  <link rel="stylesheet" href="SafetyIndiaStyle.css">
+  
+  
+<script src="Scripts/CountHandler.js"></script>
+<script src="Scripts/disabled.js"></script>
+
+</head>
+<body onload="countvisit()">
+<div class="container-fluid">
+    <div class="row" style="margin-top:10px">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="Panel" style="float:left;margin-top:0px">
+            <div class="logo">
+                <img src="Assets/Logo.jpg">
+            </div>
+        </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 titleclass">
+            <div class="Panel text-center" style="margin-top:0px;">                
+                <h4 class="titlehead">Environment, Health and Safety (EHS) - India</h4>
+                
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="Panel Home" style="margin-top: 4.1px;margin-bottom: 4.1px;float:right">
+                <a href="Index.html">
+                    <button class="btn btn-primary" type="button" style="font-size:18px;font-weight:bold;">Home <i class="fa fa-home"></i></button>
+                    
+                </a>
+            </div>
+        </div>        
+    </div>
+    <div class="row">
+      <hr style="border: 1px solid #aaa;margin-top:10px;margin-bottom:0">
+    </div>    
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="container-fluid mainhead col-xs-7 col-sm-7 col-md-7 col-lg-7">             
+          
+        <div class="row" id="Safety">
+          <div class="panel" style="margin-top:18px">
+              <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:6;color:#000">Safety</h5>
+              <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 5%;margin-left: 0px;">
+          </div>
+        </div>
+
+        <div class="row main">
+          <div class="row" style="margin-top:3%;margin-left:3%">                
+            <a href="https://danfoss.synergilife.dnv.com/" target="_blank">    
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="Assets/safetyissue.png" style="height:40px;width:40px;margin-top:4px">
+                  <h6>Report a<br> Safety Issue</h6>
+                  
+              </div> 
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+             
+            <a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/b95c1227-5b6e-4536-8f4a-25b76228e8a6?tenantId=097464b8-069c-453e-9254-c17ec707310d&source=portal" target="_blank">
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/IMSInternalAuditTool.png" style="height:40px;width:40px;margin-top:11px;">
+                  <h6>IMS Audits</h6>
+                  
+              </div> 
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+            <a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/afaebfa5-72b3-4d3e-9c3b-4e84d3c5b951/ReportSection?experience=power-bi" target="_blank">
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/ComplainceTracker.png" style="height:40px;width:40px;margin-top:4px">
+                  <h6>Compliance<br>Tracker</h6>
+                  
+              </div> 
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            
+            <a href="https://app.powerbi.com/groups/47837667-d2b1-453d-9765-cc0f5622e908/reports/d0df36e0-905f-4316-bf11-0e345ae47fe7/ReportSection82acf440195b053e1082?experience=power-bi" target="_blank">    
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/SafetyPerformanceReport.png" style="height:40px;width:40px;margin-top:4px">
+                  <h6>Safety<br>Performance</h6>
+                  
+              </div> 
+            </a>                                                           
+          </div> 
+
+          <div class="row">
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:6.5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:7.5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:7.5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:0%;margin-left:3%">                
+            <a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7BAF131059-00EB-4E33-8E0E-27FE4D9155A9%7D&file=EHS%20INDUCTION.pptm&action=edit&mobileredirect=true" target="_blank">    
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="Assets/safetyinduction.png" style="height:40px;width:40px;margin-top:4px">
+                <h6>Safety<br>Induction</h6>
+                  
+              </div> 
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>           
+
+          </div>
+
+          <div class="row" style="margin-bottom:3%">
+
+          </div>
+        </div>
+
+        <div class="row"  id="Health">
+          <div class="panel" style="margin-top:18px">
+              <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:6;color:#000">Health</h5>
+              <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 5%;margin-left: 0px;">
+          </div>
+        </div>
+
+        <div class="row main">
+          <div class="row" style="margin-top:3%;margin-left:3%">                
+            <a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B06953FF4-4307-45D8-9938-23294C5ABE8E%7D&file=EHS%20Plan%202023.pptx&action=edit&mobileredirect=true" target="_blank"> 
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="Assets/healthplan.png" style="height:40px;width:40px;margin-top:11px">
+                  <h6>Health plan</h6>
+                  
+              </div>
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+             
+            <a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/52d433e3-25e7-4bca-852d-c2f039dc4399/ReportSection63ed99c1342a65ea57d7?experience=power-bi" target="_blank">
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/ohcreports.png" style="height:40px;width:40px;margin-top:11px">
+                  <h6>OHC Reports</h6>
+                  
+              </div> 
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDYupmO0uRQ9FmvRgxOEOsR1UN1kwNkpLUkRGUTZKVjVBSVhPSVlWWTc5Si4u&wdLOR=c7FA6F46E-B1C6-42E5-BC60-A37A314C94C4" target="_blank">    
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="Assets/CrecheRegistrationForm.png" style="height:40px;width:40px;margin-top:4px">
+                  <h6>Creche<br>Registration</h6>
+                  
+                  
+              </div> 
+            </a> 
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>            
+                                                                   
+          </div>         
+
+          <div class="row" style="margin-bottom:3%">
+
+          </div>
+        </div>
+
+        <div class="row" id="Environment">
+          <div class="panel" style="margin-top:18px">
+              <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:6;color:#000">Environment</h5>
+              <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 10%;margin-left: 0px;">
+          </div>
+        </div>
+
+        <div class="row main">
+          <div class="row" style="margin-top:3%;margin-left:3%">                
+            <a href="https://danfoss.sharepoint.com/sites/EHSIndia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FEHSIndia%2FShared%20Documents%2FOne%20Screen%20Digital%2FEnvironment%2FLegislative%20Reporting&viewid=844cda27%2Dfa2d%2D4bd8%2D8a20%2D6b381bafa504" target="_blank">
+                <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <img src="Assets/legislativeReport.png" style="height:40px;width:40px;margin-top:11px">
+                    <h6>Legislations</h6>                    
+                </div> 
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+             
+            <a href="https://danfoss.sharepoint.com/sites/EHSIndia/Shared Documents/Forms/AllItems.aspx?id=%2Fsites%2FEHSIndia%2FShared%20Documents%2FOne%20Screen%20Digital%2FEnvironment%2FMonitoring%20Reports&viewid=844cda27%2Dfa2d%2D4bd8%2D8a20%2D6b381bafa504" target="_blank">
+                <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/monitoringreports.png" style="height:40px;width:40px;margin-top:11px"> 
+                  <h6>Monitoring Reports</h6>
+                    
+                    
+                </div>
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+            <a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B016CA370-CEB8-4DFE-B760-CB7D4892A4FE%7D&file=Eco%20Design.pptx&action=edit&mobileredirect=true" target="_blank"> 
+                <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2"> 
+                  <img src="Assets/ecodesign.png" style="height:40px;width:40px;margin-top:11px">  
+                  <h6>Eco Design</h6>
+                    
+                    
+                </div>
+            </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            
+            <a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B97905F25-983C-4868-9EAF-246216076259%7D&file=3R.pptx&action=edit&mobileredirect=true" target="_blank">
+                <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/3rwastemanagement.png" style="height:40px;width:40px;margin-top:4px">
+                    <h6>3R Waste<br>Management</h6>
+                    
+                </div> 
+            </a>                                                          
+          </div> 
+
+          <div class="row">
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:6.5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:7.5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+            <div class ="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="margin:0;margin-left:7.5%">
+              <hr style="border: 1px solid #E2000F;width: 100%;">
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:0%;margin-left:3%">                
+            <a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B37EA7CAD-1F5A-48CB-BC74-B941D3BF0F43%7D&file=Per%20Capita%20Reduction%20%40%20Danfoss%20Chennai%20Campus.pptx&action=edit&mobileredirect=true" target="_blank">
+              <div class="panel content text-center col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <img src="Assets/wastewatermanagement.png" style="height:40px;width:40px;margin-top:4px">
+                  <h6>Waste water<br>Management</h6>
+                  
+              </div>
+          </a>
+
+            <div class="vl col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>           
+
+          </div>
+
+          <div class="row" style="margin-bottom:3%">
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="container-fluid news col-xs-5 col-sm-5 col-md-5 col-lg-5">
+        <div class="panel events_top" style="margin-top:20px">
+              
+          <br>
+        </div>
+            <div class="row">
+              <div class="news_heading">                                
+                <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:2%;color:#E2000F;margin-top:0;margin-bottom:0;">Birthday(s) & Work Anniversary(s)</h5>
+                <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 18%;margin-left: 2%;">
+                
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6" style="margin-left:15px;margin-right:18px">
+                        
+                        <!-- ============================ -->
+                        <div class="rightSideAreaNews" id="rightSideAreaNews">
+                        </div>
+                        <!-- ============================ -->
+        
+                    </div>
+                </div>
+
+              </div>
+            </div> 
+            <div class="row">
+              <div class="feedback">
+                <img src="Assets/support.gif" onclick="openFeedbackForm()" class="reportfeedback-button">
+                <div class="form-popup" id="myForm1">
+                  <div class="form-container">
+                    <label for="selectsubmission" style="margin-bottom:0;color:#E2000F"><b>Select Submission type:</b></label><br>
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission1" onchange="handleChange(this);" value="feedback"/> Feedback &nbsp;
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission2" onchange="handleChange(this);" value="ask"/> Ask &nbsp;
+                    <input type="radio" name="TypeSubmission" id="TypeSubmission3" onchange="handleChange(this);" value="complaint"/> Complaint <br><br>
+
+                    <label for="toemail" style="margin-bottom:0"><b>To</b></label>
+                    <input type="text" id="txtToEmail" name="toemail" value="suresh.munuswamy@danfoss.com" required readonly>
+                    
+                    <label for="name" style="margin-bottom:0"><b>Name</b></label>
+                    <input type="text" id="txtName" placeholder="Enter Name" name="name" pattern="[A-Za-z]" title="Only Alphabets" required>
+
+                    <label for="email" style="margin-bottom:0"><b>Email</b></label>
+                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="contact" style="margin-bottom:0"><b>Contact</b></label>
+                    <input type="number" id="txtContact" placeholder="Enter Contact" name="contact" required>
+
+                    <label for="Message" id="LblMessage" style="margin-bottom:0"><b>Report your Submission</b></label>
+                    <textarea id="txtBodyOfMessage" type="text" placeholder="Report your Submission.." style="height:100px" required></textarea>
+
+                    <button type="button" onclick="submitQuery()"  class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeFeedbackForm()">Close</button>
+                  </div>
+                </div>
+              </div> 
+              
+                              
+            </div>           
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container gallerynews col-xs-7 col-sm-7 col-md-7 col-lg-7">
+        <div class="news_gallery" id="news_gallery">
+          <h5 style="font-weight:bold;margin-top:0;margin-bottom:0;margin-left:2%;color:#E2000F;margin-top:0;margin-bottom:0;">News</h5>
+          <hr style="border: 1px solid #E2000F;margin-top:5px;margin-bottom:0;width: 4%;margin-left: 2%;">
+
+          <div class="row block1" style="margin-left:0%;">
+            <a href="https://www.danfoss.com/en-in/about-danfoss/news/dcs/new-options-for-oems-as-danfoss-expand-the-z-design-range-of-micro-plate-heat-exchangers/" target="_blank">
+            <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+              <img src="Assets/News1.jpg" style="width:100%;height:100%;">
+              <p style="margin-left:3%">New options for OEMs as Danfoss expand the...</p>
+            </div>
+            </a>
+            <a href="https://www.danfoss.com/en-in/about-danfoss/news/dcs/danfoss-forward-naturally-with-co2-refrigeration-solutions/" target="_blank">
+            <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+              <img src="Assets/News2.jpg" style="width:100%;height:100%;">
+              <p style="margin-left:3%">Danfoss Forward. Naturally With CO₂ Refrigeration...</p>                      
+            </div>
+            </a>
+          </div>
+
+          <div class="row block1" style="margin-left:0%">
+            <a href="https://www.danfoss.com/en-in/about-danfoss/news/dhs/danfoss-adds-a-new-and-data-driven-dimension-to-district-energy-with-the-launch-of-groundbreaking-substation-technology-in-danfoss-titan/" target="_blank">
+            <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+              <img src="Assets/News3.png" style="width:100%;height:100%;">
+              <p style="margin-left:3%">Danfoss adds a new and data-driven dimension to...</p>
+            </div>
+            </a>
+            <a href="https://www.danfoss.com/en-in/about-danfoss/news/dcs/danfoss-formally-completes-acquisition-of-german-compressor-manufacturer-bock-gmbh/" target="_blank">
+            <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+              <img src="Assets/News4.jpg" style="width:100%;height:100%;">
+              <p style="margin-left:3%">Danfoss formally completes acquisition of compressor...</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="row block1" style="margin-left:0%">
+            <a href="https://www.danfoss.com/en-in/about-danfoss/news/dds/trouble-free-operation-in-water-treatment/" target="_blank">
+            <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+              <img src="Assets/News5.jpg" style="width:100%;height:100%;">
+              <p style="margin-left:3%">Trouble-free operation in water treatment...</p>
+            </div>
+            </a>
+            <a href="https://www.danfoss.com/en-in/about-danfoss/news/dds/zero-emission-ferries-molslinjen/" target="_blank">
+            <div class="panel col-xs-5 col-sm-5 col-md-5 col-lg-5 gallery">
+              <img src="Assets/News6.jpg" style="width:100%;height:100%;">
+              <p style="margin-left:3%">Danfoss powers two new zero-emission ferries for...</p>
+            </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="background-color:#EBEFF0;margin-top:18px;position:relative">
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="Panel" style="margin-top:10px;margin-bottom: 10px;">                                               
+                <img src="Assets/GSPlus_Logo.png" style="width:50px">                
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            
+        </div>
+    </div>    
+</div>
+
+
+	<script type="text/javascript">
+		var interval;
+		function ticker()
+		{
+			if($("#rightSideAreaNews .block").length > 3)
+			{
+				$("#rightSideAreaNews .block:first").slideUp(function(){
+					$(this).appendTo("#rightSideAreaNews").slideDown();
+				});
+			}			
+		}
+
+		$(document).ready(function(){
+				interval = setInterval(ticker,9000);
+			$("#rightSideAreaNews").hover(function(){
+				clearInterval(interval);
+			},function(){
+				interval = setInterval(ticker,9000);
+			});
+		});
+	</script>
+
+<script type="text/javascript">
+  var interval1;
+  function ticker1()
+  {
+    if($("#news_gallery .block1").length > 1)
+    {
+      $("#news_gallery .block1:first").slideUp(function(){
+        $(this).appendTo("#news_gallery").slideDown();
+      });
+    }			
+  }
+
+  $(document).ready(function(){
+      interval1 = setInterval(ticker1,5000);
+    $("#news_gallery").hover(function(){
+      clearInterval(interval1);
+    },function(){
+      interval1 = setInterval(ticker1,5000);
+    });
+  });
+</script>
+
+<script>
+  function openFeedbackForm() {
+    if(document.getElementById("myForm1").style.display === "block")
+    {
+      document.getElementById("myForm1").style.display = "none";                
+    }
+    else 
+    {
+      document.getElementById("myForm1").style.display = "block";
+    }
+  }
+  
+  function closeFeedbackForm() {
+    document.getElementById("myForm1").style.display = "none";
+  }
+
+
+  function submitQuery()
+  {
+     var From="gsonedigitalplatform@danfoss.com";
+     var To = document.getElementById('txtToEmail').value;
+     var Name = document.getElementById('txtName').value; var nameregexPattern = /^[a-zA-Z\s\.]+$/;
+     var Email = document.getElementById('email').value; var emailregexPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     var Contact = document.getElementById('txtContact').value;
+     var BodyOfMessage = document.getElementById('txtBodyOfMessage').value;
+    
+    var SubmissionType;      
+    var TypeSubmission1 = document.getElementById('TypeSubmission1');
+    var TypeSubmission2 = document.getElementById('TypeSubmission2');
+    var TypeSubmission3 = document.getElementById('TypeSubmission3');
+
+    if(TypeSubmission1.checked === false && TypeSubmission2.checked === false  && TypeSubmission3.checked === false )
+    {
+      alert("Please check your Submission Type");
+    }
+    else if(Name === "")
+    {
+      alert("Please enter your Name");
+    }
+    else if(!(nameregexPattern.test(Name)))
+    {
+      alert("Enter a your Valid Name");
+    }
+    else if(Email === "")
+    {
+      alert("Please enter your Email Id");
+    }
+    else if(!(emailregexPattern.test(Email)))
+    {
+      alert("Enter a your Valid Email Id");
+    }
+    else if(Contact === "")
+    {
+      alert("Please enter your Contact Number");
+    }
+    else if(BodyOfMessage === "")
+    {
+      alert("Please enter your Message in Report area");
+    }
+    else
+    {
+      if(TypeSubmission1.checked === true)
+      {
+        SubmissionType = "feedback";        
+      }
+      else if(TypeSubmission2.checked === true)
+      {
+        SubmissionType = "ask";        
+      }
+      else if(TypeSubmission3.checked === true)
+      {
+        SubmissionType = "complaint";        
+      } 
+      
+
+        
+      sendEmail(From,To,Name,Email,Contact,SubmissionType,BodyOfMessage);
+
+      document.getElementById('txtName').value ="";
+      document.getElementById('email').value ="";
+      document.getElementById('txtContact').value ="";
+      document.getElementById('txtBodyOfMessage').value ="";
+      TypeSubmission1.checked =false;
+      TypeSubmission2.checked =false;
+      TypeSubmission3.checked =false;
+
+      alert("Your Information Saved Successfully, Our team will reach you soon, Thank you.");
+
+      document.getElementById("myForm1").style.display = "none";
+    }
+  }
+
+  function handleChange(src) {
+    
+    if(src.value === "feedback"){
+      document.getElementById('LblMessage').innerHTML="<b>Report your Feedback</b>"; 
+      document.getElementById('txtBodyOfMessage').placeholder ="Report your Feedback...";
+    }
+    else if(src.value === "ask"){
+      document.getElementById('LblMessage').innerHTML="<b>Ask your Questions</b>";
+      document.getElementById('txtBodyOfMessage').placeholder ="Ask your Questions";
+    }
+    else if(src.value === "complaint"){
+      document.getElementById('LblMessage').innerHTML="<b>Report your complaint</b>";
+      document.getElementById('txtBodyOfMessage').placeholder ="Report your complaint";
+    }
+}
+
+  </script>
+
+<script>
+    function countvisit(){
+        var PageCount = 1;        
+        var PageName = "India EHS";
+        sendCount(PageCount,PageName);
+    }
+</script>
+
+<!-- News Json Data Read -->
+<script>
+  $(document).ready(function () {
+    var currentDate = new Date().getDate();
+    var currentMonth = new Date().getMonth()+1;
+    var currentYear = new Date().getFullYear();
+      fetch('./Json/GSCelebrationData.json')
+          .then(res => res.json())
+          .then(data => {            
+              data.forEach(post => {     
+                if ((parseInt(post.Day) >= currentDate) && (parseInt(post.Month) === currentMonth))
+                {     
+                  var blockRowContainer = "<div class='block row'>";
+                  var leftAreaContainer = "<div class='leftArea'>";
+                  var dateTimeContainer = "<div class='dateTime'>";
+                  var divContent = `
+                                      <span class="date">${post.Day}</span>
+                                      <span class="month-year">${post.Month} ${currentYear}</span>
+
+                              `;
+                  var dateTimeClose = "</div>";
+                  var leftAreaClose = "</div>";
+
+                  var RightDetailAreaContainer = "<div class='RightDetailArea'>";
+                  var titleContainer = "<div class='title'>";
+                  var divContent1 = `
+                          <a href="" target="_blank">${post.FirstName} ${post.LastName}</a>
+
+                  `;
+                  var titleClose = "</div>";
+                  var descriContainer = "<div class='descri'>";
+                  var divContent2 = `        
+                      <p>${post.Designation}</p><p>${post.Department}</p>
+                  `;
+                  var descriClose = "</div>";
+
+                  var anchorContainer = "<div class='anchorBtn'>";
+                  var divContent3 = `        
+                          <a href="#" target="_blank" class="btns">${post.Celebration}</a>
+                  `;
+                  var anchorClose = "</div>";     
+
+                  var RightDetailAreaClose = "</div>";
+                  var blockRowClose = "</div>";
+                  $('.rightSideAreaNews').append(blockRowContainer + leftAreaContainer + dateTimeContainer + divContent + dateTimeClose + leftAreaClose + RightDetailAreaContainer + titleContainer + divContent1 + titleClose + descriContainer + divContent2 + descriClose + anchorContainer + divContent3 + anchorClose + RightDetailAreaClose + blockRowClose);
+                }
+              });
+          });
+  });
+
+
+</script>
+
+</body>
+</html>

@@ -1,12 +1,1486 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="refresh" content="0;URL=https://gsonedigitalplatform.danfoss.com" />
-<title>Redirect to... GS ONE DIGITAL PLATFORM</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://prod-87.westeurope.logic.azure.com/workflows/d0b8d7b3702c41e0a2f24e4f9cd18fb4/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2Q0klkNsUInggoO1Il8UFfBVJJ1RcESRKf91fcHaRyo https://prod-06.westeurope.logic.azure.com/workflows/baaed420a437449c95f5616dca04a775/triggers/manual/paths/invoke/Send?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qN1nw71VIApYkJIKLl8xLT4yCF0j3AtnwqRd9g474V0; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    
+    <title>Home || India</title>
+    <link rel="icon" type="image/png" href="Assets/GSPlus_Logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="fontawesome_min.css"> <!--For Search icon-->
+  <script src="jquery_min.js"></script>
+  <script src="bootstrap_min.js"></script>
+  <link rel="stylesheet" href="IndexStyle.css">
+  <script src="Scripts/CountHandler.js"></script>
+<script src="Scripts/disabled.js"></script>
+  
+ <link rel="stylesheet" href="fontawesome_6_4_2_min.css"> <!--For Robot icon-->
+ 
 </head>
-<body>
-<h1>Re-directing... GS ONE DIGITAL PLATFORM</h1>
-<p>You are being re-directed, if nothing happens, please <a href="https://gsonedigitalplatform.danfoss.com">follow this link</a></p>
+<body onload="countvisit()">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="logo">
+                <img src="Assets/Logo.jpg">
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="container search">
+                <input type="checkbox" id="check">
+                <div class="box">
+                    <input type="text" name=" " id="myInput" placeholder="Search Here..." onkeyup="searchFun()">
+                    <label for="check"><i class='fa fa-search'></i></label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <!--<div id="chat">
+                <div id="chat-circle">                       
+                    <i class="fa-brands fa-bounce robot"><img src="Assets/bot.png" style="width:100%"></i>                        
+                </div>
+                
+                <div class="chat-box">
+                    <div class="chat-box-header">
+                        Vicki Bot
+                        <span class="chat-box-toggle"><i class="fa fa-times"></i></span>
+                    </div>
+                    <div class="chat-box-body">
+                        <iframe src="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/c169a33f-ba08-465f-9f29-dd7abacb0491?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=c2f3054d-ddc5-40b0-9601-bba6689e2200&sourcetime=1700712897486" 
+                        id="myframe"></iframe>                                            
+                    </div>    
+                </div>  
+            </div>  -->
+            <div class="dropdown localdropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="country_text">                
+                <span class="fa fa-globe"></span>
+                India 
+                <span class="caret"></span></button></button>
+                <ul class="dropdown-menu dropdown-menu-right" id="list">
+                  <li><a href="#">India</a></li>
+                  <li><a href="#">South Korea</a></li>
+                  <li><a href="#">Malaysia</a></li>
+                  <li><a href="#">Thailand</a></li>
+                  <li><a href="#">Singapore</a></li>
+                  <li><a href="#">Taiwan</a></li>
+                  <li><a href="#">Australia</a></li>
+                  <li><a href="#">New Zealand</a></li>
+                  <li><a href="#">Vietnam</a></li>
+                  <li><a href="#">Philippines</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                </ul>
+            </div>            
+        </div>
+    </div>  
+</div>
+
+<div class="container-fluid" id="searchplatform">
+    <div class="row">
+        <h4 style="text-align:center;text-transform: uppercase;color:#E2000F;font-weight:600">Search Results</h4>
+        <table id="myTable">
+            <tr class="header">
+                <th>Name</th>
+                <th>Department</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>CFO</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=in" target="_blank">click to view</a></td>
+            </tr>      
+            <tr>
+                <td>Chief Financial Officer</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=in" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Daily Flash (APR)</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/386415c4-ddd2-4064-8c35-173e0a0db940/ReportSection10b5c5267deceb03c0ed?experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Sales Flash Asia Pacific Region</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/386415c4-ddd2-4064-8c35-173e0a0db940/ReportSection10b5c5267deceb03c0ed?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Daily Flash (INR) (New)</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/bf60d34c-4471-4b4c-a139-ae49cd12b1ba/reports/cd43c484-69d9-4236-9eab-a89e46d12582/ReportSectiona01b50e53bcdd2bd6c01?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Sales Flash India (New)</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/bf60d34c-4471-4b4c-a139-ae49cd12b1ba/reports/cd43c484-69d9-4236-9eab-a89e46d12582/ReportSectiona01b50e53bcdd2bd6c01?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>APR OIT and Open Orders</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Freports%2F386415c4-ddd2-4064-8c35-173e0a0db940%2FReportSectiona6e3661de454c5d024ac%3Fexperience%3Dpower-bi&data=05%7C02%7Cjoseph.d%40danfoss.com%7C406a10a429d748d0234608dc94f1ff50%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638549014305501717%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=kjyn2b08dQz%2FnPu2XZl9DCpRNri8cshmCsV0qX9671o%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Asia Pacific Region OrderIntake and Open Orders</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Freports%2F386415c4-ddd2-4064-8c35-173e0a0db940%2FReportSectiona6e3661de454c5d024ac%3Fexperience%3Dpower-bi&data=05%7C02%7Cjoseph.d%40danfoss.com%7C406a10a429d748d0234608dc94f1ff50%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638549014305501717%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=kjyn2b08dQz%2FnPu2XZl9DCpRNri8cshmCsV0qX9671o%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <!--<tr>
+                <td>Daily OIT (INR)</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/links/6_GATNag-5?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare&bookmarkGuid=b3b92fa3-a7f0-4d0e-9adf-4004f6a60b7c" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Daily OrderIntake India</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/links/6_GATNag-5?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare&bookmarkGuid=b3b92fa3-a7f0-4d0e-9adf-4004f6a60b7c" target="_blank">click to view</a></td>
+            </tr>  --> 
+            <tr>
+                <td>Sales Waterfall (API)</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/bceb4a19-812c-4e66-aafa-8e69ec164671/ReportSection81395770473cb5cc362a?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>API Waterfall</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/bceb4a19-812c-4e66-aafa-8e69ec164671/ReportSection81395770473cb5cc362a?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>        
+            <tr>
+                <td>Sales Monthly Report (API)</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/Redirect?action=OpenReport&appId=acaaa251-eebf-45fe-8921-77c6bb6581d7&reportObjectId=884c380c-aa10-4097-8dcd-44f46d1b48f5&ctid=097464b8-069c-453e-9254-c17ec707310d&reportPage=ReportSectionacff9f8753e529200ef7&pbi_source=appShareLink&portalSessionId=e7c4a1b4-07ba-4ef4-b26d-22e17f7c1a2b" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Sales Monthly Report Asia Pacific Region</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/Redirect?action=OpenReport&appId=acaaa251-eebf-45fe-8921-77c6bb6581d7&reportObjectId=884c380c-aa10-4097-8dcd-44f46d1b48f5&ctid=097464b8-069c-453e-9254-c17ec707310d&reportPage=ReportSectionacff9f8753e529200ef7&pbi_source=appShareLink&portalSessionId=e7c4a1b4-07ba-4ef4-b26d-22e17f7c1a2b" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>APR Hotspot Dashboard</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/1009271f-7655-42e0-b88f-49507f36d734/ReportSectiona2dcb76a644ca2b03718?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>OIT</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSection4cc003c0218eb24e12b6?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Order Intake</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSection4cc003c0218eb24e12b6?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Open Order</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/884c380c-aa10-4097-8dcd-44f46d1b48f5/ReportSection42d9a804a967570c0600?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Margin Report</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/ee71cfcd-cdd9-4f56-933f-c352c50705cb/ReportSectionec76287f4417c8866d39?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>API Margin Analysis</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/acaaa251-eebf-45fe-8921-77c6bb6581d7/reports/ee71cfcd-cdd9-4f56-933f-c352c50705cb/ReportSectionec76287f4417c8866d39?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>OVC</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Fapps%2Facaaa251-eebf-45fe-8921-77c6bb6581d7%2Freports%2Ff937d1cf-f39b-42ae-a22d-193e5ce7864c%2F2b8890e794c904ea0cc9%3Fctid%3D097464b8-069c-453e-9254-c17ec707310d%26experience%3Dpower-bi&data=05%7C02%7Cjoseph.d%40danfoss.com%7C7d1c435a49424bef672a08dcafb87ba9%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638578454097323702%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=vjA9C6R4w0NR%2BjyTjSIoc%2BiHm6GxBeMQDSH3jSAuB9g%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Other Variable Cost</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Fapps%2Facaaa251-eebf-45fe-8921-77c6bb6581d7%2Freports%2Ff937d1cf-f39b-42ae-a22d-193e5ce7864c%2F2b8890e794c904ea0cc9%3Fctid%3D097464b8-069c-453e-9254-c17ec707310d%26experience%3Dpower-bi&data=05%7C02%7Cjoseph.d%40danfoss.com%7C7d1c435a49424bef672a08dcafb87ba9%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638578454097323702%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=vjA9C6R4w0NR%2BjyTjSIoc%2BiHm6GxBeMQDSH3jSAuB9g%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>P&L, BS, Cash</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/34411863-bc46-4972-8a6c-19b87d3895fd/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Profit & Loss, Balance Sheet, Cashflow</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/34411863-bc46-4972-8a6c-19b87d3895fd/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>FE</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Fapps%2Facaaa251-eebf-45fe-8921-77c6bb6581d7%2Freports%2Ff937d1cf-f39b-42ae-a22d-193e5ce7864c%2F863c13962c0161eee81a%3Fctid%3D097464b8-069c-453e-9254-c17ec707310d%26experience%3Dpower-bi&data=05%7C02%7Cjoseph.d%40danfoss.com%7C7d1c435a49424bef672a08dcafb87ba9%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638578454097309848%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=g%2BHfYLg3kD2AMhoTtURDIhUzI3Wn%2F3ikOcGp9RSykic%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Fixed Expenses</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Fapps%2Facaaa251-eebf-45fe-8921-77c6bb6581d7%2Freports%2Ff937d1cf-f39b-42ae-a22d-193e5ce7864c%2F863c13962c0161eee81a%3Fctid%3D097464b8-069c-453e-9254-c17ec707310d%26experience%3Dpower-bi&data=05%7C02%7Cjoseph.d%40danfoss.com%7C7d1c435a49424bef672a08dcafb87ba9%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638578454097309848%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=g%2BHfYLg3kD2AMhoTtURDIhUzI3Wn%2F3ikOcGp9RSykic%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Local GP</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/24e5c3e8-e901-4f89-8a85-f3afe4b49dfa/ReportSection33b9afa2d79c0d053663?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Local Gross Profit</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/3b099ef2-6f7d-41e2-94c2-f5f5c2b1d0db/reports/24e5c3e8-e901-4f89-8a85-f3afe4b49dfa/ReportSection33b9afa2d79c0d053663?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Inventory Dashboard</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/d0f7ee1b-81ee-478f-9419-9f44291a6f56/reports/733202ca-fa71-4205-8053-fc4b1c88e0c3/ReportSectione8e139c4ec600135bd58?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Savings Catalogue</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/079467f9-056b-4fac-a3db-c4143f3a411d?tenantId=097464b8-069c-453e-9254-c17ec707310d&amp;hint=1f29e205-9382-44e1-9679-aba0d83db5ff&amp;sourcetime=1707272360710&source=teamsLinkUnfurling" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>APR Country Sales</td>
+                <td>CFO & MIS</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/15a87e1c-7229-4338-ab12-14dc59e0beb6/ReportSection7b90c4aec459b6bde476?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>R2R</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=in#R2R" target="_blank">click to view</a></td>
+            </tr>           
+            <tr>
+                <td>R2R KPI</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/links/L29s0GtOZT?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Performance Indictors and Record to Report</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/links/L29s0GtOZT?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Global TP (Charges/Recharges)</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Transport Pricing </td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Global Lease Reporting-IFRS 16</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>GL Reconciliation</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Ledger and General Ledger</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>ICO Reconciliation</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Inter Company Reconciliation</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/sugumar_a_danfoss_com/Documents/Global Projects?csf=1&web=1&e=gXGIRC" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>API Annual Statutory Accounts</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/p/nirmal_kumar/Eqc1sTjV4gFEs8Ti6Ifx4mUBqwKX2mKL2QHAilHdQdZ1PQ?email=biswaranjan%40danfoss.com&e=hQECmb" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>ASA</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/p/nirmal_kumar/Eqc1sTjV4gFEs8Ti6Ifx4mUBqwKX2mKL2QHAilHdQdZ1PQ?email=biswaranjan%40danfoss.com&e=hQECmb" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>HEX Sales and Financial Reporting</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/personal/sugumar_a_danfoss_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsugumar%5Fa%5Fdanfoss%5Fcom%2FDocuments%2FHEX%20Finance&ga=1" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Sondex Reporting</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/personal/sugumar_a_danfoss_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsugumar%5Fa%5Fdanfoss%5Fcom%2FDocuments%2FHEX%20Finance&ga=1" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>DPS Reporting</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/p/gokul_ramakrishnan/EkSIzALw-HlLn-_hRohDMIMBeLhCS8PSVIlfTkHlJ8sB0A" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Power Solutions Reporting</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/p/gokul_ramakrishnan/EkSIzALw-HlLn-_hRohDMIMBeLhCS8PSVIlfTkHlJ8sB0A" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>RFM Observations</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/9575a000-bcee-4fc1-a7f9-c3857f19f2a7?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>ICOFR - Dashboard</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/links/5Y8PF3Nz6m?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Internal Control and RCM - Dashboard</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/links/5Y8PF3Nz6m?ctid=097464b8-069c-453e-9254-c17ec707310d&pbi_source=linkShare" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>One ERP Release Updates</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSFinance/DFPortal/runbook/Runbook/Forms/AllItems.aspx?id=%2Fsites%2FGSFinance%2FDFPortal%2Frunbook%2FRunbook%2FONE%20ERP%20RELEASE&viewid=00000000%2D0000%2D0000%2D0000%2D000000000000&OR=Teams%2DHL&CT=1688531512495&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA2MDQwMTEzOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Enterprise Updates</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSFinance/DFPortal/runbook/Runbook/Forms/AllItems.aspx?id=%2Fsites%2FGSFinance%2FDFPortal%2Frunbook%2FRunbook%2FONE%20ERP%20RELEASE&viewid=00000000%2D0000%2D0000%2D0000%2D000000000000&OR=Teams%2DHL&CT=1688531512495&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA2MDQwMTEzOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Workflow Approval Process-OTRS</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-finance.managed-otrs.com/external/" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Open Source</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-finance.managed-otrs.com/external/" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Treasury</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://danfoss-my.sharepoint.com/:f:/r/personal/abijeet_n_danfoss_com/Documents/01. Treasury - FY 2023-24/09. Treasury Projects/01. Treasury - Month Highlights?csf=1&web=1&e=bsndGs" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>API Transfer Pricing Support</td>
+                <td>CFO & MIS - R2R</td>
+                <td><a href="https://app.powerbi.com/groups/94d087cd-0a06-4d22-9af0-4e8b6e660b36/reports/c2c9f268-d0c1-4ffc-8745-b472101ee224/ReportSectionb36cc34e43cc56f4a79c?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>O2C</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=in#O2C" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>KPI</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSection103e4611386e6d552fc3?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=SubscribeOthers&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Detailed AR Daily Flash - APR & INR</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSection3420ea1ed0d48aa0090e?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>AR Flash, Collections, Receivables, Cash</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSection3420ea1ed0d48aa0090e?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Credit Notes trend</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSectionc67eb6899a960c01190a?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Invoice Cancellation, Disputes, Product Return</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSectionc67eb6899a960c01190a?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Top 10 OD / LOBD</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSectionfc11dc703205d0ec4666?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Customers, Disputes, Top Customers</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/acca01a1-fa14-4d97-9514-b21b697aba84/reports/c9510463-5a10-4a0a-8e84-5c32a42c1bac/ReportSectionfc11dc703205d0ec4666?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=ReportInvitation&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Global dashboard</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/9d7aaa59-644e-4780-ac76-4eb5d54c6cb3/ReportSectiondd1bf6fd4a00159d8a8a?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>AR, Collections, Receivables, Cash</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/9d7aaa59-644e-4780-ac76-4eb5d54c6cb3/ReportSectiondd1bf6fd4a00159d8a8a?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>             
+            <tr>
+                <td>Cash apps Auto Posting Ratio</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/7fd83ad7-546a-4895-bb02-f66b56a97324/reports/4347d272-19a2-44c9-80cf-1c1dc137dda5/ReportSection922ad879b8e8d06b80b0?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Clearing, Payment, Auto Posting</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/7fd83ad7-546a-4895-bb02-f66b56a97324/reports/4347d272-19a2-44c9-80cf-1c1dc137dda5/ReportSection922ad879b8e8d06b80b0?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Cash apps Unapplied Credits</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/40856bb9-3048-46c7-b7c5-6807156773c0/reports/74005ca4-238a-4ed1-8995-a54be031134f/ReportSection9dda6a08cc183dde0769?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Open Credits, Prepayments, Advance Payments, Excess Payment, Cash Discount, Rebate</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/40856bb9-3048-46c7-b7c5-6807156773c0/reports/74005ca4-238a-4ed1-8995-a54be031134f/ReportSection9dda6a08cc183dde0769?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Credit Risk Analysis Dashboard</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/3f0b5949-b9e0-4eba-ac56-db4abadafbf3/ReportSection?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Credit Risk Newsletter</td>
+                <td>CFO & MIS - O2C</td>
+                <td><a href="https://sway.cloud.microsoft/zZeQM6EsKiOKLRom?ref=Link" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>P2P</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=in#P2P" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>API Regional Dashboard</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://app.powerbi.com/groups/d5371640-e89a-4a12-9360-1895d46267cf/reports/21f4cd04-6d00-419b-bf81-487285ddd8f8/ReportSection48d3cf0e97c48df5072f?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>P2P dashboard, Dashboard,Supplier</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://app.powerbi.com/groups/d5371640-e89a-4a12-9360-1895d46267cf/reports/21f4cd04-6d00-419b-bf81-487285ddd8f8/ReportSection48d3cf0e97c48df5072f?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Global KPI - Payable</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/7d421259-7c2c-48b5-988b-5986ee621f59/reports/93592783-0f63-4b67-827c-2bd2710597eb/ReportSection066a0b1943ec288853bf?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi&bookmarkGuid=Bookmarkd73b575349c6a255a13d" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Global KPI - T&E</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/248c2148-7e09-4f06-a334-859b447072ea/reports/ccfbf807-b1ea-4358-bf9c-51fd3336a62c/ReportSection607920318070b5da5000?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>Celonis Dashboard</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.eu-3.celonis.cloud/package-manager/ui/views/ui/spaces/2619d620-b340-4b5a-8898-355071b40aa6/nodes/fbf98016-efb1-484d-a257-5dbb4b4f9c41#!/documents/fbf98016-efb1-484d-a257-5dbb4b4f9c41/view/sheets/522472f8-dec2-4711-9ca2-4b4111b0c34c" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Vendor Invoice Current Status</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSFinanceProcessesandSupportP2P/SitePages/How-to-get-support-for-Accounts-Payable-&-Travel-Expense-.aspx" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>VIM Approval Fiori Login</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://fiori.danfoss.net/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#OPT_VIM_WP-display?sap-ui-tech-hint=GUI" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>SAP Concur</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Credit Card Administration</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/fd0ec93a-b88f-40f2-85be-28519d3dc6f9?tenantId=097464b8-069c-453e-9254-c17ec707310d&sourcetime=2023-08-09%2011%3A21%3A02Z" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>TIS Approval (via single sign)</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/TreasuryHub/SitePages/Banks-%26-Payments.aspx" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Banking Online Portals</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/TreasuryHub/SitePages/Banks-%26-Payments.aspx" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Citi Approval</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://www.citidirect.com/login/landing" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>CitiDirect Banking</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://www.citidirect.com/login/landing" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>BNP Approval</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://ssologin.bnpparibas.com/cib/LoginForm.aspx?TYPE=33554433&REALMOID=06-0007ab17-9c3b-1321-8ff5-510a0af30000&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-VPRXR87ibIrEfVdPjcXCVUoDtTM%2fFW%2bAheNlUwnRKSwT%2fEPqB62mNahIJnpcDuE8&TARGET=-SM-https%3a%2f%2fcentric%2ebnpparibas%2ecom%2fhome" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Paribas Banking Online Portal</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://ssologin.bnpparibas.com/cib/LoginForm.aspx?TYPE=33554433&REALMOID=06-0007ab17-9c3b-1321-8ff5-510a0af30000&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-VPRXR87ibIrEfVdPjcXCVUoDtTM%2fFW%2bAheNlUwnRKSwT%2fEPqB62mNahIJnpcDuE8&TARGET=-SM-https%3a%2f%2fcentric%2ebnpparibas%2ecom%2fhome" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>HDFC Approval</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://corporate.hdfcbank.com/EnetMVC/" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>HDFC Corporate Internet Banking</td>
+                <td>CFO & MIS - P2P</td>
+                <td><a href="https://corporate.hdfcbank.com/EnetMVC/" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Taxation</td>
+                <td>CFO & MIS</td>
+                <td><a href="CFO.html?og=in#Taxation" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Registration Numbers</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?id=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FTax%20on%20Digital%2Epdf&parent=%2Fsites%2FDanfossIndia%2FGS%20Taxation&p=true&ga=1" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GSTIN,VAT Registration,GST Number,VAT Number</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?id=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FTax%20on%20Digital%2Epdf&parent=%2Fsites%2FDanfossIndia%2FGS%20Taxation&p=true&ga=1" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>ITL Tax Tool Referencer</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=eJi78v&cid=2a9fcf87%2Df80c%2D42bf%2D9d4e%2Da04e236a05b6&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FITL%20Tax%20Tool%20Study%20Material%20%5FINCO&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>ITL Tool,GST Rate</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=eJi78v&cid=2a9fcf87%2Df80c%2D42bf%2D9d4e%2Da04e236a05b6&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FITL%20Tax%20Tool%20Study%20Material%20%5FINCO&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Tax Code Reference Book INCO</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=EHx8L5&cid=fdae9621%2D93ee%2D434d%2D845e%2De0b464ed7d44&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FGST%20REFERENCE%20BOOK%20%5FVRB%5FINCO&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>VAT Reference Book, VRB INCO</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=EHx8L5&cid=fdae9621%2D93ee%2D434d%2D845e%2De0b464ed7d44&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FGST%20REFERENCE%20BOOK%20%5FVRB%5FINCO&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Tax Code Reference Book APA</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=uVVi4r&cid=858fa94d%2Dfd4b%2D4f18%2D9ff5%2De07095d6ef06&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FVat%20Reference%20Book%28VRB%29%20%5FAPA&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>VAT Reference Book, VRB APA</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/DanfossIndia/GS Taxation/Forms/AllItems.aspx?csf=1&web=1&e=uVVi4r&cid=858fa94d%2Dfd4b%2D4f18%2D9ff5%2De07095d6ef06&RootFolder=%2Fsites%2FDanfossIndia%2FGS%20Taxation%2FVat%20Reference%20Book%28VRB%29%20%5FAPA&FolderCTID=0x0120000B1F1C3A07018C4FAD0A04B7E4C18385" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Risk Management - procedure for written contracts (500B1050)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Risk Management Agreement (500B1050)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Delegation of Power (500B1167)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>DOP (500B1167)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Reporting of litigation cases (500B1273)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Tax Appeal (500B1273)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>General Terms and Conditions of Sale (500B0144)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>General Contracts (500B0144)</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://workplace.danfoss.net/8802/standards" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GSTR1 Compliance Dashboard</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://danfoss.sharepoint.com/:f:/r/sites/DanfossIndia/GS Taxation/GSTR1 Compliance dashboard?csf=1&web=1&e=tE6uDD" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GST Offline Tool</td>
+                <td>CFO & MIS - Taxation</td>
+                <td><a href="https://www.gst.gov.in/download/returns" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Global Competency Services</td>
+                <td>Global Competency Services</td>
+                <td><a href="gcs.html?og=in">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GCS</td>
+                <td>Global Competency Services</td>
+                <td><a href="gcs.html?og=in">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="Safety_India.html" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Environment</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="Safety_India.html#Environment" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Legislations</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/EHSIndia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FEHSIndia%2FShared%20Documents%2FOne%20Screen%20Digital%2FEnvironment%2FLegislative%20Reporting&viewid=844cda27%2Dfa2d%2D4bd8%2D8a20%2D6b381bafa504" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>HR Factory complaince</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/EHSIndia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FEHSIndia%2FShared%20Documents%2FOne%20Screen%20Digital%2FEnvironment%2FLegislative%20Reporting&viewid=844cda27%2Dfa2d%2D4bd8%2D8a20%2D6b381bafa504" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Monitoring Reports</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/EHSIndia/Shared Documents/Forms/AllItems.aspx?id=%2Fsites%2FEHSIndia%2FShared%20Documents%2FOne%20Screen%20Digital%2FEnvironment%2FMonitoring%20Reports&viewid=844cda27%2Dfa2d%2D4bd8%2D8a20%2D6b381bafa504" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>One Screen Digital Reports</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/EHSIndia/Shared Documents/Forms/AllItems.aspx?id=%2Fsites%2FEHSIndia%2FShared%20Documents%2FOne%20Screen%20Digital%2FEnvironment%2FMonitoring%20Reports&viewid=844cda27%2Dfa2d%2D4bd8%2D8a20%2D6b381bafa504" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Eco Design</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B016CA370-CEB8-4DFE-B760-CB7D4892A4FE%7D&file=Eco%20Design.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Eco PPT</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B016CA370-CEB8-4DFE-B760-CB7D4892A4FE%7D&file=Eco%20Design.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>3R Waste Management</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B97905F25-983C-4868-9EAF-246216076259%7D&file=3R.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>3R Waste U426716 initiatives</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B97905F25-983C-4868-9EAF-246216076259%7D&file=3R.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Waste water Management</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B37EA7CAD-1F5A-48CB-BC74-B941D3BF0F43%7D&file=Per%20Capita%20Reduction%20%40%20Danfoss%20Chennai%20Campus.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Per Capita Reduction at Danfoss Chennai Campus</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B37EA7CAD-1F5A-48CB-BC74-B941D3BF0F43%7D&file=Per%20Capita%20Reduction%20%40%20Danfoss%20Chennai%20Campus.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Health</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="Safety_India.html#Health" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Health plan</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B06953FF4-4307-45D8-9938-23294C5ABE8E%7D&file=EHS%20Plan%202023.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>EHS plan</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7B06953FF4-4307-45D8-9938-23294C5ABE8E%7D&file=EHS%20Plan%202023.pptx&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>OHC Reports</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/52d433e3-25e7-4bca-852d-c2f039dc4399/ReportSection63ed99c1342a65ea57d7?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Occupational Health centre Reports</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/52d433e3-25e7-4bca-852d-c2f039dc4399/ReportSection63ed99c1342a65ea57d7?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Creche Registration</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDYupmO0uRQ9FmvRgxOEOsR1UN1kwNkpLUkRGUTZKVjVBSVhPSVlWWTc5Si4u&wdLOR=c7FA6F46E-B1C6-42E5-BC60-A37A314C94C4" target="_blank">click to view</a></td>
+            </tr>         
+            <tr>
+                <td>Child Care Registration</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDYupmO0uRQ9FmvRgxOEOsR1UN1kwNkpLUkRGUTZKVjVBSVhPSVlWWTc5Si4u&wdLOR=c7FA6F46E-B1C6-42E5-BC60-A37A314C94C4" target="_blank">click to view</a></td>
+            </tr>   
+            <tr>
+                <td>Safety</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="Safety_India.html#Safety" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Report a Safety Issue</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.synergilife.dnv.com/" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>IMS Audits</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/b95c1227-5b6e-4536-8f4a-25b76228e8a6?tenantId=097464b8-069c-453e-9254-c17ec707310d&source=portal" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Internal Audits</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/b95c1227-5b6e-4536-8f4a-25b76228e8a6?tenantId=097464b8-069c-453e-9254-c17ec707310d&source=portal" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Compliance Tracker</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/afaebfa5-72b3-4d3e-9c3b-4e84d3c5b951/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Compliance Status Dashboard</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://app.powerbi.com/groups/04f77689-4b62-4b49-93e0-0354e681ed41/reports/afaebfa5-72b3-4d3e-9c3b-4e84d3c5b951/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Safety Performance</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://app.powerbi.com/groups/47837667-d2b1-453d-9765-cc0f5622e908/reports/d0df36e0-905f-4316-bf11-0e345ae47fe7/ReportSection82acf440195b053e1082?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Safety Induction</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7BAF131059-00EB-4E33-8E0E-27FE4D9155A9%7D&file=EHS%20INDUCTION.pptm&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>EHS Induction</td>
+                <td>Environment, Health and Safety (EHS)</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/r/sites/EHSIndia/_layouts/15/Doc.aspx?sourcedoc=%7BAF131059-00EB-4E33-8E0E-27FE4D9155A9%7D&file=EHS%20INDUCTION.pptm&action=edit&mobileredirect=true" target="_blank">click to view</a></td>
+            </tr>
+             <tr>
+                <td>Real Estate, Infrastructure and ESG</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="RealEstate_India.html" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>API Footprint</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3b492245-d159-4f8e-8e87-ff485448b5b0/reports/a5e85e7f-fc46-4e81-9095-6b4f0dc9c0a5/ReportSection255a7427268800869003" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Real Estate Footprint, Asia Pacific and India Region</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3b492245-d159-4f8e-8e87-ff485448b5b0/reports/a5e85e7f-fc46-4e81-9095-6b4f0dc9c0a5/ReportSection255a7427268800869003" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>MIS report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/f540802a-9263-4d6e-a50e-435c2cfd9a94/reports/2fd63f49-7118-44c2-9e0d-78b83be3a60d/ReportSection01e32f2276ae39580872?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Real Estate Services Dashboard</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/f540802a-9263-4d6e-a50e-435c2cfd9a94/reports/2fd63f49-7118-44c2-9e0d-78b83be3a60d/ReportSection01e32f2276ae39580872?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>ESG Footprint</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/40f24305-48b5-45af-aad3-13b64f86ad89/reports/c1a18d12-fa54-4082-a666-c0630af79d68/ReportSection08eb14055db8e3508e27?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Environmental, Social and Governance Footprint</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/40f24305-48b5-45af-aad3-13b64f86ad89/reports/c1a18d12-fa54-4082-a666-c0630af79d68/ReportSection08eb14055db8e3508e27?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Energy Analysis</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3e36c566-d10c-4ab2-bffd-3f03fe678962/reports/1a02190d-7d78-48f7-aa7b-8072594bb61d/ReportSection780ce009fbfd939d74e4?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Energy report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/a399195e-a556-473d-8b89-8500c8f6e5e2/ReportSection53161d054e940e819429?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi&bookmarkGuid=0b7fd883-507e-4423-88a1-6d4539897cd8" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Basic Country and Site report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/me/reports/a399195e-a556-473d-8b89-8500c8f6e5e2/ReportSection53161d054e940e819429?ctid=097464b8-069c-453e-9254-c17ec707310d&experience=power-bi&bookmarkGuid=0b7fd883-507e-4423-88a1-6d4539897cd8" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Space report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3e36c566-d10c-4ab2-bffd-3f03fe678962/reports/b5525c57-27b6-46fe-865f-4d8526e52639/ReportSection6728053ae75b7fe74a8d?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=SubscribeOthers&experience=power-bi" target="_blank">click to view</a></td>
+            </tr> 
+            <tr>
+                <td>Site Services report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3e36c566-d10c-4ab2-bffd-3f03fe678962/reports/b5525c57-27b6-46fe-865f-4d8526e52639/ReportSection6728053ae75b7fe74a8d?ctid=097464b8-069c-453e-9254-c17ec707310d&openReportSource=SubscribeOthers&experience=power-bi" target="_blank">click to view</a></td>
+            </tr>                       
+            <tr>
+                <td>OPEX (R&M)</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/f540802a-9263-4d6e-a50e-435c2cfd9a94/reports/2fd63f49-7118-44c2-9e0d-78b83be3a60d/ReportSection0bc66e07ad15558ea8ab?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>  
+            <tr>
+                <td>Operational Expenditure</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/f540802a-9263-4d6e-a50e-435c2cfd9a94/reports/2fd63f49-7118-44c2-9e0d-78b83be3a60d/ReportSection0bc66e07ad15558ea8ab?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>          
+            <tr>
+                <td>CAPEX report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3e36c566-d10c-4ab2-bffd-3f03fe678962/reports/2fd63f49-7118-44c2-9e0d-78b83be3a60d/ReportSection39e54e47e17e1d6a2938?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Capital Expenditure report</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://app.powerbi.com/groups/3e36c566-d10c-4ab2-bffd-3f03fe678962/reports/2fd63f49-7118-44c2-9e0d-78b83be3a60d/ReportSection39e54e47e17e1d6a2938?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>RE Services</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/3e375115-d1e5-470e-ac88-c391ac50fd31?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=206817e8-3225-4213-a3bd-181b304413be&sourcetime=1693985155646" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Real Estate Services</td>
+                <td>Real Estate, Infrastructure & ESG</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/3e375115-d1e5-470e-ac88-c391ac50fd31?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=206817e8-3225-4213-a3bd-181b304413be&sourcetime=1693985155646" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>Indirect Procurement</td>
+                <td>Indirect Procurement</td>
+                <td><a href="IndirectProcurement_India.html" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>MyShop</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://s1-eu.ariba.com/gb/?realm=danfossgroup&locale=en_US" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Mouse, Jabra Headphone, Laptop Accessories</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://s1-eu.ariba.com/gb/?realm=danfossgroup&locale=en_US" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>MyShop User Guides</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://workplace.danfoss.net/116686/myshop-user-guides" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>GRN</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://workplace.danfoss.net/116686/myshop-user-guides" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Procurement Contract Templates</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://workplace.danfoss.net/42738/contract-lifecycle-and-risk-management" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>Approved Vendor list</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/340ba6d6-8b44-426f-aa6c-e228de5fa933/ReportSectionbc94c1e365690e6215c3?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Vendor Names</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/340ba6d6-8b44-426f-aa6c-e228de5fa933/ReportSectionbc94c1e365690e6215c3?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Spend View</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/2f116f77-d0de-4a8d-a92d-56588a20b6db/ReportSection?experience=power-bi&bookmarkGuid=Bookmark513d2d40602602283544" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Spend dashboard, Money </td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/2f116f77-d0de-4a8d-a92d-56588a20b6db/ReportSection?experience=power-bi&bookmarkGuid=Bookmark513d2d40602602283544" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Payment Terms</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/2f116f77-d0de-4a8d-a92d-56588a20b6db/ReportSectiona2074f342e58173dee34?experience=power-bi&bookmarkGuid=Bookmarka93e5b0f9006853e52ac" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Vendor, Terms and Conditions</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/2f116f77-d0de-4a8d-a92d-56588a20b6db/ReportSectiona2074f342e58173dee34?experience=power-bi&bookmarkGuid=Bookmarka93e5b0f9006853e52ac" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Catalogue Adoption</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://app.powerbi.com/groups/me/apps/ffce1df4-337c-448b-b888-bf76069eb6b0/reports/20740f5a-7ddc-4f16-982d-991bad10a0d8/ReportSection?experience=power-bi" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Service Now</td>
+                <td>Indirect Procurement</td>
+                <td><a href="https://service.danfoss.net/esc?id=emp_taxonomy_topic&topic_id=f66e14489783bd50dafcfe7fe153af09" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Admin Services</td>
+                <td>Admin Services</td>
+                <td><a href="Admin_India.html" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Travel</td>
+                <td>Admin Services</td>
+                <td><a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Air Flight Booking</td>
+                <td>Admin Services</td>
+                <td><a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Travel playbook</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/:b:/s/GSIndiaAdministration/EY9BgUXnZtRDs5k_jQQEyp4BZ3ZekveFMeo_5SL-VGhAOw?e=3TnWre" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Booklet of Travel Guide, Travel Process, Visa Process, Visa Steps</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/:b:/s/GSIndiaAdministration/EY9BgUXnZtRDs5k_jQQEyp4BZ3ZekveFMeo_5SL-VGhAOw?e=3TnWre" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Visa invitation link</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/sites/GSIndiaAdministration/Lists/VISA Invite/NewForm.aspx?Source=https%3A%2F%2Fdanfoss%2Esharepoint%2Ecom%2Fsites%2FGSIndiaAdministration%2FSitePages%2FVisa%2DInvitation%2Easpx&RootFolder=%2Fsites%2FGSIndiaAdministration%2FLists%2FVISA%20Invite" target="_blank">click to view</a></td>
+            </tr>            
+            <tr>
+                <td>Hotel</td>
+                <td>Admin Services</td>
+                <td><a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Claim of Lunch, breakfast, Dinner, Accomodation, Travel, Internet</td>
+                <td>Admin Services</td>
+                <td><a href="https://www.concursolutions.com/UI/SSO/p0001124qfze" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Grace Travels</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/s/GSIndiaAdministration/EW_nwwPsFIlInLLXaAyql0UBCnE6peBLKKf0SaFux3BvYw?e=xoh1lb&CID=D5A3A9CF-C6C3-4BAF-95EE-E02BE00F55DE&wdLOR=cD1846AEB-B7B6-4213-A614-A37B514A32B6" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Orix Cabs</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/:p:/s/GSIndiaAdministration/EWJPeKGOukBNrUULvK-f21YBj25UPht4yvTTYovnDJNEZw?e=2vxVUo&CID=780D9857-7A43-44F1-B1A7-610A3501C266&wdLOR=c3DEF1DE9-4C69-4944-956E-F4869FD4FD6D" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Uber Cabs</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/:b:/s/GSIndiaAdministration/EYE2e90-n25ItsSaUz8lFR8BDISF8JW8kaa7dOLC0lZbYg?e=Xur43f" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Travel and Hiring Request Form</td>
+                <td>Admin Services</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/1008d3a4-7bcb-4eab-9b5e-eea975c210fd?tenantId=097464b8-069c-453e-9254-c17ec707310d&source=AppSharedV3&hint=209c1839-ef78-437f-ac66-377b87a6b9cc&skipmetadata=true" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Telecommunication Policy</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.sharepoint.com/:b:/s/GSIndiaAdministration/EZhmKJnFkbRChrOTpJYsfcUBe3rVHthpNgJiJyUBp14P4A?e=tLx2oF" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Mobile Device Request</td>
+                <td>Admin Services</td>
+                <td><a href="https://danfoss.asignet.com/sso.ashx" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Corporate Sim Request</td>
+                <td>Admin Services</td>
+                <td><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDcyQSR_bK29IrKG2N1QQSOhUNEpZSUIwTEVTNExNTktHMU5EMFM3QVowNS4u" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Courier Tracker</td>
+                <td>Admin Services</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/ca220e03-a20a-4f1a-8725-5c002ba0bf62?tenantId=097464b8-069c-453e-9254-c17ec707310d&sourcetime=2023-08-16%2007%3A22%3A36Z" target="_blank">click to view</a></td>
+            </tr>           
+            <tr>
+                <td>Business Card Request</td>
+                <td>Admin Services</td>
+                <td><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=uGR0CZwGPkWSVMF-xwcxDcyQSR_bK29IrKG2N1QQSOhUNUZJNklWTzBSMkVMVE8xWFgwRlAzTTdVNy4u" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Events Request</td>
+                <td>Admin Services</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/20373d62-7b49-4892-8c7b-41f8625b273f?tenantId=097464b8-069c-453e-9254-c17ec707310d&sourcetime=2023-08-04%2007%3A09%3A26Z" target="_blank">Link need to be added</a></td>
+            </tr>
+            <tr>
+                <td>Soft Services, Transportation, Taxi and Canteen</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="Transportation_India.html" target="_blank">click to view</a></td>
+            </tr>   
+            <tr>
+                <td>Soft Services</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/d506871d-078e-4a9d-8526-f26e7d1228fb?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=4a082475-b430-4289-a736-654861938577&sourcetime=1693985486907" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Clean and Hygiene Services</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/d506871d-078e-4a9d-8526-f26e7d1228fb?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=4a082475-b430-4289-a736-654861938577&sourcetime=1693985486907" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Canteen</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/b7c902ad-b322-41cc-8a11-f4aeaa553f32?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=b5776e8c-a86f-4bc7-8d6e-e2f5327e7aca&sourcetime=1706508904541&source=portal#" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Food, Lunch, Diet, Breakfast, Coffee, Tea, Snacks, Meals, Dinner, Drinking Water, cooldrinks</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/b7c902ad-b322-41cc-8a11-f4aeaa553f32?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=b5776e8c-a86f-4bc7-8d6e-e2f5327e7aca&sourcetime=1706508904541&source=portal#" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Transport</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/7dfae91f-acc8-414e-80ba-4d84bc68c276?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=d63f53a8-6377-4606-88d1-25b0e9d6430b&sourcetime=1693985682374" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Daily Staff Bus Services</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/7dfae91f-acc8-414e-80ba-4d84bc68c276?tenantId=097464b8-069c-453e-9254-c17ec707310d&hint=d63f53a8-6377-4606-88d1-25b0e9d6430b&sourcetime=1693985682374" target="_blank">click to view</a></td>
+            </tr>      
+            <tr>
+                <td>BTS (Bus Tracking System)</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="http://track.playgps.in" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Track the Bus by GPS</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="http://track.playgps.in" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>ETG Employee Transport Guide</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://danfoss.sharepoint.com/:b:/s/GSIndiaAdministration/EbkTIFkxV4NKgsgjMoQBHu0By4CcUpOxK1tsPIqPyx80Cw?e=eghVFu" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Daily Staff Bus Route Map</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://danfoss.sharepoint.com/:b:/s/GSIndiaAdministration/EbkTIFkxV4NKgsgjMoQBHu0By4CcUpOxK1tsPIqPyx80Cw?e=eghVFu" target="_blank">click to view</a></td>
+            </tr>                        
+            <tr>
+                <td>BOS Banquet ordering system</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Feur.safelink.emails.azure.net%2Fredirect%2F%3Fdestination%3Dhttps%253A%252F%252Fapps.powerapps.com%252Fplay%252Fe%252Fdefault-097464b8-069c-453e-9254-c17ec707310d%252Fa%252Feef16682-53bf-4b8a-a512-6f90013eec40%253FtenantId%253D097464b8-069c-453e-9254-c17ec707310d%2526source%253DAppSharedV3%2526hint%253D3d5e3dd9-5e03-436f-8628-ed5c273c351b%2526sourcetime%253D2023-08-04%252B04%25253a33%25253a58Z%26p%3DbT00NThlZDhhZi01ZmY1LTQwZjctOWYwNS0xM2UwNmU1MjA2ZjYmdT1hZW8mbD1BcHBXZWJMYXVuY2hVcmk%253D&data=05%7C01%7Cjoseph.d%40danfoss.com%7C48fa60afc1c647dde1eb08db94a41523%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638267204716980082%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=nV3%2FI1VCphQ2qbN4qgdTANLXZIYCcWRhuOUdqFos20g%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Veg and Non Veg Food ordering system</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Feur.safelink.emails.azure.net%2Fredirect%2F%3Fdestination%3Dhttps%253A%252F%252Fapps.powerapps.com%252Fplay%252Fe%252Fdefault-097464b8-069c-453e-9254-c17ec707310d%252Fa%252Feef16682-53bf-4b8a-a512-6f90013eec40%253FtenantId%253D097464b8-069c-453e-9254-c17ec707310d%2526source%253DAppSharedV3%2526hint%253D3d5e3dd9-5e03-436f-8628-ed5c273c351b%2526sourcetime%253D2023-08-04%252B04%25253a33%25253a58Z%26p%3DbT00NThlZDhhZi01ZmY1LTQwZjctOWYwNS0xM2UwNmU1MjA2ZjYmdT1hZW8mbD1BcHBXZWJMYXVuY2hVcmk%253D&data=05%7C01%7Cjoseph.d%40danfoss.com%7C48fa60afc1c647dde1eb08db94a41523%7C097464b8069c453e9254c17ec707310d%7C0%7C0%7C638267204716980082%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=nV3%2FI1VCphQ2qbN4qgdTANLXZIYCcWRhuOUdqFos20g%3D&reserved=0" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>MRR</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/bfa8bfee-ffe1-464b-a7f5-44b0c430e28e?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">click to view</a></td>
+            </tr>
+            <tr>
+                <td>Meeting Room Refreshment Request</td>
+                <td>Soft Services, Transportation and Canteen</td>
+                <td><a href="https://apps.powerapps.com/play/e/default-097464b8-069c-453e-9254-c17ec707310d/a/bfa8bfee-ffe1-464b-a7f5-44b0c430e28e?tenantId=097464b8-069c-453e-9254-c17ec707310d" target="_blank">click to view</a></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="row" id="noresult">
+        <div class="alert alert-danger">
+            <strong>Sorry,</strong> we could not find any results matching with your input...
+          </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid" id="dashboardplatform">
+    <div class="row content">        
+        <div class="welcome col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="container-fluid">
+                <div class="row" style="height:244px;">
+                    <div class="Panel col-xs-9 col-sm-9 col-md-9 col-lg-9" style="margin-top:24px">
+                        <h3 style="font-weight:bold;margin-top:0">Welcome to</h3>
+                        <h3 style="font-weight:bold;margin-top:0;margin-bottom:0;">Global Services</h3>
+                        <img src="Assets/Line.png" style="height:4px"><br>
+                        <img src="Assets/GSPlus_Logo.png" style="width:150px;margin-top:2.5%;margin-left:22%">
+                    </div>
+                    <div class="Panel col-xs-3 col-sm-3 col-md-3 col-lg-3" style="margin-top:24px">
+                        <img src="Assets/Mouse.svg" class="tab_img_mouse">
+                    </div>
+
+                </div>
+                <div class="row" style="height:44px">
+                    <div class="panel col-xs-12 col-sm-12 col-md-12 col-lg-12">                        
+                        <p class="blink-text">At your services just a click away!</p>
+                    </div>                    
+                </div>
+                <div class="row" style="height:200px">
+                    <div class="container buttonwelcome col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="CFO.html?og=in" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>CFO & MIS</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 left">
+                                    <img src="Assets/CFO.svg" class="cfoicons">
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                    <img src="Assets/MIS.svg" class="cfoicons">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container buttonwelcome mgtop col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="gcs.html?og=in" style="text-decoration:none">
+                            <div class="row text-center" style="height:60px">
+                                <p style="margin-top:10px;color:rgb(51, 51, 51)"><strong>Your Solution<br>Next Door</strong></p>                              
+                            </div>
+                            <div class="row text-center" style="height:60px">
+                                <img src="Assets/gcsdoor.svg" style="width:60px;height:60px">
+                            </div>
+                            <div class="row text-center" style="height:60px">
+                                <p id="gcs" style="color:rgb(51, 51, 51)"><strong>Global Competency Services</strong></p>                              
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="container-fluid">
+                <div class="row" style="height:250px">
+                    <div class="container buttonse col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="Admin_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>Admin</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px;margin-top: 4%">
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 leftimg">
+                                    <img src="Assets/Mobile.svg" style="width:50px;height:50px;">
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                    <img src="Assets/Car.svg" style="width:50px;height:50px;">
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 rightimg">
+                                    <img src="Assets/Globe.svg" style="width:50px;height:50px;">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container buttonse col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="Safety_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>EHS</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 left">
+                                    <img src="Assets/Safety.svg" class="cfoicons">
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                    <img src="Assets/SafetyHelmet.svg" class="cfoicons">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container buttonse col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="RealEstate_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>Real Estate, Infrastructure & ESG</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <img src="Assets/RealEstate.svg" class="cfoicons">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="height:250px">
+                    <div class="container buttonse col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="IndirectProcurement_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>Indirect<br>Procurement</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <img src="Assets/IndirectProcurement.svg" class="cfoicons">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container buttonse col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="Transportation_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>Transport & Canteen</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 left">
+                                    <img src="Assets/Transport.svg" class="cfoicons">
+                                </div>
+                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                    <img src="Assets/Canteen.svg" class="cfoicons">
+                                </div>
+                            </div>
+                        </a>        
+                    </div>
+                <!--<div class="container buttonseanim col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="IndirectProcurement_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:70px">
+                                <p style="margin-top:21px" class="shineanim"><strong>Book your Meal</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <svg class="svganim"
+                                width ="50"
+                                height ="50"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                xml:space="preserve" 
+                                overflow="hidden">
+                                <g transform="translate(-592 -312)">
+                                <path d="M606.578 333.188C607.108 333.181 607.637 333.223 608.158 333.315L608.989 333.481C609.559 333.595 610.081 333.881 610.484 334.3L612.284 336.164 613.011 335.478 611.204 333.605C610.659 333.04 609.955 332.655 609.185 332.5L608.354 332.333C607.771 332.229 607.178 332.18 606.586 332.188 605.031 332.177 603.296 331.415 601.531 329.651 598.932 326.986 596.055 322.863 595.232 321.657 595.097 321.458 595.122 321.192 595.292 321.022L595.364 320.951C595.559 320.755 595.876 320.755 596.071 320.951L603.9 328.779C604.138 329.017 604.524 329.017 604.761 328.779 604.999 328.541 604.999 328.155 604.761 327.918L596.932 320.09C596.737 319.895 596.737 319.578 596.932 319.383L597.373 318.941C597.569 318.746 597.885 318.746 598.081 318.941L605.909 326.77C606.146 327.007 606.532 327.007 606.77 326.77 607.008 326.532 607.008 326.146 606.77 325.908L598.942 318.081C598.747 317.885 598.747 317.569 598.942 317.374L599.383 316.932C599.578 316.737 599.895 316.737 600.09 316.932L607.918 324.76C608.146 325.008 608.531 325.024 608.779 324.797 609.026 324.569 609.043 324.184 608.815 323.936 608.804 323.924 608.792 323.911 608.779 323.9L600.95 316.071C600.755 315.876 600.755 315.559 600.95 315.364L601.025 315.289C601.119 315.195 601.246 315.142 601.379 315.142 601.478 315.142 601.575 315.171 601.656 315.227 604.486 317.106 607.146 319.229 609.607 321.572 611.379 323.345 612.14 325.087 612.144 326.647 612.133 327.252 612.174 327.857 612.266 328.456L612.46 329.576C612.56 330.148 612.84 330.674 613.26 331.076L615.41 333.133 616.117 332.426 613.953 330.353C613.686 330.099 613.509 329.766 613.447 329.403L613.253 328.283C613.171 327.74 613.135 327.191 613.146 326.642 613.141 324.708 612.162 322.71 610.316 320.863 607.809 318.476 605.098 316.312 602.214 314.396 601.619 313.997 600.826 314.075 600.32 314.582L600.245 314.656C599.946 314.955 599.787 315.366 599.807 315.788 599.784 315.788 599.76 315.788 599.737 315.788 599.338 315.786 598.957 315.945 598.676 316.227L598.235 316.668C597.953 316.949 597.794 317.331 597.795 317.729 597.795 317.752 597.795 317.776 597.795 317.799 597.773 317.799 597.749 317.799 597.726 317.799 597.327 317.798 596.946 317.956 596.665 318.238L596.224 318.68C595.925 318.978 595.766 319.389 595.787 319.81 595.763 319.81 595.74 319.81 595.716 319.81 595.318 319.809 594.936 319.968 594.656 320.25L594.584 320.321C594.074 320.83 593.998 321.631 594.404 322.227 595.237 323.44 598.159 327.629 600.816 330.35 602.662 332.197 604.653 333.175 606.578 333.188Z"/>
+                                <path d="M623.657 339.644 622.992 340.391 635.03 351.917C635.917 352.76 635.953 354.163 635.109 355.051 634.266 355.938 632.863 355.973 631.976 355.13 631.951 355.106 631.926 355.082 631.903 355.057L618.907 341.589C618.695 341.534 618.477 341.471 618.245 341.389L617.794 341.874 631.183 355.75C632.417 357.028 634.453 357.063 635.73 355.829 637.008 354.595 637.044 352.56 635.81 351.282 635.781 351.252 635.751 351.223 635.721 351.194Z" />
+                                <path d="M637.429 317.35C636.986 316.754 636.292 316.396 635.55 316.382L635.5 316.382C634.717 316.382 633.966 316.697 633.416 317.254L615.116 335.554 597.176 352.516C595.897 353.726 595.84 355.744 597.05 357.023 597.653 357.66 598.49 358.021 599.366 358.021 600.253 358.019 601.099 357.649 601.703 357L617.845 339.616C618.585 339.989 619.391 340.213 620.218 340.274 620.721 340.298 621.21 340.105 621.56 339.742L632.715 327.22C635.627 323.953 637.354 321.362 637.851 319.521 638.049 318.771 637.894 317.971 637.429 317.35ZM636.885 319.26C636.56 320.466 635.422 322.679 631.968 326.556L620.826 339.064C620.662 339.216 620.441 339.293 620.218 339.274 619.4 339.274 618.157 338.661 617.605 338.404L600.97 356.322C600.144 357.204 598.76 357.25 597.877 356.424 596.995 355.598 596.949 354.214 597.775 353.331 597.803 353.301 597.833 353.271 597.863 353.242L615.81 336.271 634.12 317.961C634.483 317.591 634.978 317.383 635.496 317.381L635.53 317.381C636.347 317.42 636.977 318.114 636.938 318.931 636.933 319.043 636.915 319.153 636.885 319.26Z" />
+                                </g>
+                                </svg> 
+                                                                
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+            </div>            
+        </div>
+        <div class="news col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="container-fluid">
+                <div class="row" style="height:170px;">
+                    <div class="container buttonnews" style="margin-top:40px">
+                        <a href="GSNewsLetter_India.html" style="text-decoration:none">
+                            <div class="row text-center" style="height:50px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>GS News Letter<strong></p>
+                            </div>
+                            <div class="row text-center" style="height:115px">
+                                <img src="Assets/GSNewsLetter.svg" style="width:45px;height:45px;">
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+                <div class="row" style="height:170px;">
+                    <div class="container buttonnews" style="margin-top:24px">
+                        <a href="https://danfoss.sharepoint.com/sites/ExecutiveNewsBriefINR" style="text-decoration:none">
+                            <div class="row text-center" style="height:55px">
+                                <p class="newsbrief"><strong>Executive News Brief<strong></p>
+                            </div>
+                            <div class="row text-center" style="height:110px">
+                                <img src="Assets/GSNews.svg" style="width:40px;height:40px;">
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+                <div class="row" style="height:170px">
+                    <div class="container buttonnews" style="margin-top:10px">
+                        <a href="https://danfoss.sharepoint.com/sites/GSLT-API/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FGSLT%2DAPI%2FShared%20Documents%2FGeneral%2F2023&viewid=32b9dd78%2D2a3b%2D45cf%2Dbad9%2D0999e2183227" style="text-decoration:none">    
+                            <div class="row text-center" style="height:50px">
+                                <p style="margin-top:21px;color:rgb(51, 51, 51)"><strong>GSLT (API) Meeting</strong></p>
+                            </div>
+                            <div class="row text-center" style="height:115px">
+                                <img src="Assets/Meeting.svg" style="width:50px;height:50px;">
+                            </div>
+                        </a>    
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </div> 
+    <div class="row text-center" style="margin-top:0.5%">        
+            <h5 style="color:#E2000F;font-weight: bold">           
+            <span class="big">S</span>eamless, <span class="big">S</span>mart and <span class="big">S</span>imple<span class="big">!</span>
+            </h5>         
+    </div> 
+</div>
+
+
+
+<div class="container-fluid ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+
+<script>
+    var items=document.querySelectorAll("#list li"),
+        tab = [], index;
+    //add values to tha array
+    for(var i=0;i<items.length;i++){
+        tab.push(items[i].innerHTML);
+    }
+    
+    //get selected element index
+    for(var i=0;i < items.length;i++){
+        items[i].onclick=function(){
+
+            index=tab.indexOf(this.innerHTML);
+            //console.log(this.innerHTML+"Index ="+index);
+            
+            if(index==0){
+                document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" India "+"<span class='caret'></span>";                                            
+            }
+            else if(index==1){
+                location.replace("SouthKorea.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" South Korea "+"<span class='caret'></span>";               
+            }
+            else if(index==2){
+                location.replace("Malaysia.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Malaysia "+"<span class='caret'></span>"; 
+            }
+            else if(index==3){
+                location.replace("Thailand.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Thailand "+"<span class='caret'></span>"; 
+            }
+            else if(index==4){
+                location.replace("Singapore.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Singapore "+"<span class='caret'></span>";  
+            }
+            else if(index==5){
+                location.replace("Taiwan.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Taiwan "+"<span class='caret'></span>"; 
+            }
+            else if(index==6){
+                location.replace("Australia.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Australia "+"<span class='caret'></span>";  
+            }
+            else if(index==7){
+                location.replace("NewZealand.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" New Zealand "+"<span class='caret'></span>";  
+            }
+            else if(index==8){
+                location.replace("Vietnam.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Vietnam "+"<span class='caret'></span>";  
+            }
+            else if(index==9){ 
+                location.replace("Philippines.html");               
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Philippines "+"<span class='caret'></span>";  
+            }   
+            else if(index==10){
+                location.replace("Indonesia.html");
+                //document.getElementById('country_text').innerHTML = "<span class='fa fa-globe'></span>"+" Indonesia "+"<span class='caret'></span>";  
+            }          
+        }
+    }
+
+    
+</script>
+
+<script>
+    const searchFun = () => {        
+        
+        var notfound=0;
+        let filter=document.getElementById('myInput').value.toUpperCase();
+
+        if(filter!=""){
+            document.getElementById('searchplatform').style.display="block"; 
+            
+        }
+        else
+        {
+            document.getElementById('searchplatform').style.display="none";
+            
+        }
+
+        let myTable=document.getElementById('myTable');
+
+        let tr = myTable.getElementsByTagName('tr');        
+        
+        for(var i=0;i<tr.length;i++){
+            
+            let td = tr[i].getElementsByTagName('td')[0];
+
+            if(td){
+                let textvlaue=td.textContent || td.innerHTML;
+
+                if(textvlaue.toUpperCase().indexOf(filter) > -1){
+                    
+                    tr[i].style.display = "";
+                      
+                                    
+                }                               
+                else{
+                    tr[i].style.display = "none";
+                    notfound++;  
+                                                  
+                }
+            }
+            
+        }
+        
+        if(notfound >= tr.length-1)
+        {
+            document.getElementById("noresult").style.display="";
+            document.getElementById("myTable").style.display="none";
+        }
+        else
+        {
+            document.getElementById("noresult").style.display="none";
+            document.getElementById("myTable").style.display="";
+        }
+          
+    }
+</script> 
+
+<script>
+    function countvisit(){
+        var PageCount = 1;        
+        var PageName = "India Home";
+        sendCount(PageCount,PageName);
+    }
+</script>
+
+
+<!--
+<script>
+    $(function() {  
+  $("#chat-circle").click(function() {    
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+    $("#searchplatform").css("opacity","0.2");
+    $("#dashboardplatform").css("opacity","0.2");
+  })
+  
+  $(".fa-times").click(function() {
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+    $("#searchplatform").css("opacity","1");
+    $("#dashboardplatform").css("opacity","1");
+  })  
+})
+</script>
+
+<script>
+    const text=document.querySelector('.text p');
+    text.innerHTML = text.innerText.split("").map(
+    (char,i) =>
+        `<span style="transform:rotate(${i*35}deg)">${char}</span>`
+    ).join("")
+</script>
+-->
 </body>
-</html> 
+</html>
